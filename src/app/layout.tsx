@@ -1,4 +1,5 @@
-import './globals.css'
+import { benzin, ego, tahoma } from '../styles/fonts'
+import '../styles/globals.css'
 
 export const metadata = {
   title: 'David Mamani - Portfolio',
@@ -11,7 +12,7 @@ interface Props {
 
 function RootLayout({ children }: Props) {
   return (
-    <html lang='en'>
+    <html lang='en' className={`${benzin.variable} ${ego.variable} ${tahoma.variable}`}>
       <body>{children}</body>
     </html>
   )
