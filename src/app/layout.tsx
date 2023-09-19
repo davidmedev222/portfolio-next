@@ -1,4 +1,4 @@
-import { Header } from '@/components'
+import { Footer, Header } from '@/components'
 import { benzin, ego, tahoma } from '../styles/fonts'
 import '../styles/globals.css'
 
@@ -14,10 +14,10 @@ interface Props {
 function RootLayout({ children }: Props) {
   return (
     <html lang='en' className={`${benzin.variable} ${ego.variable} ${tahoma.variable}`}>
-      <body className='min-h-screen font-tahoma text-black'>
+      <body className='min-h-screen bg-white font-tahoma text-black'>
         <Header />
         {children}
-        <footer>footer</footer>
+        <Footer />
       </body>
     </html>
   )

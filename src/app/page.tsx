@@ -1,9 +1,10 @@
-import { Hero } from '@/components'
+import { Divider, Hero } from '@/components'
 
 function HomePage() {
   return (
-    <main>
+    <main className='mx-auto max-w-screen-xl px-4 lg:px-16'>
       <Hero />
+      <Divider direction='horizontal' />
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae consequuntur velit et laboriosam unde
         dolorem explicabo cupiditate ad quam voluptatem! Dicta officia corrupti deleniti obcaecati quo accusantium
