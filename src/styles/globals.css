@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .grid-area-project {
+    grid-template-areas:
+      'image date'
+      'title .'
+      'description skills';
+  }
+  .area-project-image {
+    grid-area: image;
+  }
+  .area-project-date {
+    grid-area: date;
+  }
+  .area-project-title {
+    grid-area: title;
+  }
+  .area-project-description {
+    grid-area: description;
+  }
+  .area-project-skills {
+    grid-area: skills;
+  }
+}

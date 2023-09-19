@@ -1,3 +1,4 @@
+export { default as ProjectCard } from './card/ProjectCard'
 export { default as Divider } from './divider/Divider'
 export { default as DropdownLanguages } from './dropdown/DropdownLanguages'
 export { default as DropdownTheme } from './dropdown/DropdownTheme'
