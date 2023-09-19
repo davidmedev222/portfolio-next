@@ -15,10 +15,10 @@ function DropdownTheme() {
     ),
     optionsMobile: clsx('absolute top-[calc(100%+6px)] grid gap-y-1.5 lg:hidden'),
     optionsDesktop: clsx(
-      'absolute right-0 top-[calc(100%+16px)] grid hidden w-44 place-items-center gap-y-1 rounded-3xl bg-box p-4 lg:grid'
+      'absolute right-0 top-[calc(100%+16px)] grid hidden w-44 place-items-center gap-y-2.5 rounded-3xl bg-box p-4 lg:grid'
     ),
     optionDesktop: clsx(
-      'flex w-28 cursor-pointer items-center gap-x-4 rounded-[7px] bg-violet-300 px-3 py-1 text-sm shadow-md shadow-black/25 transition-colors duration-300 hover:bg-violet-300'
+      'flex w-28 cursor-pointer items-center gap-x-4 rounded-full bg-violet-300 px-4 py-1.5 text-sm shadow-md shadow-black/25 transition-colors duration-300 hover:bg-violet-300'
     )
   }
 
