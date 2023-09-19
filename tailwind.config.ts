@@ -8,6 +8,7 @@ const config: Config = {
       current: 'currentColor',
       black: '#000218',
       white: '#F7FBFE',
+      box: '#E6EAF2',
       violet: {
         100: '#f0eff8',
         200: '#e4e2f2',
