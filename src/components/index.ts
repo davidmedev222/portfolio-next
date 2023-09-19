@@ -1,6 +1,7 @@
 export { default as Divider } from './divider/Divider'
 export { default as DropdownLanguages } from './dropdown/DropdownLanguages'
 export { default as DropdownTheme } from './dropdown/DropdownTheme'
+export { default as Footer } from './footer/Footer'
 export { default as Header } from './header/Header'
 export { default as Navbar } from './header/Navbar'
 export { default as Hero } from './hero/Hero'
