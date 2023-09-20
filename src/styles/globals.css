@@ -1,3 +1,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    --swiper-pagination-color: #988aca;
+    --swiper-pagination-left: auto;
+    --swiper-pagination-right: 8px;
+    --swiper-pagination-bottom: 8px;
+    --swiper-pagination-top: auto;
+    --swiper-pagination-fraction-color: inherit;
+    --swiper-pagination-progressbar-bg-color: rgba(0, 0, 0, 0.25);
+    --swiper-pagination-progressbar-size: 4px;
+    --swiper-pagination-bullet-size: 8px;
+    --swiper-pagination-bullet-width: 12px;
+    --swiper-pagination-bullet-height: 5px;
+    --swiper-pagination-bullet-border-radius: 24px;
+    --swiper-pagination-bullet-inactive-color: #e6eaf2;
+    --swiper-pagination-bullet-inactive-opacity: 1;
+    --swiper-pagination-bullet-opacity: 1;
+    --swiper-pagination-bullet-horizontal-gap: 4px;
+    --swiper-pagination-bullet-vertical-gap: 6px;
+  }
+}
+
+@layer components {
+  .grid-area-project {
+    grid-template-areas:
+      'image date'
+      'title .'
+      'description skills';
+  }
+  .area-project-image {
+    grid-area: image;
+  }
+  .area-project-date {
+    grid-area: date;
+  }
+  .area-project-title {
+    grid-area: title;
+  }
+  .area-project-description {
+    grid-area: description;
+  }
+  .area-project-skills {
+    grid-area: skills;
+  }
+}

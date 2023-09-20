@@ -3,7 +3,9 @@
     "@formkit/auto-animate": "^0.8.0",
     "next": "13.4.19",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-lines-ellipsis": "^0.15.3",
+    "swiper": "^10.2.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
@@ -11,6 +13,7 @@
     "@types/node": "20.6.2",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
+    "@types/react-lines-ellipsis": "^0.15.1",
     "autoprefixer": "10.4.15",
     "clsx": "^2.0.0",
     "eslint": "8.49.0",

@@ -83,6 +83,9 @@ const config: Config = {
         benzin: ['var(--font-benzin)'],
         ego: ['var(--font-ego)'],
         tahoma: ['var(--font-tahoma)']
+      },
+      gridTemplateColumns: {
+        project: '2fr 1fr'
       }
     }
   },
