@@ -1,31 +1,14 @@
-import { Divider, Hero, ProjectCard } from '@/components'
+import { CustomLink, Divider, Hero, ProjectCardList, ProjectCarousel } from '@/components'
+import { Routes } from '@/utils/const'
 
 function HomePage() {
   return (
     <main className='mx-auto max-w-screen-xl px-4 lg:px-16'>
       <Hero />
-      <Divider direction='horizontal' />
-      <ProjectCard />
-      {/* <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae consequuntur velit et laboriosam unde
-        dolorem explicabo cupiditate ad quam voluptatem! Dicta officia corrupti deleniti obcaecati quo accusantium
-        architecto dolorum ex!
-      </p>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae consequuntur velit et laboriosam unde
-        dolorem explicabo cupiditate ad quam voluptatem! Dicta officia corrupti deleniti obcaecati quo accusantium
-        architecto dolorum ex!
-      </p>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae consequuntur velit et laboriosam unde
-        dolorem explicabo cupiditate ad quam voluptatem! Dicta officia corrupti deleniti obcaecati quo accusantium
-        architecto dolorum ex!
-      </p>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae consequuntur velit et laboriosam unde
-        dolorem explicabo cupiditate ad quam voluptatem! Dicta officia corrupti deleniti obcaecati quo accusantium
-        architecto dolorum ex!
-      </p> */}
+      <Divider direction='horizontal' className='h-[1px] md:h-0.5' />
+      <ProjectCarousel />
+      <ProjectCardList />
+      <CustomLink href={Routes.projects}>Ver todos</CustomLink>
     </main>
   )
 }
