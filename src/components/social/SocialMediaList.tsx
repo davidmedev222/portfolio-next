@@ -4,7 +4,7 @@ import SocialMediaLink from './SocialMediaLink'
 
 function SocialMediaList() {
   return (
-    <ul className='mx-auto grid max-w-xs gap-8 py-10 md:max-w-none md:grid-cols-3 lg:gap-x-[72px]'>
+    <ul className='mx-auto grid max-w-xs gap-8 py-10 md:max-w-none md:grid-cols-3 md:py-24 lg:gap-x-[72px]'>
       <li>
         <SocialMediaLink
           className='flex items-center gap-x-[18px] pl-[92px] pr-4 md:p-6'
