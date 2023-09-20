@@ -24,7 +24,7 @@ function ProjectCard() {
       <h4 className='lg:area-project-title font-benzin text-[min(6vw,48px)] uppercase'>
         Design <span className='font-ego'>Website</span>
       </h4>
-      <TextEllipsis className='md:area-project-description text-sm md:text-lg' numberOfLines={3}>
+      <TextEllipsis component='p' className='md:area-project-description text-sm md:text-lg' numberOfLines={3}>
         Website that allows designers to show their work and projects in an attractive and professional way. Where they
         can create their personalized portfolio, upload their designs, and share it with the world. This website allows
         them to highlight their talent and connect with potential clients or collaborators.

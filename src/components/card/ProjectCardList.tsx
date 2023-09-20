@@ -12,15 +12,15 @@ function ProjectCardList({ variant }: Props) {
   return (
     <section className={classes}>
       <ProjectCard />
-      <Divider direction='horizontal' className='h-[1px] md:h-0.5' />
+      <Divider direction='horizontal' />
       <ProjectCard />
-      <Divider direction='horizontal' className='h-[1px] md:h-0.5' />
+      <Divider direction='horizontal' />
       <ProjectCard />
-      <Divider direction='horizontal' className='h-[1px] md:h-0.5' />
+      <Divider direction='horizontal' />
       <ProjectCard />
-      <Divider direction='horizontal' className='h-[1px] md:h-0.5' />
+      <Divider direction='horizontal' />
       <ProjectCard />
-      <Divider direction='horizontal' className='h-[1px] md:h-0.5' />
+      <Divider direction='horizontal' />
     </section>
   )
 }

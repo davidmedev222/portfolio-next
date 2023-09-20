@@ -5,7 +5,7 @@ function HomePage() {
   return (
     <main className='mx-auto max-w-screen-xl px-4 lg:px-16'>
       <Hero />
-      <Divider direction='horizontal' className='h-[1px] md:h-0.5' />
+      <Divider direction='horizontal' />
       <ProjectCarousel />
       <ProjectCardList variant='highlights' />
       <CustomLink href={Routes.projects}>Ver todos</CustomLink>

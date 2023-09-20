@@ -26,13 +26,21 @@ function HamburgerMenu() {
       <div className={classes.backdrop}>
         <div className={classes.menu}>
           <div className={classes.links}>
-            <MenuLink href={Routes.home}>Home</MenuLink>
+            <MenuLink onClick={toggleHamburgerMenu} href={Routes.home}>
+              Home
+            </MenuLink>
             <Divider direction='horizontal' />
-            <MenuLink href={Routes.projects}>Proyects</MenuLink>
+            <MenuLink onClick={toggleHamburgerMenu} href={Routes.projects}>
+              Proyects
+            </MenuLink>
             <Divider direction='horizontal' />
-            <MenuLink href={Routes.about}>About Me</MenuLink>
+            <MenuLink onClick={toggleHamburgerMenu} href={Routes.about}>
+              About Me
+            </MenuLink>
             <Divider direction='horizontal' />
-            <MenuLink href={Routes.contact}>Contact</MenuLink>
+            <MenuLink onClick={toggleHamburgerMenu} href={Routes.contact}>
+              Contact
+            </MenuLink>
           </div>
           <CloseIcon onClick={toggleHamburgerMenu} className={classes.close} />
         </div>
