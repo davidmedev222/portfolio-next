@@ -7,7 +7,7 @@ function HomePage() {
       <Hero />
       <Divider direction='horizontal' className='h-[1px] md:h-0.5' />
       <ProjectCarousel />
-      <ProjectCardList />
+      <ProjectCardList variant='highlights' />
       <CustomLink href={Routes.projects}>Ver todos</CustomLink>
     </main>
   )

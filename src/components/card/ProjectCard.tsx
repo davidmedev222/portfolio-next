@@ -5,8 +5,8 @@ import TextEllipsis from '../text/TextEllipsis'
 
 function ProjectCard() {
   return (
-    <article className='md:grid-area-project grid gap-y-2.5 py-10 md:grid-cols-project md:gap-x-10 md:gap-y-8'>
-      <h3 className='md:area-project-date font-benzin text-xl uppercase md:pt-24 md:text-center md:text-5xl'>
+    <article className='md:grid-area-project grid gap-2.5 py-10 md:grid-cols-project'>
+      <h3 className='md:area-project-date font-benzin text-[min(6vw,48px)] uppercase md:pt-24 md:text-center'>
         Agosto <span className='font-ego'>2023</span>
       </h3>
       <Link href='/projects/design' className='md:area-project-image group relative h-60 md:h-96'>
@@ -21,7 +21,7 @@ function ProjectCard() {
           <ArrowIcon className='h-[52px] w-8 rotate-180 fill-transparent stroke-white stroke-[0.4px] md:h-36 md:w-20' />
         </div>
       </Link>
-      <h4 className='lg:area-project-title font-benzin text-xl uppercase md:text-5xl'>
+      <h4 className='lg:area-project-title font-benzin text-[min(6vw,48px)] uppercase'>
         Design <span className='font-ego'>Website</span>
       </h4>
       <TextEllipsis className='md:area-project-description text-sm md:text-lg' numberOfLines={3}>
@@ -30,12 +30,12 @@ function ProjectCard() {
         them to highlight their talent and connect with potential clients or collaborators.
       </TextEllipsis>
       <ul className='md:area-project-skills mt-4 flex flex-wrap items-center gap-x-1.5 gap-y-2.5 text-sm text-violet-950 md:mt-0 md:gap-x-3 md:gap-y-5 md:text-lg'>
-        <li className='rounded-3xl bg-box px-1.5 py-0.5 shadow-md shadow-black/25'>Typescript</li>
-        <li className='rounded-3xl bg-box px-1.5 py-0.5 shadow-md shadow-black/25'>Next</li>
-        <li className='rounded-3xl bg-box px-1.5 py-0.5 shadow-md shadow-black/25'>Tailwind CSS</li>
-        <li className='rounded-3xl bg-box px-1.5 py-0.5 shadow-md shadow-black/25'>Clsx</li>
-        <li className='rounded-3xl bg-box px-1.5 py-0.5 shadow-md shadow-black/25'>React Hook Form</li>
-        <li className='rounded-3xl bg-box px-1.5 py-0.5 shadow-md shadow-black/25'>Pnpm</li>
+        <li className='rounded-3xl bg-box px-2 py-0.5 shadow-md shadow-black/25 md:px-4'>Typescript</li>
+        <li className='rounded-3xl bg-box px-2 py-0.5 shadow-md shadow-black/25 md:px-4'>Next</li>
+        <li className='rounded-3xl bg-box px-2 py-0.5 shadow-md shadow-black/25 md:px-4'>Tailwind CSS</li>
+        <li className='rounded-3xl bg-box px-2 py-0.5 shadow-md shadow-black/25 md:px-4'>Clsx</li>
+        <li className='rounded-3xl bg-box px-2 py-0.5 shadow-md shadow-black/25 md:px-4'>React Hook Form</li>
+        <li className='rounded-3xl bg-box px-2 py-0.5 shadow-md shadow-black/25 md:px-4'>Pnpm</li>
       </ul>
     </article>
   )
