@@ -1,3 +1,4 @@
+import { languageEN } from '@/utils/const'
 import Button from './Button'
 
 function ContactForm() {
@@ -18,7 +19,7 @@ function ContactForm() {
         rows={6}
         placeholder='Mensaje'
       />
-      <Button className='mt-14'>Submit</Button>
+      <Button className='mt-14'>{languageEN.contact.contact.button}</Button>
     </form>
   )
 }

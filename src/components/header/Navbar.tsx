@@ -1,5 +1,5 @@
 'use client'
-import { Routes } from '@/utils/const'
+import { languageEN } from '@/utils/const'
 import clsx from 'clsx'
 import Link, { LinkProps } from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -13,18 +13,11 @@ function Navbar() {
   return (
     <nav className={classes.nav}>
       <ul className={classes.items}>
-        <li>
-          <NavLink href={Routes.home}>Home</NavLink>
-        </li>
-        <li>
-          <NavLink href={Routes.projects}>Proyects</NavLink>
-        </li>
-        <li>
-          <NavLink href={Routes.about}>About Me</NavLink>
-        </li>
-        <li>
-          <NavLink href={Routes.contact}>Contact</NavLink>
-        </li>
+        {languageEN.header.links.map((link) => (
+          <li key={link.id}>
+            <NavLink href={link.href}>{link.title}</NavLink>
+          </li>
+        ))}
       </ul>
     </nav>
   )

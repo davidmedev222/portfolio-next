@@ -1,5 +1,5 @@
 import { CustomLink, Divider, Hero, ProjectCardList, ProjectCarousel } from '@/components'
-import { Routes } from '@/utils/const'
+import { languageEN } from '@/utils/const'
 
 function HomePage() {
   return (
@@ -8,7 +8,7 @@ function HomePage() {
       <Divider direction='horizontal' />
       <ProjectCarousel />
       <ProjectCardList variant='highlights' />
-      <CustomLink href={Routes.projects}>Ver todos</CustomLink>
+      <CustomLink href={languageEN.home.link.href}>{languageEN.home.link.title}</CustomLink>
     </main>
   )
 }

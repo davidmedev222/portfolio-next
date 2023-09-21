@@ -3,14 +3,19 @@ import Divider from '../divider/Divider'
 
 interface Props {
   children: React.ReactNode
-  variant?: 'sub-heading'
+  variant?: 'heading' | 'sub-heading'
   as?: 'h2' | 'h3' | 'h4'
   className?: string
 }
 
 function PageHeading({ children, variant, as, className }: Props) {
   const classes = {
-    section: clsx('pt-[84px] md:space-y-4 md:pt-[152px]', variant === 'sub-heading' && 'pt-11 md:pt-20', className),
+    section: clsx(
+      'md:space-y-4',
+      variant === 'heading' && 'pt-[84px] md:pt-[152px]',
+      variant === 'sub-heading' && 'pt-11 md:pt-20',
+      className
+    ),
     heading: clsx('text-center font-benzin text-[min(6vw,36px)] uppercase')
   }
 

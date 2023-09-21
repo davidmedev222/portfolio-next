@@ -1,7 +1,7 @@
 'use client'
-import { CloseIcon, Divider, MenuIcon } from '@/components'
+import { CloseIcon, MenuIcon } from '@/components'
 import { useToggle } from '@/hooks'
-import { Routes } from '@/utils/const'
+import { languageEN } from '@/utils/const'
 import clsx from 'clsx'
 import MenuLink from './MenuLink'
 
@@ -26,21 +26,11 @@ function HamburgerMenu() {
       <div className={classes.backdrop}>
         <div className={classes.menu}>
           <div className={classes.links}>
-            <MenuLink onClick={toggleHamburgerMenu} href={Routes.home}>
-              Home
-            </MenuLink>
-            <Divider direction='horizontal' />
-            <MenuLink onClick={toggleHamburgerMenu} href={Routes.projects}>
-              Proyects
-            </MenuLink>
-            <Divider direction='horizontal' />
-            <MenuLink onClick={toggleHamburgerMenu} href={Routes.about}>
-              About Me
-            </MenuLink>
-            <Divider direction='horizontal' />
-            <MenuLink onClick={toggleHamburgerMenu} href={Routes.contact}>
-              Contact
-            </MenuLink>
+            {languageEN.header.links.map((link) => (
+              <MenuLink key={link.id} onClick={toggleHamburgerMenu} href={link.href}>
+                {link.title}
+              </MenuLink>
+            ))}
           </div>
           <CloseIcon onClick={toggleHamburgerMenu} className={classes.close} />
         </div>

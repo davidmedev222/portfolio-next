@@ -1,9 +1,11 @@
+/* eslint-disable react/jsx-key */
+import { languageEN } from '@/utils/const'
 import clsx from 'clsx'
 import Divider from '../divider/Divider'
 import ProjectCard from './ProjectCard'
 
 interface Props {
-  variant?: 'highlights'
+  variant?: 'highlights' | 'all'
 }
 
 function ProjectCardList({ variant }: Props) {
@@ -11,16 +13,20 @@ function ProjectCardList({ variant }: Props) {
 
   return (
     <section className={classes}>
-      <ProjectCard />
-      <Divider direction='horizontal' />
-      <ProjectCard />
-      <Divider direction='horizontal' />
-      <ProjectCard />
-      <Divider direction='horizontal' />
-      <ProjectCard />
-      <Divider direction='horizontal' />
-      <ProjectCard />
-      <Divider direction='horizontal' />
+      {variant === 'highlights' &&
+        languageEN.home.projects.map((project) => (
+          <>
+            <ProjectCard project={project} />
+            <Divider direction='horizontal' />
+          </>
+        ))}
+      {variant === 'all' &&
+        languageEN.projects.projects.map((project) => (
+          <>
+            <ProjectCard project={project} />
+            <Divider direction='horizontal' />
+          </>
+        ))}
     </section>
   )
 }
