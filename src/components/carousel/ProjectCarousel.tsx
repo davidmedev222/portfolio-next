@@ -1,4 +1,5 @@
 'use client'
+import { languageEN } from '@/utils/const'
 import 'swiper/css'
 import 'swiper/css/effect-coverflow'
 import 'swiper/css/pagination'
@@ -25,24 +26,11 @@ function ProjectCarousel() {
       }}
       className='md:!hidden'
     >
-      <SwiperSlide>
-        <ProjectCard />
-      </SwiperSlide>
-      <SwiperSlide>
-        <ProjectCard />
-      </SwiperSlide>
-      <SwiperSlide>
-        <ProjectCard />
-      </SwiperSlide>
-      <SwiperSlide>
-        <ProjectCard />
-      </SwiperSlide>
-      <SwiperSlide>
-        <ProjectCard />
-      </SwiperSlide>
-      <SwiperSlide>
-        <ProjectCard />
-      </SwiperSlide>
+      {languageEN.home.projects.map((project) => (
+        <SwiperSlide key={project.id}>
+          <ProjectCard project={project} />
+        </SwiperSlide>
+      ))}
     </Swiper>
   )
 }
