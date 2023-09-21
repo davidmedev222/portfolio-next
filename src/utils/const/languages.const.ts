@@ -771,7 +771,7 @@ export const languageEN = {
       categories: [
         {
           id: crypto.randomUUID(),
-          title: 'Languages & preprocessors',
+          title: 'Languages & Preprocessors',
           logos: [
             { id: crypto.randomUUID(), image: '/assets/skills/logohtml.webp', alt: 'Technology logo html' },
             { id: crypto.randomUUID(), image: '/assets/skills/logocss.webp', alt: 'Technology logo css' },

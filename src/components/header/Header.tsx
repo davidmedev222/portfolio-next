@@ -3,7 +3,7 @@ import { Divider, DropdownLanguages, DropdownTheme, HamburgerMenu, LogoIcon, Nav
 import clsx from 'clsx'
 import { useEffect, useState } from 'react'
 
-const minScroll = 100
+const minScroll = 25
 
 function Header() {
   const [scrolling, setScrolling] = useState(false)

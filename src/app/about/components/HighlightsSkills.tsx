@@ -8,7 +8,7 @@ interface Props {
 function HighlightsSkills({ skill }: Props) {
   return (
     <section className='mx-auto grid max-w-screen-md gap-y-7 px-4 py-6 md:gap-y-11 md:px-16 md:py-16'>
-      <h5 className='text-xs text-gray-700 md:text-lg'>{skill.title}</h5>
+      <h5 className='text-sm text-gray-700 md:text-lg'>{skill.title}</h5>
       <ul className='flex flex-wrap items-center gap-4 md:gap-8'>
         {skill.logos.map((logo) => (
           <li key={logo.id}>

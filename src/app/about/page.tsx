@@ -1,6 +1,6 @@
-/* eslint-disable react/jsx-key */
 import { Divider, PageHeading } from '@/components'
 import { languageEN } from '@/utils/const'
+import { Fragment } from 'react'
 import Hero from './components/Hero'
 import HighlightsExperience from './components/HighlightsExperience'
 import HighlightsSkills from './components/HighlightsSkills'
@@ -20,12 +20,12 @@ function AboutMePage() {
         {languageEN.about.skills.title}
       </PageHeading>
       {languageEN.about.skills.categories.map((skill) => (
-        <>
+        <Fragment key={skill.id}>
           <HighlightsSkills skill={skill} />
           <div className='mx-auto max-w-screen-xl px-4 lg:px-16'>
             <Divider direction='horizontal' />
           </div>
-        </>
+        </Fragment>
       ))}
     </main>
   )
