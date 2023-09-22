@@ -7,7 +7,7 @@ function ArrowBack() {
   return (
     <svg
       onClick={back}
-      className='xs:left-16 xs:top-24 xs:h-12 xs:w-12 absolute left-4 top-16 h-8 w-8 cursor-pointer fill-transparent stroke-black stroke-[0.4px] transition-colors duration-300 hover:stroke-violet-500'
+      className='absolute left-4 top-16 h-8 w-8 cursor-pointer fill-transparent stroke-black stroke-[0.4px] transition-colors duration-300 hover:stroke-violet-500 xs:left-16 xs:top-24 xs:h-12 xs:w-12 2xl:h-16 2xl:w-16'
       xmlns='http://www.w3.org/2000/svg'
       viewBox='0 0 30 30'
     >

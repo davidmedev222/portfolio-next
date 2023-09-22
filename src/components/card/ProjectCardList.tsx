@@ -17,14 +17,14 @@ function ProjectCardList({ variant }: Props) {
         languageEN.home.projects.map((project) => (
           <Fragment key={project.id}>
             <ProjectCard project={project} />
-            <Divider direction='horizontal' />
+            <Divider color='box' direction='horizontal' />
           </Fragment>
         ))}
       {variant === 'all' &&
         languageEN.projects.projects.map((project) => (
           <Fragment key={project.id}>
             <ProjectCard project={project} />
-            <Divider direction='horizontal' />
+            <Divider color='box' direction='horizontal' />
           </Fragment>
         ))}
     </section>

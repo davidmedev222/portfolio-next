@@ -23,7 +23,7 @@ function AboutMePage() {
         <Fragment key={skill.id}>
           <HighlightsSkills skill={skill} />
           <div className='mx-auto max-w-screen-xl px-4 lg:px-16'>
-            <Divider direction='horizontal' />
+            <Divider color='box' direction='horizontal' />
           </div>
         </Fragment>
       ))}
