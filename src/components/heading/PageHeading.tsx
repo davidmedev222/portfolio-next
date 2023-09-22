@@ -25,7 +25,7 @@ function PageHeading({ children, variant, as, className }: Props) {
         {as === 'h2' && <h2 className={classes.heading}>{children}</h2>}
         {as === 'h3' && <h3 className={classes.heading}>{children}</h3>}
         {as === 'h4' && <h4 className={classes.heading}>{children}</h4>}
-        <Divider color='violet' sizes='lg' direction='horizontal' />
+        <Divider color='violet' direction='horizontal' />
       </section>
     )
   }
@@ -33,7 +33,7 @@ function PageHeading({ children, variant, as, className }: Props) {
   return (
     <section className={classes.section}>
       <h1 className={classes.heading}>{children}</h1>
-      <Divider sizes='lg' color='violet' direction='horizontal' />
+      <Divider color='violet' direction='horizontal' />
     </section>
   )
 }

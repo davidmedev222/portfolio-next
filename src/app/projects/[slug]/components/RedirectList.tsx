@@ -3,7 +3,7 @@ import CustomLink from './CustomLink'
 
 function RedirectList() {
   return (
-    <ul className='mx-auto grid max-w-screen-xl grid-cols-[1fr_auto_1fr] px-4 pb-9 md:pb-20 lg:px-16'>
+    <ul className='container-base grid grid-cols-[1fr_auto_1fr] pb-9 md:pb-20'>
       <li>
         <CustomLink icon iconPosition='left' href='#'>
           Back

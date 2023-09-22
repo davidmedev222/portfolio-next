@@ -3,7 +3,7 @@ import { languageEN } from '@/utils/const'
 
 function HomePage() {
   return (
-    <main className='mx-auto max-w-screen-xl px-4 lg:px-16'>
+    <main className='container-base'>
       <Hero />
       <Divider color='violet' direction='horizontal' />
       <ProjectCarousel />

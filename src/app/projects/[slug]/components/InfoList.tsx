@@ -2,7 +2,7 @@ import { SkillText } from '@/components'
 
 function InfoList() {
   return (
-    <ul className='mx-auto grid max-w-screen-xl gap-y-2.5 px-4 py-4 text-sm uppercase text-gray-700 md:grid-cols-6 md:gap-x-6 md:gap-y-20 md:py-20 md:text-lg lg:px-16'>
+    <ul className='container-base grid gap-y-2.5 py-4 text-sm uppercase text-gray-700 md:grid-cols-6 md:gap-x-6 md:gap-y-20 md:py-20 md:text-lg'>
       <li className='col-span-2 grid gap-y-1.5'>
         Proyecto
         <span className='capitalize text-black'>Jordan Store</span>

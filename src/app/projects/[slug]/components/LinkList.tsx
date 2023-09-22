@@ -3,7 +3,7 @@ import CustomLink from './CustomLink'
 
 function LinkList() {
   return (
-    <ul className='mx-auto grid max-w-screen-xl grid-cols-[1fr_auto_1fr] px-4 pt-2.5 lg:px-16'>
+    <ul className='container-base grid grid-cols-[1fr_auto_1fr] pt-2.5'>
       <li>
         <CustomLink decoration='underline' href='#'>
           Code
