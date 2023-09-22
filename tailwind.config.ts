@@ -86,6 +86,12 @@ const config: Config = {
       },
       gridTemplateColumns: {
         project: '2fr 1fr'
+      },
+      screens: {
+        xs: '496px'
+      },
+      dropShadow: {
+        heading: '0px 4px 4px rgba(0, 0, 0, 0.25)'
       }
     }
   },
