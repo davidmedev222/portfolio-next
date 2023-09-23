@@ -43,11 +43,11 @@ function DropdownTheme() {
             <div className={classes.optionDesktop} onClick={toggleTheme}>
               <LightIcon className='h-[22px] w-[22px]' /> Light
             </div>
-            <Divider direction='horizontal' />
+            <Divider color='violet' direction='horizontal' />
             <div className={classes.optionDesktop} onClick={toggleTheme}>
               <DarkIcon className='h-5 w-[13px]' /> Dark
             </div>
-            <Divider direction='horizontal' />
+            <Divider color='violet' direction='horizontal' />
             <div className={classes.optionDesktop} onClick={toggleTheme}>
               <SystemIcon className='h-4 w-6' /> System
             </div>
