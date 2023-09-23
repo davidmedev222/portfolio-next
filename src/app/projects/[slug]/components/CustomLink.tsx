@@ -1,15 +1,17 @@
 import { ArrowIcon, Divider } from '@/components'
 import clsx from 'clsx'
 import Link, { LinkProps } from 'next/link'
+import { HTMLAttributeAnchorTarget } from 'react'
 
 interface Props extends LinkProps {
   children: React.ReactNode
+  target?: HTMLAttributeAnchorTarget
   decoration?: 'underline'
   icon?: boolean
   iconPosition?: 'left' | 'right'
 }
 
-function CustomLink({ children, decoration, icon, iconPosition, ...rest }: Props) {
+function CustomLink({ children, target, decoration, icon, iconPosition, ...rest }: Props) {
   const classes = {
     link: clsx(
       'group block text-center font-benzin text-base uppercase transition-colors duration-300 hover:text-violet-500 md:text-[64px]',
@@ -23,7 +25,7 @@ function CustomLink({ children, decoration, icon, iconPosition, ...rest }: Props
   }
 
   return (
-    <Link className={classes.link} {...rest}>
+    <Link target={target} className={classes.link} {...rest}>
       <Divider
         color='violet'
         direction='horizontal'

@@ -1,28 +1,36 @@
 import { Divider, Paragraph } from '@/components'
+import { languageEN } from '@/utils/const'
+import { notFound } from 'next/navigation'
 import Hero from './components/Hero'
 import InfoList from './components/InfoList'
 import LinkList from './components/LinkList'
 import MockupList from './components/MockupList'
 import RedirectList from './components/RedirectList'
 
-function ProjectPage() {
+interface Props {
+  params: { slug: string }
+}
+
+function ProjectPage({ params }: Props) {
+  const slug = params.slug
+  const project = languageEN.projects.projects.find((project) => project.slug === slug)
+
+  if (!project) notFound()
+
   return (
     <main>
-      <Hero />
-      <LinkList />
-      <Paragraph className='container-base py-5 md:py-20'>
-        Online sneaker store for people with a Jordan brand preference, where they will be able to purchase and manage
-        their own account on the website.
-      </Paragraph>
+      <Hero project={project} />
+      <LinkList project={project} />
+      <Paragraph className='container-base py-5 md:py-20'>{project.description}</Paragraph>
       <div className='container-base'>
         <Divider direction='horizontal' color='box' />
       </div>
-      <InfoList />
+      <InfoList project={project} />
       <div className='container-base'>
         <Divider direction='horizontal' color='box' />
       </div>
-      <MockupList />
-      <RedirectList />
+      <MockupList mockups={project.mockups} />
+      <RedirectList project={project} />
     </main>
   )
 }

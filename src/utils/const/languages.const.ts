@@ -47,10 +47,33 @@ export const languageEN = {
         ],
         tools: ['ESLint', 'Prettier', 'Figma', 'Notion', 'Visual Studio Code', 'Git', 'Github'],
         video: '',
+        info: {
+          code: 'Code',
+          demo: 'Demo',
+          project: 'Project',
+          date: 'Date',
+          role: 'Role',
+          technologies: 'Technologies',
+          tools: 'Tools',
+          back: 'Back',
+          next: 'Next'
+        },
         mockups: [
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the design website project' },
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the design website project' },
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the design website project' }
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the design website project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the design website project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the design website project'
+          }
         ],
         prevProject: '',
         nextProject: 'solidarity-union'
@@ -100,10 +123,33 @@ export const languageEN = {
           'Github'
         ],
         video: '',
+        info: {
+          code: 'Code',
+          demo: 'Demo',
+          project: 'Project',
+          date: 'Date',
+          role: 'Role',
+          technologies: 'Technologies',
+          tools: 'Tools',
+          back: 'Back',
+          next: 'Next'
+        },
         mockups: [
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the mova app project' },
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the mova app project' },
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the mova app project' }
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the mova app project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the mova app project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the mova app project'
+          }
         ],
         prevProject: '',
         nextProject: 'design-website'
@@ -138,10 +184,33 @@ export const languageEN = {
         ],
         tools: ['ESLint', 'Prettier', 'Figma', 'Trello', 'Visual Studio Code', 'Git', 'Github'],
         video: '',
+        info: {
+          code: 'Code',
+          demo: 'Demo',
+          project: 'Project',
+          date: 'Date',
+          role: 'Role',
+          technologies: 'Technologies',
+          tools: 'Tools',
+          back: 'Back',
+          next: 'Next'
+        },
         mockups: [
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the my photos project' },
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the my photos project' },
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the my photos project' }
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the my photos project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the my photos project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the my photos project'
+          }
         ],
         prevProject: '',
         nextProject: 'lawyer-website'
@@ -166,10 +235,33 @@ export const languageEN = {
         technologies: ['Javascript', 'React', 'Sass', 'ViteJs', 'React Router Dom', 'CommitLint', 'Husky', 'Pnpm'],
         tools: ['ESLint', 'Figma', 'Trello', 'Visual Studio Code', 'Git', 'Github'],
         video: '',
+        info: {
+          code: 'Code',
+          demo: 'Demo',
+          project: 'Project',
+          date: 'Date',
+          role: 'Role',
+          technologies: 'Technologies',
+          tools: 'Tools',
+          back: 'Back',
+          next: 'Next'
+        },
         mockups: [
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the union solidaria project' },
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the union solidaria project' },
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the union solidaria project' }
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the union solidaria project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the union solidaria project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the union solidaria project'
+          }
         ],
         prevProject: '',
         nextProject: 'solidarity-union'
@@ -204,10 +296,33 @@ export const languageEN = {
         ],
         tools: ['ESLint', 'Trello', 'Visual Studio Code', 'Git', 'Github'],
         video: '',
+        info: {
+          code: 'Code',
+          demo: 'Demo',
+          project: 'Project',
+          date: 'Date',
+          role: 'Role',
+          technologies: 'Technologies',
+          tools: 'Tools',
+          back: 'Back',
+          next: 'Next'
+        },
         mockups: [
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the jordan store project' },
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the jordan store project' },
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the jordan store project' }
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the jordan store project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the jordan store project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the jordan store project'
+          }
         ],
         prevProject: '',
         nextProject: 'solidarity-union'
@@ -253,12 +368,46 @@ export const languageEN = {
           'Husky',
           'Npm'
         ],
-        tools: ['ESLint, Prettier, Figma, Notion, RapidAPI Client, Slack, Discord, Visual Studio Code, Git, Github'],
+        tools: [
+          'ESLint',
+          'Prettier',
+          'Figma',
+          'Notion',
+          'RapidAPI Client',
+          'Slack',
+          'Discord',
+          'Visual Studio Code',
+          'Git',
+          'Github'
+        ],
         video: '',
+        info: {
+          code: 'Code',
+          demo: 'Demo',
+          project: 'Project',
+          date: 'Date',
+          role: 'Role',
+          technologies: 'Technologies',
+          tools: 'Tools',
+          back: 'Back',
+          next: 'Next'
+        },
         mockups: [
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the solidarity union project' },
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the solidarity union project' },
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the solidarity union project' }
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the solidarity union project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the solidarity union project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the solidarity union project'
+          }
         ],
         prevProject: '',
         nextProject: 'solidarity-union'
@@ -297,10 +446,33 @@ export const languageEN = {
         ],
         tools: ['ESLint', 'Prettier', 'Figma', 'Notion', 'Visual Studio Code', 'Git', 'Github'],
         video: '',
+        info: {
+          code: 'Code',
+          demo: 'Demo',
+          project: 'Project',
+          date: 'Date',
+          role: 'Role',
+          technologies: 'Technologies',
+          tools: 'Tools',
+          back: 'Back',
+          next: 'Next'
+        },
         mockups: [
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the design website project' },
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the design website project' },
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the design website project' }
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the design website project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the design website project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the design website project'
+          }
         ],
         prevProject: '',
         nextProject: 'solidarity-union'
@@ -350,10 +522,33 @@ export const languageEN = {
           'Github'
         ],
         video: '',
+        info: {
+          code: 'Code',
+          demo: 'Demo',
+          project: 'Project',
+          date: 'Date',
+          role: 'Role',
+          technologies: 'Technologies',
+          tools: 'Tools',
+          back: 'Back',
+          next: 'Next'
+        },
         mockups: [
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the mova app project' },
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the mova app project' },
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the mova app project' }
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the mova app project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the mova app project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the mova app project'
+          }
         ],
         prevProject: '',
         nextProject: 'design-website'
@@ -391,10 +586,33 @@ export const languageEN = {
         ],
         tools: ['ESLint', 'Prettier', 'Figma', 'Trello', 'Slack', 'Discord', 'Visual Studio Code', 'Git', 'Github'],
         video: '',
+        info: {
+          code: 'Code',
+          demo: 'Demo',
+          project: 'Project',
+          date: 'Date',
+          role: 'Role',
+          technologies: 'Technologies',
+          tools: 'Tools',
+          back: 'Back',
+          next: 'Next'
+        },
         mockups: [
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the lot todo project' },
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the lot todo project' },
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the lot todo project' }
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the lot todo project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the lot todo project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the lot todo project'
+          }
         ],
         prevProject: '',
         nextProject: 'mova-app'
@@ -430,10 +648,33 @@ export const languageEN = {
         ],
         tools: ['ESLint', 'Prettier', 'Figma', 'Notion', 'Discord', 'Visual Studio Code', 'Git', 'Github'],
         video: '',
+        info: {
+          code: 'Code',
+          demo: 'Demo',
+          project: 'Project',
+          date: 'Date',
+          role: 'Role',
+          technologies: 'Technologies',
+          tools: 'Tools',
+          back: 'Back',
+          next: 'Next'
+        },
         mockups: [
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the lawyer website project' },
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the lawyer website project' },
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the lawyer website project' }
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the lawyer website project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the lawyer website project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the lawyer website project'
+          }
         ],
         prevProject: '',
         nextProject: 'lot-todo'
@@ -468,10 +709,33 @@ export const languageEN = {
         ],
         tools: ['ESLint', 'Prettier', 'Figma', 'Trello', 'Visual Studio Code', 'Git', 'Github'],
         video: '',
+        info: {
+          code: 'Code',
+          demo: 'Demo',
+          project: 'Project',
+          date: 'Date',
+          role: 'Role',
+          technologies: 'Technologies',
+          tools: 'Tools',
+          back: 'Back',
+          next: 'Next'
+        },
         mockups: [
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the my photos project' },
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the my photos project' },
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the my photos project' }
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the my photos project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the my photos project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the my photos project'
+          }
         ],
         prevProject: '',
         nextProject: 'lawyer-website'
@@ -519,10 +783,33 @@ export const languageEN = {
           'Github'
         ],
         video: '',
+        info: {
+          code: 'Code',
+          demo: 'Demo',
+          project: 'Project',
+          date: 'Date',
+          role: 'Role',
+          technologies: 'Technologies',
+          tools: 'Tools',
+          back: 'Back',
+          next: 'Next'
+        },
         mockups: [
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the chat box project' },
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the chat box project' },
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the chat box project' }
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the chat box project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the chat box project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the chat box project'
+          }
         ],
         prevProject: '',
         nextProject: 'my-photos'
@@ -547,10 +834,33 @@ export const languageEN = {
         technologies: ['Typescript', 'React', 'Styled Components', 'ViteJs', 'React Router Dom', 'Pnpm'],
         tools: ['ESLint', 'Figma', 'Trello', 'Visual Studio Code', 'Git', 'Github'],
         video: '',
+        info: {
+          code: 'Code',
+          demo: 'Demo',
+          project: 'Project',
+          date: 'Date',
+          role: 'Role',
+          technologies: 'Technologies',
+          tools: 'Tools',
+          back: 'Back',
+          next: 'Next'
+        },
         mockups: [
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the agency website project' },
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the agency website project' },
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the agency website project' }
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the agency website project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the agency website project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the agency website project'
+          }
         ],
         prevProject: '',
         nextProject: 'solidarity-union'
@@ -606,10 +916,33 @@ export const languageEN = {
           'Github'
         ],
         video: '',
+        info: {
+          code: 'Code',
+          demo: 'Demo',
+          project: 'Project',
+          date: 'Date',
+          role: 'Role',
+          technologies: 'Technologies',
+          tools: 'Tools',
+          back: 'Back',
+          next: 'Next'
+        },
         mockups: [
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the custom sports project' },
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the custom sports project' },
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the custom sports project' }
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the custom sports project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the custom sports project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the custom sports project'
+          }
         ],
         prevProject: '',
         nextProject: 'solidarity-union'
@@ -634,10 +967,33 @@ export const languageEN = {
         technologies: ['Javascript', 'React', 'Sass', 'ViteJs', 'React Router Dom', 'CommitLint', 'Husky', 'Pnpm'],
         tools: ['ESLint', 'Figma', 'Trello', 'Visual Studio Code', 'Git', 'Github'],
         video: '',
+        info: {
+          code: 'Code',
+          demo: 'Demo',
+          project: 'Project',
+          date: 'Date',
+          role: 'Role',
+          technologies: 'Technologies',
+          tools: 'Tools',
+          back: 'Back',
+          next: 'Next'
+        },
         mockups: [
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the union solidaria project' },
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the union solidaria project' },
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the union solidaria project' }
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the union solidaria project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the union solidaria project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the union solidaria project'
+          }
         ],
         prevProject: '',
         nextProject: 'solidarity-union'
@@ -671,10 +1027,33 @@ export const languageEN = {
         ],
         tools: ['ESLint', 'Figma', 'Trello', 'Visual Studio Code', 'Git', 'Github'],
         video: '',
+        info: {
+          code: 'Code',
+          demo: 'Demo',
+          project: 'Project',
+          date: 'Date',
+          role: 'Role',
+          technologies: 'Technologies',
+          tools: 'Tools',
+          back: 'Back',
+          next: 'Next'
+        },
         mockups: [
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the blizt website project' },
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the blizt website project' },
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the blizt website project' }
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the blizt website project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the blizt website project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the blizt website project'
+          }
         ],
         prevProject: '',
         nextProject: 'solidarity-union'
@@ -699,10 +1078,33 @@ export const languageEN = {
         technologies: ['Javascript', 'React', 'Sass', 'ViteJs', 'React Router Dom', 'Firebase', 'Glider Js', 'Npm'],
         tools: ['Figma', 'Trello', 'Slack', 'Discord', 'Visual Studio Code', 'Git', 'Github'],
         video: '',
+        info: {
+          code: 'Code',
+          demo: 'Demo',
+          project: 'Project',
+          date: 'Date',
+          role: 'Role',
+          technologies: 'Technologies',
+          tools: 'Tools',
+          back: 'Back',
+          next: 'Next'
+        },
         mockups: [
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the stadium sports project' },
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the stadium sports project' },
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the stadium sports project' }
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the stadium sports project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the stadium sports project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the stadium sports project'
+          }
         ],
         prevProject: '',
         nextProject: 'solidarity-union'
@@ -737,10 +1139,33 @@ export const languageEN = {
         ],
         tools: ['ESLint', 'Trello', 'Visual Studio Code', 'Git', 'Github'],
         video: '',
+        info: {
+          code: 'Code',
+          demo: 'Demo',
+          project: 'Project',
+          date: 'Date',
+          role: 'Role',
+          technologies: 'Technologies',
+          tools: 'Tools',
+          back: 'Back',
+          next: 'Next'
+        },
         mockups: [
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the jordan store project' },
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the jordan store project' },
-          { id: crypto.randomUUID(), image: '', alt: 'Design of presentation of the jordan store project' }
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the jordan store project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the jordan store project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/apollonft/mobile.png',
+            alt: 'Design of presentation of the jordan store project'
+          }
         ],
         prevProject: '',
         nextProject: 'solidarity-union'
