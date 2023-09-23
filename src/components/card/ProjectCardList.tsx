@@ -1,6 +1,6 @@
-/* eslint-disable react/jsx-key */
 import { languageEN } from '@/utils/const'
 import clsx from 'clsx'
+import { Fragment } from 'react'
 import Divider from '../divider/Divider'
 import ProjectCard from './ProjectCard'
 
@@ -15,17 +15,17 @@ function ProjectCardList({ variant }: Props) {
     <section className={classes}>
       {variant === 'highlights' &&
         languageEN.home.projects.map((project) => (
-          <>
+          <Fragment key={project.id}>
             <ProjectCard project={project} />
-            <Divider direction='horizontal' />
-          </>
+            <Divider color='box' direction='horizontal' />
+          </Fragment>
         ))}
       {variant === 'all' &&
         languageEN.projects.projects.map((project) => (
-          <>
+          <Fragment key={project.id}>
             <ProjectCard project={project} />
-            <Divider direction='horizontal' />
-          </>
+            <Divider color='box' direction='horizontal' />
+          </Fragment>
         ))}
     </section>
   )

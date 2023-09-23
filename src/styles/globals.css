@@ -47,3 +47,15 @@
     grid-area: skills;
   }
 }
+
+@layer utilities {
+  .px-base {
+    @apply px-4 lg:px-16;
+  }
+  .max-w-base {
+    @apply mx-auto max-w-screen-xl;
+  }
+  .container-base {
+    @apply mx-auto max-w-screen-xl px-4 lg:px-16;
+  }
+}

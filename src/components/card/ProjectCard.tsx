@@ -3,7 +3,7 @@ import { Routes } from '@/utils/const'
 import Image from 'next/image'
 import Link from 'next/link'
 import ArrowIcon from '../icons/ArrowIcon'
-import TextEllipsis from '../text/TextEllipsis'
+import Paragraph from '../text/Paragraph'
 
 interface Props {
   project: IProject
@@ -32,9 +32,7 @@ function ProjectCard({ project }: Props) {
       <h4 className='lg:area-project-title font-benzin text-[min(6vw,48px)] uppercase'>
         {project.name} <span className='font-ego'>{project.subname}</span>
       </h4>
-      <TextEllipsis component='p' className='md:area-project-description text-sm md:text-lg' numberOfLines={3}>
-        {project.description}
-      </TextEllipsis>
+      <Paragraph className='md:area-project-description line-clamp-3 self-start'>{project.description}</Paragraph>
       <ul className='md:area-project-skills mt-4 flex flex-wrap items-center gap-x-1.5 gap-y-2.5 text-sm text-violet-950 md:mt-0 md:gap-x-3 md:gap-y-5 md:text-lg'>
         {project.skills.map((skill) => (
           <li key={skill} className='rounded-3xl bg-box px-2 py-0.5 shadow-md shadow-black/25 md:px-4'>

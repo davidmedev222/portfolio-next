@@ -4,11 +4,11 @@ import ContactForm from './components/ContactForm'
 
 function ContactPage() {
   return (
-    <main className='mx-auto max-w-screen-xl px-4 lg:px-16'>
+    <main className='container-base'>
       <PageHeading variant='heading'>{languageEN.contact.title}</PageHeading>
       <Paragraph className='pt-10 md:pt-16'>{languageEN.contact.social.paragraph}</Paragraph>
       <SocialMediaList />
-      <Divider direction='horizontal' />
+      <Divider color='box' direction='horizontal' />
       <Paragraph className='pt-10 md:pt-16'>{languageEN.contact.contact.paragraph}</Paragraph>
       <ContactForm />
     </main>

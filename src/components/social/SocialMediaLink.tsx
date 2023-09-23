@@ -10,7 +10,7 @@ interface Props extends LinkProps {
 
 function SocialMediaLink({ children, target, className, ...rest }: Props) {
   const classes = clsx(
-    'block rounded-xl bg-box py-[18px] text-sm shadow-md shadow-black/25 transition-colors duration-300 hover:bg-violet-300 lg:py-8 lg:text-2xl',
+    'block rounded-xl bg-box py-[18px] text-sm shadow-md shadow-black/25 transition-colors duration-300 hover:bg-violet-300 lg:py-8 lg:text-xl',
     className
   )
 

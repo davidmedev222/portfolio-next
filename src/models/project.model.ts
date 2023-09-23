@@ -10,7 +10,18 @@ export interface ISkill {
   logos: ILogo[]
 }
 
-interface IMockup {
+interface IInfo {
+  code: string
+  demo: string
+  project: string
+  date: string
+  role: string
+  technologies: string
+  tools: string
+  back: string
+  next: string
+}
+export interface IMockup {
   id: string
   image: string
   alt: string
@@ -31,9 +42,11 @@ export interface IProject {
   description: string
   project: string
   date: string
+  role: string
   technologies: string[]
   tools: string[]
   video: string
+  info: IInfo
   mockups: IMockup[]
   prevProject: string
   nextProject: string

@@ -3,7 +3,7 @@ import { languageEN } from '@/utils/const'
 
 function ProjectsPage() {
   return (
-    <main className='mx-auto max-w-screen-xl px-4 lg:px-16'>
+    <main className='container-base'>
       <PageHeading variant='heading'>{languageEN.projects.title}</PageHeading>
       <ProjectCardList variant='all' />
     </main>

@@ -19,7 +19,7 @@ function DropdownLanguages() {
   return (
     <div ref={ref} className={classes.dropdown}>
       <div className={classes.option} onClick={toggleLanguages}>
-        <Image width={22} height={22} src='/assets/logo-ar.png' alt='Icono del pais Argentina' /> AR
+        <Image width={22} height={22} src='/assets/logo-en.png' alt='Icono del pais Estados Unidos' /> EN
       </div>
       {isOpen && (
         <div className={classes.options}>
@@ -27,7 +27,7 @@ function DropdownLanguages() {
             <Image width={22} height={22} src='/assets/logo-br.png' alt='Icono del pais Brasil' /> BR
           </div>
           <div className={classes.option} onClick={toggleLanguages}>
-            <Image width={22} height={22} src='/assets/logo-en.png' alt='Icono del pais Estados Unidos' /> EN
+            <Image width={22} height={22} src='/assets/logo-ar.png' alt='Icono del pais Argentina' /> AR
           </div>
         </div>
       )}
