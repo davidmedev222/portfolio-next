@@ -16,7 +16,7 @@ function Hero({ project }: Props) {
         <h1 className='font-benzin text-white'>{project.name}</h1>
         <h2 className='font-ego xs:text-white'>{project.subname}</h2>
       </div>
-      <ArrowIcon className='absolute inset-x-0 bottom-4 mx-auto h-5 w-3 -rotate-90 fill-transparent stroke-black stroke-[0.4px] xs:stroke-white md:h-14 md:w-7' />
+      <ArrowIcon className='absolute inset-x-0 bottom-4 mx-auto h-5 w-3 -rotate-90 fill-transparent stroke-white stroke-[0.4px] md:h-14 md:w-7' />
     </section>
   )
 }

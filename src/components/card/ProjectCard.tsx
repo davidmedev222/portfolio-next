@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import ArrowIcon from '../icons/ArrowIcon'
 import Paragraph from '../text/Paragraph'
+import SkillText from '../text/SkillText'
 
 interface Props {
   project: IProject
@@ -33,11 +34,9 @@ function ProjectCard({ project }: Props) {
         {project.name} <span className='font-ego'>{project.subname}</span>
       </h4>
       <Paragraph className='md:area-project-description line-clamp-3 self-start'>{project.description}</Paragraph>
-      <ul className='md:area-project-skills mt-4 flex flex-wrap items-center gap-x-1.5 gap-y-2.5 text-sm text-violet-950 md:mt-0 md:gap-x-3 md:gap-y-5 md:text-lg'>
+      <ul className='md:area-project-skills mt-4 flex flex-wrap items-center gap-x-1.5 gap-y-2.5 md:mt-0 md:gap-x-3 md:gap-y-5'>
         {project.skills.map((skill) => (
-          <li key={skill} className='rounded-3xl bg-box px-2 py-0.5 shadow-md shadow-black/25 md:px-4'>
-            {skill}
-          </li>
+          <SkillText key={skill}>{skill}</SkillText>
         ))}
       </ul>
     </article>

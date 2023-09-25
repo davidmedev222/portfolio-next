@@ -10,15 +10,15 @@ function InfoList({ project }: Props) {
     <ul className='container-base grid gap-y-2.5 py-4 text-sm uppercase text-gray-700 md:grid-cols-6 md:gap-x-6 md:gap-y-20 md:py-20 md:text-lg'>
       <li className='col-span-2 grid gap-y-1.5'>
         {project.info.project}
-        <span className='capitalize text-black'>{project.project}</span>
+        <span className='capitalize text-black dark:text-white'>{project.project}</span>
       </li>
       <li className='col-span-2 grid gap-y-1.5'>
         {project.info.date}
-        <span className='capitalize text-black'>{project.date}</span>
+        <span className='capitalize text-black dark:text-white'>{project.date}</span>
       </li>
       <li className='col-span-2 grid gap-y-1.5'>
         {project.info.role}
-        <span className='capitalize text-black'>{project.role}</span>
+        <span className='capitalize text-black dark:text-white'>{project.role}</span>
       </li>
       <li className='col-span-3 grid gap-y-1.5 self-start'>
         {project.info.technologies}

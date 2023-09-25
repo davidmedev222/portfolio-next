@@ -9,9 +9,12 @@ function Header() {
   const [scrolling, setScrolling] = useState(false)
 
   const classes = {
-    header: clsx('fixed inset-0 z-10 h-fit w-full transition-colors duration-150', scrolling && 'bg-white'),
+    header: clsx(
+      'fixed inset-0 z-10 h-fit w-full transition-colors duration-150',
+      scrolling && 'bg-white dark:bg-black'
+    ),
     content: clsx('container-base flex items-center justify-between gap-3 py-3 lg:py-5'),
-    logo: clsx('mr-auto h-8 w-24 lg:h-[52px] lg:w-[164px]')
+    logo: clsx('mr-auto h-8 w-24 fill-black dark:fill-white lg:h-[52px] lg:w-[164px]')
   }
 
   const handleScroll = () => {

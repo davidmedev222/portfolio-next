@@ -30,8 +30,8 @@ interface Props extends LinkProps {
 function NavLink({ children, ...rest }: Props) {
   const pathname = usePathname()
   const classes = clsx(
-    'rounded-full px-4 py-1 transition-colors duration-300 hover:bg-box',
-    pathname === rest.href && 'bg-box shadow-md shadow-black/25'
+    'rounded-full px-4 py-1 text-gray-700 transition-colors duration-300 hover:bg-violet-300 hover:text-black dark:hover:bg-violet-950 dark:hover:text-white',
+    pathname === rest.href && 'bg-violet-300 !text-black shadow-md shadow-black/25 dark:bg-violet-950 dark:!text-white'
   )
 
   return (

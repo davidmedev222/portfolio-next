@@ -15,7 +15,7 @@ function SocialMediaList() {
           >
             <Image src={social.image} width={30} height={30} alt={social.alt} />
             {social.title}
-            <ArrowLink className='ml-auto h-2.5 w-1.5 lg:h-[18px] lg:w-3' />
+            <ArrowLink className='ml-auto h-2.5 w-1.5 fill-black dark:fill-white lg:h-[18px] lg:w-3' />
           </SocialMediaLink>
         </li>
       ))}
