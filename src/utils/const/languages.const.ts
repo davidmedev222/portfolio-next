@@ -1234,6 +1234,7 @@ export const languageEN = {
               alt: 'Technology logo tailwind css'
             },
             { id: crypto.randomUUID(), image: '/assets/skills/logonode.webp', alt: 'Technology logo node js' },
+            { id: crypto.randomUUID(), image: '/assets/skills/logoexpo.webp', alt: 'Technology logo expo' },
             { id: crypto.randomUUID(), image: '/assets/skills/logofirebase.webp', alt: 'Technology logo firebase' }
           ]
         },
@@ -1260,6 +1261,7 @@ export const languageEN = {
               alt: 'Technology logo react hook form'
             },
             { id: crypto.randomUUID(), image: '/assets/skills/logohusky.webp', alt: 'Technology logo husky' },
+            { id: crypto.randomUUID(), image: '/assets/skills/logoswr.webp', alt: 'Technology logo swr' },
             { id: crypto.randomUUID(), image: '/assets/skills/logozustand.webp', alt: 'Technology logo zustand' },
             {
               id: crypto.randomUUID(),
@@ -1319,22 +1321,19 @@ export const languageEN = {
         {
           id: crypto.randomUUID(),
           href: 'https://www.linkedin.com/in/davidmedev/',
-          image: '/assets/media/logolinkedin.png',
-          alt: 'Linkedin social network icon',
+          name: 'linkedin',
           title: 'Linkedin'
         },
         {
           id: crypto.randomUUID(),
           href: 'https://github.com/davidmedev222',
-          image: '/assets/media/logogithub.png',
-          alt: 'Github social network icon',
+          name: 'github',
           title: 'Github'
         },
         {
           id: crypto.randomUUID(),
           href: 'https://www.instagram.com/davidmedev/',
-          image: '/assets/media/logoinstagram.png',
-          alt: 'Instagram social network icon',
+          name: 'instagram',
           title: 'Instagram'
         }
       ]
@@ -1376,6 +1375,6 @@ export const languageEN = {
         ]
       }
     },
-    copyright: '© davidmedev. All rights reserved.'
+    copyright: '© Davidmedev. All rights reserved.'
   }
 }

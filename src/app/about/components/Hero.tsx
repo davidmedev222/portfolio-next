@@ -3,7 +3,7 @@ import { languageEN } from '@/utils/const'
 
 function Hero() {
   return (
-    <section className='container-base grid text-[min(6vw,54px)] uppercase'>
+    <section className='container-md grid text-[min(6vw,54px)] uppercase'>
       <h2 className='py-10 text-center font-benzin'>
         {languageEN.about.name} <span className='font-ego'>{languageEN.about.lastname}</span>
       </h2>

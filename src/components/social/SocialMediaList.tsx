@@ -1,5 +1,7 @@
+import GithubIcon from '@/app/contact/components/GithubIcon'
+import InstagramIcon from '@/app/contact/components/InstagramIcon'
+import LinkedinIcon from '@/app/contact/components/LinkedinIcon'
 import { languageEN } from '@/utils/const'
-import Image from 'next/image'
 import ArrowLink from '../icons/ArrowLink'
 import SocialMediaLink from './SocialMediaLink'
 
@@ -13,7 +15,9 @@ function SocialMediaList() {
             target='_blank'
             href={social.href}
           >
-            <Image src={social.image} width={30} height={30} alt={social.alt} />
+            {social.name === 'linkedin' && <LinkedinIcon className='h-8 w-8 fill-black dark:fill-white' />}
+            {social.name === 'github' && <GithubIcon className='h-8 w-8 fill-black dark:fill-white' />}
+            {social.name === 'instagram' && <InstagramIcon className='h-8 w-8 fill-black dark:fill-white' />}
             {social.title}
             <ArrowLink className='ml-auto h-2.5 w-1.5 fill-black dark:fill-white lg:h-[18px] lg:w-3' />
           </SocialMediaLink>
