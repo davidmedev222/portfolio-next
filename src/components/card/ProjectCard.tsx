@@ -1,9 +1,10 @@
 import { IProject } from '@/models'
 import { Routes } from '@/utils/const'
-import Image from 'next/image'
 import Link from 'next/link'
 import ArrowIcon from '../icons/ArrowIcon'
+import ThemeImage from '../image/ThemeImage'
 import Paragraph from '../text/Paragraph'
+import SkillText from '../text/SkillText'
 
 interface Props {
   project: IProject
@@ -18,12 +19,14 @@ function ProjectCard({ project }: Props) {
         {project.month} <span className='font-ego'>{project.year}</span>
       </h3>
       <Link href={href} className='md:area-project-image group relative h-60 md:h-96'>
-        <Image
+        <ThemeImage
           className='rounded-3xl object-cover'
-          src={project.image}
-          alt={project.alt}
           sizes='(max-width: 768px) 100vw, 70vw'
           fill
+          priority='high'
+          srcLight={project.thumbnail}
+          srcDark={project.thumbnailDark}
+          alt={project.alt}
         />
         <div className='absolute left-0 top-0 grid h-full w-full place-items-center rounded-3xl bg-black/50 opacity-0 transition-opacity duration-500 group-hover:opacity-100'>
           <ArrowIcon className='h-[52px] w-8 rotate-180 fill-transparent stroke-white stroke-[0.4px] md:h-36 md:w-20' />
@@ -33,11 +36,9 @@ function ProjectCard({ project }: Props) {
         {project.name} <span className='font-ego'>{project.subname}</span>
       </h4>
       <Paragraph className='md:area-project-description line-clamp-3 self-start'>{project.description}</Paragraph>
-      <ul className='md:area-project-skills mt-4 flex flex-wrap items-center gap-x-1.5 gap-y-2.5 text-sm text-violet-950 md:mt-0 md:gap-x-3 md:gap-y-5 md:text-lg'>
+      <ul className='md:area-project-skills mt-4 flex flex-wrap items-center gap-x-1.5 gap-y-2.5 md:mt-0 md:gap-x-3 md:gap-y-5'>
         {project.skills.map((skill) => (
-          <li key={skill} className='rounded-3xl bg-box px-2 py-0.5 shadow-md shadow-black/25 md:px-4'>
-            {skill}
-          </li>
+          <SkillText key={skill}>{skill}</SkillText>
         ))}
       </ul>
     </article>

@@ -19,14 +19,20 @@ function AboutMePage() {
       <PageHeading className='container-base' as='h4' variant='sub-heading'>
         {languageEN.about.skills.title}
       </PageHeading>
-      {languageEN.about.skills.categories.map((skill) => (
-        <Fragment key={skill.id}>
-          <HighlightsSkills skill={skill} />
-          <div className='container-base'>
-            <Divider color='box' direction='horizontal' />
-          </div>
-        </Fragment>
-      ))}
+      {languageEN.about.skills.categories.map((skill, index) => {
+        const isLastProject = index === languageEN.about.skills.categories.length - 1
+
+        return (
+          <Fragment key={skill.id}>
+            <HighlightsSkills skill={skill} />
+            {!isLastProject && (
+              <div className='container-base'>
+                <Divider color='box' direction='horizontal' />
+              </div>
+            )}
+          </Fragment>
+        )
+      })}
     </main>
   )
 }

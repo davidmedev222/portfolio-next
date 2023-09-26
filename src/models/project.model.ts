@@ -10,6 +10,16 @@ export interface ISkill {
   logos: ILogo[]
 }
 
+interface IThemeImage {
+  image: string
+  imageDark: string
+}
+
+interface IImages {
+  mobile: IThemeImage
+  desktop: IThemeImage
+}
+
 interface IInfo {
   code: string
   demo: string
@@ -24,6 +34,7 @@ interface IInfo {
 export interface IMockup {
   id: string
   image: string
+  imageDark: string
   alt: string
 }
 
@@ -35,7 +46,9 @@ export interface IProject {
   subname: string
   skills: string[]
   slug: string
-  image: string
+  thumbnail: string
+  thumbnailDark: string
+  images: IImages
   alt: string
   code: string
   demo: string

@@ -18,7 +18,7 @@ function CustomLink({ children, target, decoration, icon, iconPosition, ...rest 
       decoration === 'underline' && 'underline'
     ),
     icon: clsx(
-      'absolute inset-y-0 my-auto h-5 w-3 fill-transparent stroke-black stroke-[0.4px] transition-colors duration-300 group-hover:stroke-violet-500 md:h-[52px] md:w-7',
+      'absolute inset-y-0 my-auto h-5 w-3 fill-transparent stroke-black stroke-[0.4px] transition-colors duration-300 group-hover:stroke-violet-500 dark:fill-white dark:stroke-white dark:group-hover:fill-violet-500 md:h-[52px] md:w-7',
       iconPosition === 'left' && 'left-0 md:left-7',
       iconPosition === 'right' && 'right-0 rotate-180 md:right-7'
     )

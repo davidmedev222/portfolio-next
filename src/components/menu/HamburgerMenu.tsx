@@ -1,8 +1,9 @@
 'use client'
-import { CloseIcon, MenuIcon } from '@/components'
+import { CloseIcon, Divider, MenuIcon } from '@/components'
 import { useToggle } from '@/hooks'
 import { languageEN } from '@/utils/const'
 import clsx from 'clsx'
+import { Fragment } from 'react'
 import MenuLink from './MenuLink'
 
 function HamburgerMenu() {
@@ -11,25 +12,30 @@ function HamburgerMenu() {
   const classes = {
     backdrop: clsx(
       'pointer-events-none fixed left-0 top-0 h-full w-full bg-black/0 transition-colors duration-300 lg:hidden',
-      isOpen && 'pointer-events-auto bg-black/50'
+      isOpen && 'pointer-events-auto bg-black/50 dark:bg-black/80'
     ),
     menu: clsx('translate-x-full transition-transform duration-300', isOpen && '!translate-x-0'),
-    links: clsx('flex flex-col items-center justify-center gap-y-6 bg-box p-6'),
+    links: clsx('flex flex-col items-center justify-center gap-y-6 bg-box p-6 dark:bg-black'),
     close: clsx('mx-auto mt-8 h-12 w-12 cursor-pointer fill-white')
   }
 
   return (
     <>
       <button className='lg:hidden' onClick={toggleHamburgerMenu}>
-        <MenuIcon className='h-5 w-7' />
+        <MenuIcon className='h-[18px] w-[26px] fill-black dark:fill-white' />
       </button>
       <div className={classes.backdrop}>
         <div className={classes.menu}>
           <div className={classes.links}>
-            {languageEN.header.links.map((link) => (
-              <MenuLink key={link.id} onClick={toggleHamburgerMenu} href={link.href}>
-                {link.title}
-              </MenuLink>
+            {languageEN.header.links.map((link, index) => (
+              <Fragment key={link.id}>
+                <MenuLink key={link.id} onClick={toggleHamburgerMenu} href={link.href}>
+                  {link.title}
+                </MenuLink>
+                {index !== languageEN.header.links.length - 1 && (
+                  <Divider className='md:h-[1px]' color='violet' direction='horizontal' />
+                )}
+              </Fragment>
             ))}
           </div>
           <CloseIcon onClick={toggleHamburgerMenu} className={classes.close} />
