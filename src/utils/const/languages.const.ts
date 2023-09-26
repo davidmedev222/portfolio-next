@@ -21,7 +21,18 @@ export const languageEN = {
         subname: 'Website',
         skills: ['Typescript', 'Next', 'Tailwind CSS', 'Clsx', 'React Hook Form', 'Pnpm'],
         slug: 'design-website',
-        image: '/assets/projects/designwebsite/designwebsite.webp',
+        thumbnail: '/assets/projects/designwebsite/designwebsite.webp',
+        thumbnailDark: '/assets/projects/designwebsite/designwebsited.webp',
+        images: {
+          mobile: {
+            image: '/assets/projects/designwebsite/designwebsitemp.webp',
+            imageDark: '/assets/projects/designwebsite/designwebsitempd.webp'
+          },
+          desktop: {
+            image: '/assets/projects/designwebsite/designwebsitedp.webp',
+            imageDark: '/assets/projects/designwebsite/designwebsitedpd.webp'
+          }
+        },
         alt: 'Design website project thumbnail',
         code: 'https://github.com/davidmedev222/design',
         demo: 'https://designwebsite.vercel.app/',
@@ -61,22 +72,25 @@ export const languageEN = {
         mockups: [
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/designwebsite/designwebsite/designwebsite.webp',
+            imageDark: '/assets/projects/designwebsite/designwebsite/designwebsited.webp',
             alt: 'Design of presentation of the design website project'
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/designwebsite/designwebsite/designwebsite2.webp',
+            imageDark: '/assets/projects/designwebsite/designwebsite/designwebsite2d.webp',
             alt: 'Design of presentation of the design website project'
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/designwebsite/designwebsite/designwebsite3.webp',
+            imageDark: '/assets/projects/designwebsite/designwebsite/designwebsite3d.webp',
             alt: 'Design of presentation of the design website project'
           }
         ],
-        prevProject: '',
-        nextProject: 'solidarity-union'
+        prevProject: 'solidarity-union',
+        nextProject: 'mova-app'
       },
       {
         id: crypto.randomUUID(),
@@ -87,6 +101,18 @@ export const languageEN = {
         skills: ['Typescript', 'Expo', 'React Native', 'Clsx', 'Firebase', 'Pnpm'],
         slug: 'mova-app',
         image: '/assets/projects/movaapp/movaapp.webp',
+        thumbnail: '/assets/projects/movaapp/movaapp.webp',
+        thumbnailDark: '/assets/projects/movaapp/movaappd.webp',
+        images: {
+          mobile: {
+            image: '/assets/projects/movaapp/movaappmp.webp',
+            imageDark: '/assets/projects/movaapp/movaappmpd.webp'
+          },
+          desktop: {
+            image: '/assets/projects/movaapp/movaappdp.webp',
+            imageDark: '/assets/projects/movaapp/movaappdpd.webp'
+          }
+        },
         alt: 'Mova app project thumbnail',
         code: 'https://github.com/davidmedev222/mova',
         demo: 'https://github.com/davidmedev222/mova#usage',
@@ -137,22 +163,25 @@ export const languageEN = {
         mockups: [
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/movaapp/movaapp.webp',
+            imageDark: '/assets/projects/movaapp/movaappd.webp',
             alt: 'Design of presentation of the mova app project'
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/movaapp/movaapp2.webp',
+            imageDark: '/assets/projects/movaapp/movaapp2.webp',
             alt: 'Design of presentation of the mova app project'
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/movaapp/movaapp3.webp',
+            imageDark: '/assets/projects/movaapp/movaapp3.webp',
             alt: 'Design of presentation of the mova app project'
           }
         ],
-        prevProject: '',
-        nextProject: 'design-website'
+        prevProject: 'design-website',
+        nextProject: 'lot-todo'
       },
       {
         id: crypto.randomUUID(),
@@ -162,7 +191,18 @@ export const languageEN = {
         subname: 'Photos',
         skills: ['Typescript', 'Next', 'Tailwind CSS', 'Clsx', 'Firebase', 'Pnpm'],
         slug: 'my-photos',
-        image: '/assets/projects/myphotos/myphotos.webp',
+        thumbnail: '/assets/projects/myphotos/myphotos.webp',
+        thumbnailDark: '/assets/projects/myphotos/myphotosd.webp',
+        images: {
+          mobile: {
+            image: '/assets/projects/myphotos/myphotosmp.webp',
+            imageDark: '/assets/projects/myphotos/myphotosmpd.webp'
+          },
+          desktop: {
+            image: '/assets/projects/myphotos/myphotosdp.webp',
+            imageDark: '/assets/projects/myphotos/myphotosdpd.webp'
+          }
+        },
         alt: 'My photos project thumbnail',
         code: 'https://github.com/davidmedev222/my-photos',
         demo: 'https://myphotosdev.vercel.app/',
@@ -198,22 +238,25 @@ export const languageEN = {
         mockups: [
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/myphotos/myphotos.webp',
+            imageDark: '/assets/projects/myphotos/myphotosd.webp',
             alt: 'Design of presentation of the my photos project'
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/myphotos/myphotos2.webp',
+            imageDark: '/assets/projects/myphotos/myphotos2d.webp',
             alt: 'Design of presentation of the my photos project'
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/myphotos/myphotos3.webp',
+            imageDark: '/assets/projects/myphotos/myphotos3d.webp',
             alt: 'Design of presentation of the my photos project'
           }
         ],
-        prevProject: '',
-        nextProject: 'lawyer-website'
+        prevProject: 'lawyer-website',
+        nextProject: 'chat-box'
       },
       {
         id: crypto.randomUUID(),
@@ -223,7 +266,18 @@ export const languageEN = {
         subname: 'NFT',
         skills: ['Javascript', 'React', 'Sass', 'ViteJs', 'React Router Dom', 'Pnpm'],
         slug: 'apollo-nft',
-        image: '/assets/projects/apollonft/apollonft.webp',
+        thumbnail: '/assets/projects/apollonft/apollonft.webp',
+        thumbnailDark: '/assets/projects/apollonft/apollonftd.webp',
+        images: {
+          mobile: {
+            image: '/assets/projects/apollonft/apollonftmp.webp',
+            imageDark: '/assets/projects/apollonft/apollonftmpd.webp'
+          },
+          desktop: {
+            image: '/assets/projects/apollonft/apollonftdp.webp',
+            imageDark: '/assets/projects/apollonft/apollonftdpd.webp'
+          }
+        },
         alt: 'Apollo NFT project thumbnail',
         code: 'https://github.com/davidmedev222/landing-apollonft-react',
         demo: 'https://apollonft.vercel.app/',
@@ -249,22 +303,25 @@ export const languageEN = {
         mockups: [
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/apollonft/apollonft.webp',
+            imageDark: '/assets/projects/apollonft/apollonftd.webp',
             alt: 'Design of presentation of the union solidaria project'
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/apollonft/apollonft2.webp',
+            imageDark: '/assets/projects/apollonft/apollonft2d.webp',
             alt: 'Design of presentation of the union solidaria project'
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/apollonft/apollonft3.webp',
+            imageDark: '/assets/projects/apollonft/apollonft3d.webp',
             alt: 'Design of presentation of the union solidaria project'
           }
         ],
-        prevProject: '',
-        nextProject: 'solidarity-union'
+        prevProject: 'custom-sports',
+        nextProject: 'blizt-website'
       },
       {
         id: crypto.randomUUID(),
@@ -274,7 +331,18 @@ export const languageEN = {
         subname: 'Store',
         skills: ['Javascript', 'React', 'Styled Components', 'ViteJs', 'React Router Dom', 'Firebase'],
         slug: 'jordan-store',
-        image: '/assets/projects/jordanstore/jordanstore.webp',
+        thumbnail: '/assets/projects/jordanstore/jordanstore.webp',
+        thumbnailDark: '/assets/projects/jordanstore/jordanstored.webp',
+        images: {
+          mobile: {
+            image: '/assets/projects/jordanstore/jordanstoremp.webp',
+            imageDark: '/assets/projects/jordanstore/jordanstorempd.webp'
+          },
+          desktop: {
+            image: '/assets/projects/jordanstore/jordanstoredp.webp',
+            imageDark: '/assets/projects/jordanstore/jordanstoredpd.webp'
+          }
+        },
         alt: 'Jordan Store project thumbnail',
         code: 'https://github.com/davidmedev222/ecommerce-jordan-react',
         demo: 'https://jordanstore.vercel.app/',
@@ -310,21 +378,24 @@ export const languageEN = {
         mockups: [
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/jordanstore/jordanstore.webp',
+            imageDark: '/assets/projects/jordanstore/jordanstored.webp',
             alt: 'Design of presentation of the jordan store project'
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/jordanstore/jordanstore2.webp',
+            imageDark: '/assets/projects/jordanstore/jordanstore2d.webp',
             alt: 'Design of presentation of the jordan store project'
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/jordanstore/jordanstore3.webp',
+            imageDark: '/assets/projects/jordanstore/jordanstore3d.webp',
             alt: 'Design of presentation of the jordan store project'
           }
         ],
-        prevProject: '',
+        prevProject: 'stadium-sports',
         nextProject: 'solidarity-union'
       }
     ],
@@ -341,7 +412,18 @@ export const languageEN = {
         subname: 'Union',
         skills: ['Typescript', 'Next', 'Tailwind CSS', 'Redux Toolkit', 'Axios', 'Npm'],
         slug: 'solidarity-union',
-        image: '/assets/projects/unionsolidaria/unionsolidaria.webp',
+        thumbnail: '/assets/projects/unionsolidaria/unionsolidaria.webp',
+        thumbnailDark: '/assets/projects/unionsolidaria/unionsolidariad.webp',
+        images: {
+          mobile: {
+            image: '/assets/projects/unionsolidaria/unionsolidariamp.webp',
+            imageDark: '/assets/projects/unionsolidaria/unionsolidariampd.webp'
+          },
+          desktop: {
+            image: '/assets/projects/unionsolidaria/unionsolidariadp.webp',
+            imageDark: '/assets/projects/unionsolidaria/unionsolidariadpd.webp'
+          }
+        },
         alt: 'Solidarity union project thumbnail',
         code: 'https://github.com/No-Country/s10-13-m-express-next',
         demo: 'https://union-solidaria-app.vercel.app/',
@@ -395,22 +477,25 @@ export const languageEN = {
         mockups: [
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/unionsolidaria/unionsolidaria.webp',
+            imageDark: '/assets/projects/unionsolidaria/unionsolidariad.webp',
             alt: 'Design of presentation of the solidarity union project'
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/unionsolidaria/unionsolidaria2.webp',
+            imageDark: '/assets/projects/unionsolidaria/unionsolidaria2d.webp',
             alt: 'Design of presentation of the solidarity union project'
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/unionsolidaria/unionsolidaria3.webp',
+            imageDark: '/assets/projects/unionsolidaria/unionsolidaria3d.webp',
             alt: 'Design of presentation of the solidarity union project'
           }
         ],
-        prevProject: '',
-        nextProject: 'solidarity-union'
+        prevProject: 'jordan-store',
+        nextProject: 'design-website'
       },
       {
         id: crypto.randomUUID(),
@@ -420,7 +505,18 @@ export const languageEN = {
         subname: 'Website',
         skills: ['Typescript', 'Next', 'Tailwind CSS', 'Clsx', 'React Hook Form', 'Pnpm'],
         slug: 'design-website',
-        image: '/assets/projects/designwebsite/designwebsite.webp',
+        thumbnail: '/assets/projects/designwebsite/designwebsite.webp',
+        thumbnailDark: '/assets/projects/designwebsite/designwebsited.webp',
+        images: {
+          mobile: {
+            image: '/assets/projects/designwebsite/designwebsitemp.webp',
+            imageDark: '/assets/projects/designwebsite/designwebsitempd.webp'
+          },
+          desktop: {
+            image: '/assets/projects/designwebsite/designwebsitedp.webp',
+            imageDark: '/assets/projects/designwebsite/designwebsitedpd.webp'
+          }
+        },
         alt: 'Design website project thumbnail',
         code: 'https://github.com/davidmedev222/design',
         demo: 'https://designwebsite.vercel.app/',
@@ -460,22 +556,25 @@ export const languageEN = {
         mockups: [
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/designwebsite/designwebsite.webp',
+            imageDark: '/assets/projects/designwebsite/designwebsited.webp',
             alt: 'Design of presentation of the design website project'
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/designwebsite/designwebsite2.webp',
+            imageDark: '/assets/projects/designwebsite/designwebsite2d.webp',
             alt: 'Design of presentation of the design website project'
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/designwebsite/designwebsite3.webp',
+            imageDark: '/assets/projects/designwebsite/designwebsite3d.webp',
             alt: 'Design of presentation of the design website project'
           }
         ],
-        prevProject: '',
-        nextProject: 'solidarity-union'
+        prevProject: 'solidarity-union',
+        nextProject: 'mova-app'
       },
       {
         id: crypto.randomUUID(),
@@ -485,7 +584,18 @@ export const languageEN = {
         subname: 'App',
         skills: ['Typescript', 'Expo', 'React Native', 'Clsx', 'Firebase', 'Pnpm'],
         slug: 'mova-app',
-        image: '/assets/projects/movaapp/movaapp.webp',
+        thumbnail: '/assets/projects/movaapp/movaapp.webp',
+        thumbnailDark: '/assets/projects/movaapp/movaappd.webp',
+        images: {
+          mobile: {
+            image: '/assets/projects/movaapp/movaappmp.webp',
+            imageDark: '/assets/projects/movaapp/movaappmpd.webp'
+          },
+          desktop: {
+            image: '/assets/projects/movaapp/movaappdp.webp',
+            imageDark: '/assets/projects/movaapp/movaappdpd.webp'
+          }
+        },
         alt: 'Mova app project thumbnail',
         code: 'https://github.com/davidmedev222/mova',
         demo: 'https://github.com/davidmedev222/mova#usage',
@@ -536,22 +646,25 @@ export const languageEN = {
         mockups: [
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/movaapp/movaapp.webp',
+            imageDark: '/assets/projects/movaapp/movaappd.webp',
             alt: 'Design of presentation of the mova app project'
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/movaapp/movaapp2.webp',
+            imageDark: '/assets/projects/movaapp/movaapp2d.webp',
             alt: 'Design of presentation of the mova app project'
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/movaapp/movaapp3.webp',
+            imageDark: '/assets/projects/movaapp/movaapp3d.webp',
             alt: 'Design of presentation of the mova app project'
           }
         ],
-        prevProject: '',
-        nextProject: 'design-website'
+        prevProject: 'design-website',
+        nextProject: 'lot-todo'
       },
       {
         id: crypto.randomUUID(),
@@ -561,7 +674,18 @@ export const languageEN = {
         subname: 'Todo',
         skills: ['Javascript', 'Expo', 'React', 'Style Sheet', 'Firebase', 'Npm'],
         slug: 'lot-todo',
-        image: '/assets/projects/lottodo/lottodo.webp',
+        thumbnail: '/assets/projects/lottodo/lottodo.webp',
+        thumbnailDark: '/assets/projects/lottodo/lottodod.webp',
+        images: {
+          mobile: {
+            image: '/assets/projects/lottodo/lottodomp.webp',
+            imageDark: '/assets/projects/lottodo/lottodompd.webp'
+          },
+          desktop: {
+            image: '/assets/projects/lottodo/lottododp.webp',
+            imageDark: '/assets/projects/lottodo/lottododpd.webp'
+          }
+        },
         alt: 'Lot todo project thumbnail',
         code: 'https://github.com/No-Country/C12-38-M-REACTNATIVE',
         demo: 'https://expo.dev/@florencia09/lot-todo?serviceType=classic&distribution=expo-go',
@@ -600,22 +724,25 @@ export const languageEN = {
         mockups: [
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/lottodo/lottodo.webp',
+            imageDark: '/assets/projects/lottodo/lottodod.webp',
             alt: 'Design of presentation of the lot todo project'
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/lottodo/lottodo2.webp',
+            imageDark: '/assets/projects/lottodo/lottodo2d.webp',
             alt: 'Design of presentation of the lot todo project'
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/lottodo/lottodo3.webp',
+            imageDark: '/assets/projects/lottodo/lottodo3d.webp',
             alt: 'Design of presentation of the lot todo project'
           }
         ],
-        prevProject: '',
-        nextProject: 'mova-app'
+        prevProject: 'mova-app',
+        nextProject: 'lawyer-website'
       },
       {
         id: crypto.randomUUID(),
@@ -625,7 +752,18 @@ export const languageEN = {
         subname: 'Website',
         skills: ['Typescript', 'Next', 'Tailwind CSS', 'Clsx', 'React Hook Form', 'Pnpm'],
         slug: 'lawyer-website',
-        image: '/assets/projects/lawyerwebsite/lawyerwebsite.webp',
+        thumbnail: '/assets/projects/lawyerwebsite/lawyerwebsite.webp',
+        thumbnailDark: '/assets/projects/lawyerwebsite/lawyerwebsited.webp',
+        images: {
+          mobile: {
+            image: '/assets/projects/lawyerwebsite/lawyerwebsitemp.webp',
+            imageDark: '/assets/projects/lawyerwebsite/lawyerwebsitempd.webp'
+          },
+          desktop: {
+            image: '/assets/projects/lawyerwebsite/lawyerwebsitedp.webp',
+            imageDark: '/assets/projects/lawyerwebsite/lawyerwebsitedpd.webp'
+          }
+        },
         alt: 'Lawyer website project thumbnail',
         code: 'https://github.com/demattei-teo/Lawyer',
         demo: 'https://lawyerdev.vercel.app/',
@@ -662,22 +800,25 @@ export const languageEN = {
         mockups: [
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/lawyerwebsite/lawyerwebsite.webp',
+            imageDark: '/assets/projects/lawyerwebsite/lawyerwebsited.webp',
             alt: 'Design of presentation of the lawyer website project'
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/lawyerwebsite/lawyerwebsite2.webp',
+            imageDark: '/assets/projects/lawyerwebsite/lawyerwebsite2d.webp',
             alt: 'Design of presentation of the lawyer website project'
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/lawyerwebsite/lawyerwebsite3.webp',
+            imageDark: '/assets/projects/lawyerwebsite/lawyerwebsite3d.webp',
             alt: 'Design of presentation of the lawyer website project'
           }
         ],
-        prevProject: '',
-        nextProject: 'lot-todo'
+        prevProject: 'lot-todo',
+        nextProject: 'my-photos'
       },
       {
         id: crypto.randomUUID(),
@@ -687,7 +828,18 @@ export const languageEN = {
         subname: 'Photos',
         skills: ['Typescript', 'Next', 'Tailwind CSS', 'Clsx', 'Firebase', 'Pnpm'],
         slug: 'my-photos',
-        image: '/assets/projects/myphotos/myphotos.webp',
+        thumbnail: '/assets/projects/myphotos/myphotos.webp',
+        thumbnailDark: '/assets/projects/myphotos/myphotosd.webp',
+        images: {
+          mobile: {
+            image: '/assets/projects/myphotos/myphotosmp.webp',
+            imageDark: '/assets/projects/myphotos/myphotosmpd.webp'
+          },
+          desktop: {
+            image: '/assets/projects/myphotos/myphotosdp.webp',
+            imageDark: '/assets/projects/myphotos/myphotosdpd.webp'
+          }
+        },
         alt: 'My photos project thumbnail',
         code: 'https://github.com/davidmedev222/my-photos',
         demo: 'https://myphotosdev.vercel.app/',
@@ -723,22 +875,25 @@ export const languageEN = {
         mockups: [
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/myphotos/myphotos.webp',
+            imageDark: '/assets/projects/myphotos/myphotosd.webp',
             alt: 'Design of presentation of the my photos project'
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/myphotos/myphotos2.webp',
+            imageDark: '/assets/projects/myphotos/myphotos2d.webp',
             alt: 'Design of presentation of the my photos project'
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/myphotos/myphotos3.webp',
+            imageDark: '/assets/projects/myphotos/myphotos3d.webp',
             alt: 'Design of presentation of the my photos project'
           }
         ],
-        prevProject: '',
-        nextProject: 'lawyer-website'
+        prevProject: 'lawyer-website',
+        nextProject: 'chat-box'
       },
       {
         id: crypto.randomUUID(),
@@ -748,7 +903,18 @@ export const languageEN = {
         subname: 'Box',
         skills: ['Typescript', 'React', 'Styled Components', 'ViteJs', 'React Router Dom', 'Npm'],
         slug: 'chat-box',
-        image: '/assets/projects/chatbox/chatbox.webp',
+        thumbnail: '/assets/projects/chatbox/chatbox.webp',
+        thumbnailDark: '/assets/projects/chatbox/chatboxd.webp',
+        images: {
+          mobile: {
+            image: '/assets/projects/chatbox/chatboxmp.webp',
+            imageDark: '/assets/projects/chatbox/chatboxmpd.webp'
+          },
+          desktop: {
+            image: '/assets/projects/chatbox/chatboxdp.webp',
+            imageDark: '/assets/projects/chatbox/chatboxdpd.webp'
+          }
+        },
         alt: 'Chat Box project thumbnail',
         code: 'https://github.com/No-Country/S7-20-T-NODEREACT',
         demo: 'https://github.com/No-Country/S7-20-T-NODEREACT',
@@ -797,22 +963,25 @@ export const languageEN = {
         mockups: [
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/chatbox/chatbox.webp',
+            imageDark: '/assets/projects/chatbox/chatboxd.webp',
             alt: 'Design of presentation of the chat box project'
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/chatbox/chatbox2.webp',
+            imageDark: '/assets/projects/chatbox/chatbox2d.webp',
             alt: 'Design of presentation of the chat box project'
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/chatbox/chatbox3.webp',
+            imageDark: '/assets/projects/chatbox/chatbox3d.webp',
             alt: 'Design of presentation of the chat box project'
           }
         ],
-        prevProject: '',
-        nextProject: 'my-photos'
+        prevProject: 'my-photos',
+        nextProject: 'agency-website'
       },
       {
         id: crypto.randomUUID(),
@@ -822,7 +991,18 @@ export const languageEN = {
         subname: 'Website',
         skills: ['Typescript', 'React', 'Styled Components', 'ViteJs', 'React Router Dom', 'Pnpm'],
         slug: 'agency-website',
-        image: '/assets/projects/agencywebsite/agencywebsite.webp',
+        thumbnail: '/assets/projects/agencywebsite/agencywebsite.webp',
+        thumbnailDark: '/assets/projects/agencywebsite/agencywebsited.webp',
+        images: {
+          mobile: {
+            image: '/assets/projects/agencywebsite/agencywebsitemp.webp',
+            imageDark: '/assets/projects/agencywebsite/agencywebsitempd.webp'
+          },
+          desktop: {
+            image: '/assets/projects/agencywebsite/agencywebsitedp.webp',
+            imageDark: '/assets/projects/agencywebsite/agencywebsitedpd.webp'
+          }
+        },
         alt: 'Agency website project thumbnail',
         code: 'https://github.com/davidmedev222/agency',
         demo: 'https://devagency.vercel.app/',
@@ -848,22 +1028,25 @@ export const languageEN = {
         mockups: [
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/agencywebsite/agencywebsite.webp',
+            imageDark: '/assets/projects/agencywebsite/agencywebsited.webp',
             alt: 'Design of presentation of the agency website project'
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/agencywebsite/agencywebsite2.webp',
+            imageDark: '/assets/projects/agencywebsite/agencywebsite2d.webp',
             alt: 'Design of presentation of the agency website project'
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/agencywebsite/agencywebsite3.webp',
+            imageDark: '/assets/projects/agencywebsite/agencywebsite3d.webp',
             alt: 'Design of presentation of the agency website project'
           }
         ],
-        prevProject: '',
-        nextProject: 'solidarity-union'
+        prevProject: 'chat-box',
+        nextProject: 'custom-sports'
       },
       {
         id: crypto.randomUUID(),
@@ -873,7 +1056,18 @@ export const languageEN = {
         subname: 'Sports',
         skills: ['Javascript', 'React', 'Styled Components', 'ViteJs', 'React Router Dom', 'Npm'],
         slug: 'custom-sports',
-        image: '/assets/projects/customsports/customsports.webp',
+        thumbnail: '/assets/projects/customsports/customsports.webp',
+        thumbnailDark: '/assets/projects/customsports/customsportsd.webp',
+        images: {
+          mobile: {
+            image: '/assets/projects/customsports/customsportsmp.webp',
+            imageDark: '/assets/projects/customsports/customsportsmpd.webp'
+          },
+          desktop: {
+            image: '/assets/projects/customsports/customsportsdp.webp',
+            imageDark: '/assets/projects/customsports/customsportsdpd.webp'
+          }
+        },
         alt: 'Custom Sports project thumbnail',
         code: 'https://github.com/No-Country/S6-14-T-MERN',
         demo: 'http://ec2-18-118-29-121.us-east-2.compute.amazonaws.com/',
@@ -930,22 +1124,25 @@ export const languageEN = {
         mockups: [
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/customsports/customsports.webp',
+            imageDark: '/assets/projects/customsports/customsportsd.webp',
             alt: 'Design of presentation of the custom sports project'
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/customsports/customsports2.webp',
+            imageDark: '/assets/projects/customsports/customsports2d.webp',
             alt: 'Design of presentation of the custom sports project'
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/customsports/customsports3.webp',
+            imageDark: '/assets/projects/customsports/customsports3d.webp',
             alt: 'Design of presentation of the custom sports project'
           }
         ],
-        prevProject: '',
-        nextProject: 'solidarity-union'
+        prevProject: 'agency-webiste',
+        nextProject: 'apollo-nft'
       },
       {
         id: crypto.randomUUID(),
@@ -955,7 +1152,18 @@ export const languageEN = {
         subname: 'NFT',
         skills: ['Javascript', 'React', 'Sass', 'ViteJs', 'React Router Dom', 'Pnpm'],
         slug: 'apollo-nft',
-        image: '/assets/projects/apollonft/apollonft.webp',
+        thumbnail: '/assets/projects/apollonft/apollonft.webp',
+        thumbnailDark: '/assets/projects/apollonft/apollonftd.webp',
+        images: {
+          mobile: {
+            image: '/assets/projects/apollonft/apollonftmp.webp',
+            imageDark: '/assets/projects/apollonft/apollonftmpd.webp'
+          },
+          desktop: {
+            image: '/assets/projects/apollonft/apollonftdp.webp',
+            imageDark: '/assets/projects/apollonft/apollonftdpd.webp'
+          }
+        },
         alt: 'Apollo NFT project thumbnail',
         code: 'https://github.com/davidmedev222/landing-apollonft-react',
         demo: 'https://apollonft.vercel.app/',
@@ -981,22 +1189,25 @@ export const languageEN = {
         mockups: [
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/apollonft/apollonft.webp',
+            imageDark: '/assets/projects/apollonft/apollonftd.webp',
             alt: 'Design of presentation of the union solidaria project'
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/apollonft/apollonft2.webp',
+            imageDark: '/assets/projects/apollonft/apollonft2d.webp',
             alt: 'Design of presentation of the union solidaria project'
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/apollonft/apollonft3.webp',
+            imageDark: '/assets/projects/apollonft/apollonft3d.webp',
             alt: 'Design of presentation of the union solidaria project'
           }
         ],
-        prevProject: '',
-        nextProject: 'solidarity-union'
+        prevProject: 'custom-sports',
+        nextProject: 'blizt-website'
       },
       {
         id: crypto.randomUUID(),
@@ -1006,7 +1217,18 @@ export const languageEN = {
         subname: 'Website',
         skills: ['Javascript', 'React', 'Sass', 'ViteJs', 'React Router Dom', 'Pnpm'],
         slug: 'blizt-website',
-        image: '/assets/projects/bliztwebsite/bliztwebsite.webp',
+        thumbnail: '/assets/projects/bliztwebsite/bliztwebsite.webp',
+        thumbnailDark: '/assets/projects/bliztwebsite/bliztwebsited.webp',
+        images: {
+          mobile: {
+            image: '/assets/projects/bliztwebsite/bliztwebsitemp.webp',
+            imageDark: '/assets/projects/bliztwebsite/bliztwebsitempd.webp'
+          },
+          desktop: {
+            image: '/assets/projects/bliztwebsite/bliztwebsitedp.webp',
+            imageDark: '/assets/projects/bliztwebsite/bliztwebsitedpd.webp'
+          }
+        },
         alt: 'Blizt Website project thumbnail',
         code: 'https://github.com/davidmedev222/landing-blizt-react',
         demo: 'https://blizt.vercel.app/',
@@ -1041,22 +1263,25 @@ export const languageEN = {
         mockups: [
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/bliztwebsite/bliztwebsite.webp',
+            imageDark: '/assets/projects/bliztwebsite/bliztwebsited.webp',
             alt: 'Design of presentation of the blizt website project'
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/bliztwebsite/bliztwebsite2.webp',
+            imageDark: '/assets/projects/bliztwebsite/bliztwebsite2d.webp',
             alt: 'Design of presentation of the blizt website project'
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/bliztwebsite/bliztwebsite.webp',
+            imageDark: '/assets/projects/bliztwebsite/bliztwebsited.webp',
             alt: 'Design of presentation of the blizt website project'
           }
         ],
-        prevProject: '',
-        nextProject: 'solidarity-union'
+        prevProject: 'apollo-nft',
+        nextProject: 'stadium-sports'
       },
       {
         id: crypto.randomUUID(),
@@ -1066,7 +1291,18 @@ export const languageEN = {
         subname: 'Sports',
         skills: ['Javascript', 'React', 'Sass', 'ViteJs', 'React Router Dom', 'Npm'],
         slug: 'stadium-sports',
-        image: '/assets/projects/stadiumsports/stadiumsports.webp',
+        thumbnail: '/assets/projects/stadiumsports/stadiumsports.webp',
+        thumbnailDark: '/assets/projects/stadiumsports/stadiumsportsd.webp',
+        images: {
+          mobile: {
+            image: '/assets/projects/stadiumsports/stadiumsportsmp.webp',
+            imageDark: '/assets/projects/stadiumsports/stadiumsportsmpd.webp'
+          },
+          desktop: {
+            image: '/assets/projects/stadiumsports/stadiumsportsdp.webp',
+            imageDark: '/assets/projects/stadiumsports/stadiumsportsdpd.webp'
+          }
+        },
         alt: 'Stadium Sports project thumbnail',
         code: 'https://github.com/No-Country/C8-73-T-RN',
         demo: 'https://e-stadium.vercel.app/',
@@ -1092,22 +1328,25 @@ export const languageEN = {
         mockups: [
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/stadiumsports/stadiumsports.webp',
+            imageDark: '/assets/projects/stadiumsports/stadiumsportsd.webp',
             alt: 'Design of presentation of the stadium sports project'
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/stadiumsports/stadiumsports2.webp',
+            imageDark: '/assets/projects/stadiumsports/stadiumsports2d.webp',
             alt: 'Design of presentation of the stadium sports project'
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/stadiumsports/stadiumsports3.webp',
+            imageDark: '/assets/projects/stadiumsports/stadiumsports3d.webp',
             alt: 'Design of presentation of the stadium sports project'
           }
         ],
-        prevProject: '',
-        nextProject: 'solidarity-union'
+        prevProject: 'blizt-website',
+        nextProject: 'jordan-store'
       },
       {
         id: crypto.randomUUID(),
@@ -1117,7 +1356,18 @@ export const languageEN = {
         subname: 'Store',
         skills: ['Javascript', 'React', 'Styled Components', 'ViteJs', 'React Router Dom', 'Firebase'],
         slug: 'jordan-store',
-        image: '/assets/projects/jordanstore/jordanstore.webp',
+        thumbnail: '/assets/projects/jordanstore/jordanstore.webp',
+        thumbnailDark: '/assets/projects/jordanstore/jordanstored.webp',
+        images: {
+          mobile: {
+            image: '/assets/projects/jordanstore/jordanstoremp.webp',
+            imageDark: '/assets/projects/jordanstore/jordanstorempd.webp'
+          },
+          desktop: {
+            image: '/assets/projects/jordanstore/jordanstoredp.webp',
+            imageDark: '/assets/projects/jordanstore/jordanstoredpd.webp'
+          }
+        },
         alt: 'Jordan Store project thumbnail',
         code: 'https://github.com/davidmedev222/ecommerce-jordan-react',
         demo: 'https://jordanstore.vercel.app/',
@@ -1153,21 +1403,24 @@ export const languageEN = {
         mockups: [
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/jordanstore/jordanstore.webp',
+            imageDark: '/assets/projects/jordanstore/jordanstored.webp',
             alt: 'Design of presentation of the jordan store project'
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/jordanstore/jordanstore2.webp',
+            imageDark: '/assets/projects/jordanstore/jordanstore2d.webp',
             alt: 'Design of presentation of the jordan store project'
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/apollonft/mobile.png',
+            image: '/assets/projects/jordanstore/jordanstore3.webp',
+            imageDark: '/assets/projects/jordanstore/jordanstore3d.webp',
             alt: 'Design of presentation of the jordan store project'
           }
         ],
-        prevProject: '',
+        prevProject: 'stadium-sports',
         nextProject: 'solidarity-union'
       }
     ]
