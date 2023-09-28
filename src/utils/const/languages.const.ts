@@ -1141,7 +1141,7 @@ export const languageEN = {
             alt: 'Design of presentation of the custom sports project'
           }
         ],
-        prevProject: 'agency-webiste',
+        prevProject: 'agency-website',
         nextProject: 'apollo-nft'
       },
       {
