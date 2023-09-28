@@ -42,7 +42,7 @@ function ContactForm() {
     } finally {
       setTimeout(() => {
         setIsSend(() => '')
-      }, 5000)
+      }, 4000)
     }
   })
 

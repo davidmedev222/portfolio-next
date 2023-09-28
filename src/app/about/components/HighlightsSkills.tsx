@@ -12,7 +12,7 @@ function HighlightsSkills({ skill }: Props) {
       <h5 className='text-sm text-gray-700 md:text-lg'>{skill.title}</h5>
       <ul className='flex flex-wrap items-center gap-4 md:gap-8'>
         {skill.logos.map((logo) => {
-          const themeSkills = ['expo', 'cssmodules', 'commitlint', 'swr', 'styledcomponents']
+          const themeSkills = ['expo', 'cssmodules', 'commitlint', 'swr', 'styledcomponents', 'github']
           const themeSkill = logo.title && themeSkills.includes(logo.title)
 
           return (
