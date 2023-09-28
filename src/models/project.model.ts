@@ -1,6 +1,8 @@
 interface ILogo {
   id: string
+  title?: string
   image: string
+  imageDark?: string
   alt: string
 }
 
