@@ -26,27 +26,21 @@ function DropdownTheme() {
   const classes = {
     dropdown: clsx('relative flex select-none items-center justify-center'),
     optionMobile: clsx(
-      'h-6 w-8 cursor-pointer rounded-lg bg-box shadow-md shadow-black/25 transition-colors duration-300 hover:bg-violet-300 dark:bg-violet-950 dark:hover:bg-violet-500'
+      'h-6 w-8 cursor-pointer rounded-lg bg-box shadow-md shadow-black/25 transition-colors duration-300 hover:bg-violet-300 data-[active=true]:bg-violet-300 dark:bg-violet-950 dark:hover:bg-violet-500 dark:data-[active=true]:bg-violet-500'
     ),
-    optionActive: clsx(isOpen && 'bg-violet-300 dark:bg-violet-500'),
     optionsMobile: clsx('absolute top-[calc(100%+6px)] grid place-items-center gap-y-1.5 lg:hidden'),
     optionsDesktop: clsx(
       'absolute right-0 top-[calc(100%+16px)] hidden w-44 rounded-3xl bg-box p-[18px] shadow-md shadow-black/25 dark:bg-violet-950 lg:grid lg:gap-y-2.5'
     ),
-    optionDesktop: {
-      default: clsx(
-        'ml-[18px] mr-auto flex h-8 cursor-pointer items-center gap-x-[18px] rounded-full px-4 text-xs transition-colors duration-300 hover:bg-violet-300 dark:hover:bg-violet-500'
-      ),
-      system: clsx(theme === 'system' && 'bg-violet-300 dark:bg-violet-500'),
-      dark: clsx(theme === 'dark' && 'bg-violet-300 dark:bg-violet-500'),
-      light: clsx(theme === 'light' && 'bg-violet-300 dark:bg-violet-500')
-    }
+    optionDesktop: clsx(
+      'ml-[18px] mr-auto flex h-8 cursor-pointer items-center gap-x-[18px] rounded-full px-4 text-xs transition-colors duration-300 hover:bg-violet-300 data-[active=true]:bg-violet-300 data-[theme=true]:bg-violet-300 dark:hover:bg-violet-500 dark:data-[theme=true]:bg-violet-500'
+    )
   }
 
   return (
     <>
       <div className={classes.dropdown}>
-        <button className={`${classes.optionMobile} ${classes.optionActive}`} onClick={toggleState}>
+        <button data-active={isOpen} className={classes.optionMobile} onClick={toggleState}>
           {theme === 'system' && <SystemIcon className='h-full w-full fill-black px-1.5 py-1 dark:fill-white' />}
           {theme === 'dark' && <DarkIcon className='h-full w-full fill-black px-2.5 py-0.5 dark:fill-white' />}
           {theme === 'light' && <LightIcon className='h-full w-full fill-black px-1.5 py-0.5 dark:fill-white' />}
@@ -73,21 +67,20 @@ function DropdownTheme() {
         {isOpen && (
           <div className={classes.optionsDesktop}>
             <button
-              className={`${classes.optionDesktop.default} ${classes.optionDesktop.system}`}
+              data-theme={theme === 'system'}
+              className={classes.optionDesktop}
               onClick={handleToggleTheme('system')}
             >
               <SystemIcon className='h-full w-full fill-black py-2 dark:fill-white' /> System
             </button>
             <Divider className='dark:!bg-violet-300 lg:h-[1px]' color='violet' direction='horizontal' />
-            <button
-              className={`${classes.optionDesktop.default} ${classes.optionDesktop.dark}`}
-              onClick={handleToggleTheme('dark')}
-            >
+            <button data-theme={theme === 'dark'} className={classes.optionDesktop} onClick={handleToggleTheme('dark')}>
               <DarkIcon className='h-full w-full fill-black py-1.5 dark:fill-white' /> Dark
             </button>
             <Divider className='dark:!bg-violet-300 lg:h-[1px]' color='violet' direction='horizontal' />
             <button
-              className={`${classes.optionDesktop.default} ${classes.optionDesktop.light}`}
+              data-theme={theme === 'light'}
+              className={classes.optionDesktop}
               onClick={handleToggleTheme('light')}
             >
               <LightIcon className='h-full w-full fill-black py-1 dark:fill-white' /> Light

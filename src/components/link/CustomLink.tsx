@@ -1,16 +1,20 @@
+import clsx from 'clsx'
 import Link, { LinkProps } from 'next/link'
 import Divider from '../divider/Divider'
 
 interface Props extends LinkProps {
   children: React.ReactNode
+  className?: string
 }
 
-function CustomLink({ children, ...rest }: Props) {
+function CustomLink({ children, className, ...rest }: Props) {
+  const classes = clsx(
+    'group block text-center font-benzin text-xs uppercase transition-colors duration-300 hover:text-violet-500 md:text-3xl',
+    className
+  )
+
   return (
-    <Link
-      {...rest}
-      className='group my-8 ml-auto block w-28 text-center font-benzin text-xs uppercase transition-colors duration-300 hover:text-violet-500 md:my-32 md:w-[496px] md:text-3xl'
-    >
+    <Link {...rest} className={classes}>
       <Divider
         color='violet'
         direction='horizontal'
