@@ -1487,7 +1487,13 @@ export const languageEN = {
               alt: 'Technology logo tailwind css'
             },
             { id: crypto.randomUUID(), image: '/assets/skills/logonode.webp', alt: 'Technology logo node js' },
-            { id: crypto.randomUUID(), image: '/assets/skills/logoexpo.webp', alt: 'Technology logo expo' },
+            {
+              id: crypto.randomUUID(),
+              title: 'expo',
+              image: '/assets/skills/logoexpo.webp',
+              imageDark: '/assets/skills/logoexpod.webp',
+              alt: 'Technology logo expo'
+            },
             { id: crypto.randomUUID(), image: '/assets/skills/logofirebase.webp', alt: 'Technology logo firebase' }
           ]
         },
@@ -1498,11 +1504,24 @@ export const languageEN = {
             { id: crypto.randomUUID(), image: '/assets/skills/logoreact.webp', alt: 'Technology logo react' },
             { id: crypto.randomUUID(), image: '/assets/skills/logomui.webp', alt: 'Technology logo material ui' },
             { id: crypto.randomUUID(), image: '/assets/skills/logobootstrap.webp', alt: 'Technology logo bootstrap' },
+            {
+              id: crypto.randomUUID(),
+              title: 'cssmodules',
+              image: '/assets/skills/logocssmodules.webp',
+              imageDark: '/assets/skills/logocssmodulesd.webp',
+              alt: 'Technology logo css modules'
+            },
             { id: crypto.randomUUID(), image: '/assets/skills/logoredux.webp', alt: 'Technology logo redux toolkit' },
             { id: crypto.randomUUID(), image: '/assets/skills/logoaxios.webp', alt: 'Technology logo axios' },
             { id: crypto.randomUUID(), image: '/assets/skills/logomongoose.webp', alt: 'Technology logo mongoose' },
             { id: crypto.randomUUID(), image: '/assets/skills/logostripe.webp', alt: 'Technology logo stripe' },
-            { id: crypto.randomUUID(), image: '/assets/skills/logocommitlint.webp', alt: 'Technology logo commitlint' },
+            {
+              id: crypto.randomUUID(),
+              title: 'commitlint',
+              image: '/assets/skills/logocommitlint.webp',
+              imageDark: '/assets/skills/logocommitlintd.webp',
+              alt: 'Technology logo commitlint'
+            },
             {
               id: crypto.randomUUID(),
               image: '/assets/skills/logoreactrouterdom.webp',
@@ -1514,11 +1533,19 @@ export const languageEN = {
               alt: 'Technology logo react hook form'
             },
             { id: crypto.randomUUID(), image: '/assets/skills/logohusky.webp', alt: 'Technology logo husky' },
-            { id: crypto.randomUUID(), image: '/assets/skills/logoswr.webp', alt: 'Technology logo swr' },
+            {
+              id: crypto.randomUUID(),
+              title: 'swr',
+              image: '/assets/skills/logoswr.webp',
+              imageDark: '/assets/skills/logoswrd.webp',
+              alt: 'Technology logo swr'
+            },
             { id: crypto.randomUUID(), image: '/assets/skills/logozustand.webp', alt: 'Technology logo zustand' },
             {
               id: crypto.randomUUID(),
+              title: 'styledcomponents',
               image: '/assets/skills/logostyledcomponents.webp',
+              imageDark: '/assets/skills/logostyledcomponentsd.webp',
               alt: 'Technology logo styled components'
             }
           ]
@@ -1548,7 +1575,13 @@ export const languageEN = {
             { id: crypto.randomUUID(), image: '/assets/skills/logomiro.webp', alt: 'Technology logo miro' },
             { id: crypto.randomUUID(), image: '/assets/skills/logorapidapi.webp', alt: 'Technology logo rapid api' },
             { id: crypto.randomUUID(), image: '/assets/skills/logogit.webp', alt: 'Technology logo git' },
-            { id: crypto.randomUUID(), image: '/assets/skills/logogithub.webp', alt: 'Technology logo github' },
+            {
+              id: crypto.randomUUID(),
+              title: 'github',
+              image: '/assets/skills/logogithub.webp',
+              imageDark: '/assets/skills/logogithubd.webp',
+              alt: 'Technology logo github'
+            },
             { id: crypto.randomUUID(), image: '/assets/skills/logocanva.webp', alt: 'Technology logo canva' },
             { id: crypto.randomUUID(), image: '/assets/skills/logoslack.webp', alt: 'Technology logo slack' },
             { id: crypto.randomUUID(), image: '/assets/skills/logonotion.webp', alt: 'Technology logo notion' },

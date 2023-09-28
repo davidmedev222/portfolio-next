@@ -22,6 +22,29 @@
     --swiper-pagination-bullet-horizontal-gap: 4px;
     --swiper-pagination-bullet-vertical-gap: 6px;
   }
+
+  [type='text'],
+  input:where(:not([type])),
+  [type='email'],
+  [type='url'],
+  [type='password'],
+  [type='number'],
+  [type='date'],
+  [type='datetime-local'],
+  [type='month'],
+  [type='search'],
+  [type='tel'],
+  [type='time'],
+  [type='week'],
+  [multiple],
+  textarea,
+  select {
+    @apply rounded-3xl border-none bg-box px-8 py-[18px] text-sm text-gray-700 shadow-md shadow-black/25 placeholder:text-gray-700 focus:ring-violet-500 dark:bg-violet-950 dark:text-violet-300 dark:placeholder:text-violet-300 md:text-lg;
+  }
+
+  [aria-invalid='true'] {
+    @apply ring-1 ring-red-600  focus:ring-red-600;
+  }
 }
 
 @layer components {
