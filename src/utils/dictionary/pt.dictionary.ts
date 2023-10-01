@@ -1,31 +1,31 @@
-import { Routes } from './routes.const'
+import { Routes } from '../const/routes.const'
 
-export const languageEN = {
+const dictionary = {
   header: {
     links: [
-      { id: crypto.randomUUID(), href: Routes.home, title: 'Home' },
-      { id: crypto.randomUUID(), href: Routes.projects, title: 'Projects' },
-      { id: crypto.randomUUID(), href: Routes.about, title: 'About Me' },
-      { id: crypto.randomUUID(), href: Routes.contact, title: 'Contact' }
+      { id: crypto.randomUUID(), href: Routes.home, title: 'Início' },
+      { id: crypto.randomUUID(), href: Routes.projects, title: 'Projetos' },
+      { id: crypto.randomUUID(), href: Routes.about, title: 'Sobre Mim' },
+      { id: crypto.randomUUID(), href: Routes.contact, title: 'Contato' }
     ],
     languages: {
-      en: 'EN',
-      es: 'ES',
-      br: 'BR'
+      en: 'en',
+      es: 'es',
+      pt: 'pt'
     },
     themes: {
-      system: 'system',
-      light: 'light',
-      dark: 'dark'
+      system: 'Sistema',
+      light: 'Luz',
+      dark: 'Escuro'
     }
   },
   home: {
     name: 'David Mamani',
-    role: 'Frontend Developer',
+    role: 'Desenvolvedor Frontend',
     projects: [
       {
         id: crypto.randomUUID(),
-        month: 'August',
+        month: 'Agosto',
         year: '2023',
         name: 'Design',
         subname: 'Website',
@@ -43,14 +43,14 @@ export const languageEN = {
             imageDark: '/assets/projects/designwebsite/designwebsitedpd.webp'
           }
         },
-        alt: 'Design website project thumbnail',
+        alt: 'Miniatura do projeto do site de design',
         code: 'https://github.com/davidmedev222/design',
         demo: 'https://designwebsite.vercel.app/',
         description:
-          'Website that allows designers to show their work and projects in an attractive and professional way. Where they can create their personalized portfolio, upload their designs, and share it with the world. This website allows them to highlight their talent and connect with potential clients or collaborators.',
+          'Site que permite que os designers mostrem seus trabalhos e projetos de forma atraente e profissional. Onde eles podem criar seu portfólio personalizado, carregar seus designs e compartilhá-los com o mundo. Esse site permite que eles destaquem seu talento e se conectem com clientes ou colaboradores em potencial.',
         project: 'Design Website',
-        date: 'August 2023',
-        role: 'Frontend Developer',
+        date: 'Agosto 2023',
+        role: 'Desenvolvedor Frontend',
         technologies: [
           'Typescript',
           'Next',
@@ -69,13 +69,13 @@ export const languageEN = {
         tools: ['ESLint', 'Prettier', 'Figma', 'Notion', 'Visual Studio Code', 'Git', 'Github'],
         video: '',
         info: {
-          code: 'Code',
+          code: 'Código',
           demo: 'Demo',
-          project: 'Project',
-          date: 'Date',
-          role: 'Role',
-          technologies: 'Technologies',
-          tools: 'Tools',
+          project: 'Projeto',
+          date: 'Data',
+          role: 'Função',
+          technologies: 'Tecnologias',
+          tools: 'Ferramentas',
           back: 'Back',
           next: 'Next'
         },
@@ -84,19 +84,19 @@ export const languageEN = {
             id: crypto.randomUUID(),
             image: '/assets/projects/designwebsite/designwebsite/designwebsite.webp',
             imageDark: '/assets/projects/designwebsite/designwebsite/designwebsited.webp',
-            alt: 'Design of presentation of the design website project'
+            alt: 'Design da apresentação do projeto do site de design'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/designwebsite/designwebsite/designwebsite2.webp',
             imageDark: '/assets/projects/designwebsite/designwebsite/designwebsite2d.webp',
-            alt: 'Design of presentation of the design website project'
+            alt: 'Design da apresentação do projeto do site de design'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/designwebsite/designwebsite/designwebsite3.webp',
             imageDark: '/assets/projects/designwebsite/designwebsite/designwebsite3d.webp',
-            alt: 'Design of presentation of the design website project'
+            alt: 'Design da apresentação do projeto do site de design'
           }
         ],
         prevProject: 'solidarity-union',
@@ -104,7 +104,7 @@ export const languageEN = {
       },
       {
         id: crypto.randomUUID(),
-        month: 'July',
+        month: 'Julho',
         year: '2023',
         name: 'Mova',
         subname: 'App',
@@ -123,14 +123,14 @@ export const languageEN = {
             imageDark: '/assets/projects/movaapp/movaappdpd.webp'
           }
         },
-        alt: 'Mova app project thumbnail',
+        alt: 'Miniatura do projeto do aplicativo Mova',
         code: 'https://github.com/davidmedev222/mova',
         demo: 'https://github.com/davidmedev222/mova#usage',
         description:
-          'Mobile application where you can view the catalogs of popular movies, top rated movies, incoming movies, series and more.',
+          'Aplicativo móvel no qual você pode visualizar os catálogos de filmes populares, filmes com melhor classificação, filmes recebidos, séries e muito mais.',
         project: 'Mova App',
-        date: 'July 2023',
-        role: 'Frontend Developer',
+        date: 'Julho 2023',
+        role: 'Desenvolvedor Frontend',
         technologies: [
           'Typescript',
           'React Native',
@@ -160,13 +160,13 @@ export const languageEN = {
         ],
         video: '',
         info: {
-          code: 'Code',
+          code: 'Código',
           demo: 'Demo',
-          project: 'Project',
-          date: 'Date',
-          role: 'Role',
-          technologies: 'Technologies',
-          tools: 'Tools',
+          project: 'Projeto',
+          date: 'Data',
+          role: 'Função',
+          technologies: 'Tecnologias',
+          tools: 'Ferramentas',
           back: 'Back',
           next: 'Next'
         },
@@ -175,19 +175,19 @@ export const languageEN = {
             id: crypto.randomUUID(),
             image: '/assets/projects/movaapp/movaapp.webp',
             imageDark: '/assets/projects/movaapp/movaappd.webp',
-            alt: 'Design of presentation of the mova app project'
+            alt: 'Design da apresentação do projeto do aplicativo mova'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/movaapp/movaapp2.webp',
             imageDark: '/assets/projects/movaapp/movaapp2.webp',
-            alt: 'Design of presentation of the mova app project'
+            alt: 'Design da apresentação do projeto do aplicativo mova'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/movaapp/movaapp3.webp',
             imageDark: '/assets/projects/movaapp/movaapp3.webp',
-            alt: 'Design of presentation of the mova app project'
+            alt: 'Design da apresentação do projeto do aplicativo mova'
           }
         ],
         prevProject: 'design-website',
@@ -195,7 +195,7 @@ export const languageEN = {
       },
       {
         id: crypto.randomUUID(),
-        month: 'May',
+        month: 'Maio',
         year: '2023',
         name: 'My',
         subname: 'Photos',
@@ -213,14 +213,14 @@ export const languageEN = {
             imageDark: '/assets/projects/myphotos/myphotosdpd.webp'
           }
         },
-        alt: 'My photos project thumbnail',
+        alt: 'Miniatura do projeto My photos',
         code: 'https://github.com/davidmedev222/my-photos',
         demo: 'https://myphotosdev.vercel.app/',
         description:
-          'Website designed exclusively to showcase photographs, focused on providing visitors with a captivating visual experience by presenting stunning images in a simple one-page layout.',
+          'Site projetado exclusivamente para exibir fotografias, com foco em proporcionar aos visitantes uma experiência visual cativante, apresentando imagens impressionantes em um layout simples de uma página.',
         project: 'My Photos',
         date: 'May 2023',
-        role: 'Frontend Developer',
+        role: 'Desenvolvedor Frontend',
         technologies: [
           'Typescript',
           'Next',
@@ -235,13 +235,13 @@ export const languageEN = {
         tools: ['ESLint', 'Prettier', 'Figma', 'Trello', 'Visual Studio Code', 'Git', 'Github'],
         video: '',
         info: {
-          code: 'Code',
+          code: 'Código',
           demo: 'Demo',
-          project: 'Project',
-          date: 'Date',
-          role: 'Role',
-          technologies: 'Technologies',
-          tools: 'Tools',
+          project: 'Projeto',
+          date: 'Data',
+          role: 'Função',
+          technologies: 'Tecnologias',
+          tools: 'Ferramentas',
           back: 'Back',
           next: 'Next'
         },
@@ -250,19 +250,19 @@ export const languageEN = {
             id: crypto.randomUUID(),
             image: '/assets/projects/myphotos/myphotos.webp',
             imageDark: '/assets/projects/myphotos/myphotosd.webp',
-            alt: 'Design of presentation of the my photos project'
+            alt: 'Design da apresentação do projeto my photos'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/myphotos/myphotos2.webp',
             imageDark: '/assets/projects/myphotos/myphotos2d.webp',
-            alt: 'Design of presentation of the my photos project'
+            alt: 'Design da apresentação do projeto my photos'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/myphotos/myphotos3.webp',
             imageDark: '/assets/projects/myphotos/myphotos3d.webp',
-            alt: 'Design of presentation of the my photos project'
+            alt: 'Design da apresentação do projeto my photos'
           }
         ],
         prevProject: 'lawyer-website',
@@ -270,7 +270,7 @@ export const languageEN = {
       },
       {
         id: crypto.randomUUID(),
-        month: 'January',
+        month: 'Janeiro',
         year: '2023',
         name: 'Apollo',
         subname: 'NFT',
@@ -288,25 +288,25 @@ export const languageEN = {
             imageDark: '/assets/projects/apollonft/apollonftdpd.webp'
           }
         },
-        alt: 'Apollo NFT project thumbnail',
+        alt: 'Miniatura do projeto Apollo NFT',
         code: 'https://github.com/davidmedev222/landing-apollonft-react',
         demo: 'https://apollonft.vercel.app/',
         description:
-          'Apollo NFT, Website where you can find information about the nft market and information on how to create your own nft from the page.',
+          'Apollo NFT, site onde você pode encontrar informações sobre o mercado de nft e informações sobre como criar seu próprio nft a partir da página.',
         project: 'Apollo NFT',
-        date: 'January 2023',
-        role: 'Frontend Developer',
+        date: 'Janeiro 2023',
+        role: 'Desenvolvedor Frontend',
         technologies: ['Javascript', 'React', 'Sass', 'ViteJs', 'React Router Dom', 'CommitLint', 'Husky', 'Pnpm'],
         tools: ['ESLint', 'Figma', 'Trello', 'Visual Studio Code', 'Git', 'Github'],
         video: '',
         info: {
-          code: 'Code',
+          code: 'Código',
           demo: 'Demo',
-          project: 'Project',
-          date: 'Date',
-          role: 'Role',
-          technologies: 'Technologies',
-          tools: 'Tools',
+          project: 'Projeto',
+          date: 'Data',
+          role: 'Função',
+          technologies: 'Tecnologias',
+          tools: 'Ferramentas',
           back: 'Back',
           next: 'Next'
         },
@@ -315,19 +315,19 @@ export const languageEN = {
             id: crypto.randomUUID(),
             image: '/assets/projects/apollonft/apollonft.webp',
             imageDark: '/assets/projects/apollonft/apollonftd.webp',
-            alt: 'Design of presentation of the union solidaria project'
+            alt: 'Design de apresentação do projeto union solidaria'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/apollonft/apollonft2.webp',
             imageDark: '/assets/projects/apollonft/apollonft2d.webp',
-            alt: 'Design of presentation of the union solidaria project'
+            alt: 'Design de apresentação do projeto union solidaria'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/apollonft/apollonft3.webp',
             imageDark: '/assets/projects/apollonft/apollonft3d.webp',
-            alt: 'Design of presentation of the union solidaria project'
+            alt: 'Design de apresentação do projeto union solidaria'
           }
         ],
         prevProject: 'custom-sports',
@@ -335,7 +335,7 @@ export const languageEN = {
       },
       {
         id: crypto.randomUUID(),
-        month: 'October',
+        month: 'Outubro',
         year: '2022',
         name: 'Jordan',
         subname: 'Store',
@@ -353,14 +353,14 @@ export const languageEN = {
             imageDark: '/assets/projects/jordanstore/jordanstoredpd.webp'
           }
         },
-        alt: 'Jordan Store project thumbnail',
+        alt: 'Miniatura do projeto da Jordan Store',
         code: 'https://github.com/davidmedev222/ecommerce-jordan-react',
         demo: 'https://jordanstore.vercel.app/',
         description:
-          'Online sneaker store for people with a Jordan brand preference, where they will be able to purchase and manage their own account on the website.',
+          'Loja on-line de tênis para pessoas com preferência pela marca Jordan, onde poderão comprar e gerenciar sua própria conta no site.',
         project: 'Jordan Store',
-        date: 'October 2022',
-        role: 'Frontend Developer',
+        date: 'Outubro 2022',
+        role: 'Desenvolvedor Frontend',
         technologies: [
           'Javascript',
           'React',
@@ -375,13 +375,13 @@ export const languageEN = {
         tools: ['ESLint', 'Trello', 'Visual Studio Code', 'Git', 'Github'],
         video: '',
         info: {
-          code: 'Code',
+          code: 'Código',
           demo: 'Demo',
-          project: 'Project',
-          date: 'Date',
-          role: 'Role',
-          technologies: 'Technologies',
-          tools: 'Tools',
+          project: 'Projeto',
+          date: 'Data',
+          role: 'Função',
+          technologies: 'Tecnologias',
+          tools: 'Ferramentas',
           back: 'Back',
           next: 'Next'
         },
@@ -390,19 +390,19 @@ export const languageEN = {
             id: crypto.randomUUID(),
             image: '/assets/projects/jordanstore/jordanstore.webp',
             imageDark: '/assets/projects/jordanstore/jordanstored.webp',
-            alt: 'Design of presentation of the jordan store project'
+            alt: 'Design de apresentação do projeto da loja jordan'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/jordanstore/jordanstore2.webp',
             imageDark: '/assets/projects/jordanstore/jordanstore2d.webp',
-            alt: 'Design of presentation of the jordan store project'
+            alt: 'Design de apresentação do projeto da loja jordan'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/jordanstore/jordanstore3.webp',
             imageDark: '/assets/projects/jordanstore/jordanstore3d.webp',
-            alt: 'Design of presentation of the jordan store project'
+            alt: 'Design de apresentação do projeto da loja jordan'
           }
         ],
         prevProject: 'stadium-sports',
@@ -412,11 +412,11 @@ export const languageEN = {
     link: { id: crypto.randomUUID(), href: Routes.projects, title: 'View All' }
   },
   projects: {
-    title: 'Projects',
+    title: 'Projetos',
     projects: [
       {
         id: crypto.randomUUID(),
-        month: 'August',
+        month: 'Agosto',
         year: '2023',
         name: 'Solidarity',
         subname: 'Union',
@@ -434,14 +434,14 @@ export const languageEN = {
             imageDark: '/assets/projects/unionsolidaria/unionsolidariadpd.webp'
           }
         },
-        alt: 'Solidarity union project thumbnail',
+        alt: 'Miniatura do projeto do sindicato solidário',
         code: 'https://github.com/No-Country/s10-13-m-express-next',
         demo: 'https://union-solidaria-app.vercel.app/',
         description:
-          'A webapp that connects volunteers with social initiatives of different categories and themes, that also allows organizations to create their own initiatives to recruit volunteers. A portal oriented to volunteers who want to help beyond their resources or possibilities.',
+          'Um aplicativo da Web que conecta voluntários a iniciativas sociais de diferentes categorias e temas, além de permitir que as organizações criem suas próprias iniciativas para recrutar voluntários. Um portal voltado para voluntários que desejam ajudar além de seus recursos ou possibilidades.',
         project: 'Solidarity Union',
-        date: 'August 2023',
-        role: 'Frontend Developer',
+        date: 'Agosto 2023',
+        role: 'Desenvolvedor Frontend',
         technologies: [
           'Typescript',
           'Next',
@@ -474,13 +474,13 @@ export const languageEN = {
         ],
         video: '',
         info: {
-          code: 'Code',
+          code: 'Código',
           demo: 'Demo',
-          project: 'Project',
-          date: 'Date',
-          role: 'Role',
-          technologies: 'Technologies',
-          tools: 'Tools',
+          project: 'Projeto',
+          date: 'Data',
+          role: 'Função',
+          technologies: 'Tecnologias',
+          tools: 'Ferramentas',
           back: 'Back',
           next: 'Next'
         },
@@ -489,19 +489,19 @@ export const languageEN = {
             id: crypto.randomUUID(),
             image: '/assets/projects/unionsolidaria/unionsolidaria.webp',
             imageDark: '/assets/projects/unionsolidaria/unionsolidariad.webp',
-            alt: 'Design of presentation of the solidarity union project'
+            alt: 'Design da apresentação do projeto de união solidária'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/unionsolidaria/unionsolidaria2.webp',
             imageDark: '/assets/projects/unionsolidaria/unionsolidaria2d.webp',
-            alt: 'Design of presentation of the solidarity union project'
+            alt: 'Design da apresentação do projeto de união solidária'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/unionsolidaria/unionsolidaria3.webp',
             imageDark: '/assets/projects/unionsolidaria/unionsolidaria3d.webp',
-            alt: 'Design of presentation of the solidarity union project'
+            alt: 'Design da apresentação do projeto de união solidária'
           }
         ],
         prevProject: 'jordan-store',
@@ -509,7 +509,7 @@ export const languageEN = {
       },
       {
         id: crypto.randomUUID(),
-        month: 'August',
+        month: 'Agosto',
         year: '2023',
         name: 'Design',
         subname: 'Website',
@@ -527,14 +527,14 @@ export const languageEN = {
             imageDark: '/assets/projects/designwebsite/designwebsitedpd.webp'
           }
         },
-        alt: 'Design website project thumbnail',
+        alt: 'Miniatura do projeto do site de design',
         code: 'https://github.com/davidmedev222/design',
         demo: 'https://designwebsite.vercel.app/',
         description:
-          'Website that allows designers to show their work and projects in an attractive and professional way. Where they can create their personalized portfolio, upload their designs, and share it with the world. This website allows them to highlight their talent and connect with potential clients or collaborators.',
+          'Site que permite que os designers mostrem seus trabalhos e projetos de forma atraente e profissional. Onde eles podem criar seu portfólio personalizado, carregar seus designs e compartilhá-los com o mundo. Esse site permite que eles destaquem seu talento e se conectem com clientes ou colaboradores em potencial.',
         project: 'Design Website',
-        date: 'August 2023',
-        role: 'Frontend Developer',
+        date: 'Agosto 2023',
+        role: 'Desenvolvedor Frontend',
         technologies: [
           'Typescript',
           'Next',
@@ -553,13 +553,13 @@ export const languageEN = {
         tools: ['ESLint', 'Prettier', 'Figma', 'Notion', 'Visual Studio Code', 'Git', 'Github'],
         video: '',
         info: {
-          code: 'Code',
+          code: 'Código',
           demo: 'Demo',
-          project: 'Project',
-          date: 'Date',
-          role: 'Role',
-          technologies: 'Technologies',
-          tools: 'Tools',
+          project: 'Projeto',
+          date: 'Data',
+          role: 'Função',
+          technologies: 'Tecnologias',
+          tools: 'Ferramentas',
           back: 'Back',
           next: 'Next'
         },
@@ -568,19 +568,19 @@ export const languageEN = {
             id: crypto.randomUUID(),
             image: '/assets/projects/designwebsite/designwebsite.webp',
             imageDark: '/assets/projects/designwebsite/designwebsited.webp',
-            alt: 'Design of presentation of the design website project'
+            alt: 'Design da apresentação do projeto do site de design'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/designwebsite/designwebsite2.webp',
             imageDark: '/assets/projects/designwebsite/designwebsite2d.webp',
-            alt: 'Design of presentation of the design website project'
+            alt: 'Design da apresentação do projeto do site de design'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/designwebsite/designwebsite3.webp',
             imageDark: '/assets/projects/designwebsite/designwebsite3d.webp',
-            alt: 'Design of presentation of the design website project'
+            alt: 'Design da apresentação do projeto do site de design'
           }
         ],
         prevProject: 'solidarity-union',
@@ -588,12 +588,13 @@ export const languageEN = {
       },
       {
         id: crypto.randomUUID(),
-        month: 'July',
+        month: 'Julho',
         year: '2023',
         name: 'Mova',
         subname: 'App',
         skills: ['Typescript', 'Expo', 'React Native', 'Clsx', 'Firebase', 'Pnpm'],
         slug: 'mova-app',
+        image: '/assets/projects/movaapp/movaapp.webp',
         thumbnail: '/assets/projects/movaapp/movaapp.webp',
         thumbnailDark: '/assets/projects/movaapp/movaappd.webp',
         images: {
@@ -606,14 +607,14 @@ export const languageEN = {
             imageDark: '/assets/projects/movaapp/movaappdpd.webp'
           }
         },
-        alt: 'Mova app project thumbnail',
+        alt: 'Miniatura do projeto do aplicativo Mova',
         code: 'https://github.com/davidmedev222/mova',
         demo: 'https://github.com/davidmedev222/mova#usage',
         description:
-          'Mobile application where you can view the catalogs of popular movies, top rated movies, incoming movies, series and more.',
+          'Aplicativo móvel no qual você pode visualizar os catálogos de filmes populares, filmes com melhor classificação, filmes recebidos, séries e muito mais.',
         project: 'Mova App',
-        date: 'July 2023',
-        role: 'Frontend Developer',
+        date: 'Julho 2023',
+        role: 'Desenvolvedor Frontend',
         technologies: [
           'Typescript',
           'React Native',
@@ -643,13 +644,13 @@ export const languageEN = {
         ],
         video: '',
         info: {
-          code: 'Code',
+          code: 'Código',
           demo: 'Demo',
-          project: 'Project',
-          date: 'Date',
-          role: 'Role',
-          technologies: 'Technologies',
-          tools: 'Tools',
+          project: 'Projeto',
+          date: 'Data',
+          role: 'Função',
+          technologies: 'Tecnologias',
+          tools: 'Ferramentas',
           back: 'Back',
           next: 'Next'
         },
@@ -658,19 +659,19 @@ export const languageEN = {
             id: crypto.randomUUID(),
             image: '/assets/projects/movaapp/movaapp.webp',
             imageDark: '/assets/projects/movaapp/movaappd.webp',
-            alt: 'Design of presentation of the mova app project'
+            alt: 'Design da apresentação do projeto do aplicativo mova'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/movaapp/movaapp2.webp',
-            imageDark: '/assets/projects/movaapp/movaapp2d.webp',
-            alt: 'Design of presentation of the mova app project'
+            imageDark: '/assets/projects/movaapp/movaapp2.webp',
+            alt: 'Design da apresentação do projeto do aplicativo mova'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/movaapp/movaapp3.webp',
-            imageDark: '/assets/projects/movaapp/movaapp3d.webp',
-            alt: 'Design of presentation of the mova app project'
+            imageDark: '/assets/projects/movaapp/movaapp3.webp',
+            alt: 'Design da apresentação do projeto do aplicativo mova'
           }
         ],
         prevProject: 'design-website',
@@ -678,7 +679,7 @@ export const languageEN = {
       },
       {
         id: crypto.randomUUID(),
-        month: 'July',
+        month: 'Julho',
         year: '2023',
         name: 'Lot',
         subname: 'Todo',
@@ -696,14 +697,14 @@ export const languageEN = {
             imageDark: '/assets/projects/lottodo/lottododpd.webp'
           }
         },
-        alt: 'Lot todo project thumbnail',
+        alt: 'Miniatura do projeto Lot Todo',
         code: 'https://github.com/No-Country/C12-38-M-REACTNATIVE',
         demo: 'https://expo.dev/@florencia09/lot-todo?serviceType=classic&distribution=expo-go',
         description:
-          'The application seeks to offer a tool to potential users to organize their daily activities through lists of tasks divided by categories and with the possibility of visualizing them on a daily, weekly and monthly basis; as well as a home screen where you can see at a glance the total number of tasks created. There is also the possibility of deleting these tasks or marking them as completed. Finally, you can register as a user, change your account data and profile picture.',
+          'O aplicativo busca oferecer uma ferramenta para que os usuários em potencial organizem suas atividades diárias por meio de listas de tarefas divididas por categorias e com a possibilidade de visualizá-las diariamente, semanalmente e mensalmente, além de uma tela inicial na qual é possível ver rapidamente o número total de tarefas criadas. Há também a possibilidade de excluir essas tarefas ou marcá-las como concluídas. Por fim, você pode se registrar como usuário, alterar os dados da conta e a foto do perfil.',
         project: 'Lot Todo',
-        date: 'July 2023',
-        role: 'Frontend Developer',
+        date: 'Julho 2023',
+        role: 'Desenvolvedor Frontend',
         technologies: [
           'Javascript',
           ' React Native',
@@ -721,13 +722,13 @@ export const languageEN = {
         tools: ['ESLint', 'Prettier', 'Figma', 'Trello', 'Slack', 'Discord', 'Visual Studio Code', 'Git', 'Github'],
         video: '',
         info: {
-          code: 'Code',
+          code: 'Código',
           demo: 'Demo',
-          project: 'Project',
-          date: 'Date',
-          role: 'Role',
-          technologies: 'Technologies',
-          tools: 'Tools',
+          project: 'Projeto',
+          date: 'Data',
+          role: 'Função',
+          technologies: 'Tecnologias',
+          tools: 'Ferramentas',
           back: 'Back',
           next: 'Next'
         },
@@ -736,19 +737,19 @@ export const languageEN = {
             id: crypto.randomUUID(),
             image: '/assets/projects/lottodo/lottodo.webp',
             imageDark: '/assets/projects/lottodo/lottodod.webp',
-            alt: 'Design of presentation of the lot todo project'
+            alt: 'Design da apresentação do projeto lot todo'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/lottodo/lottodo2.webp',
             imageDark: '/assets/projects/lottodo/lottodo2d.webp',
-            alt: 'Design of presentation of the lot todo project'
+            alt: 'Design da apresentação do projeto lot todo'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/lottodo/lottodo3.webp',
             imageDark: '/assets/projects/lottodo/lottodo3d.webp',
-            alt: 'Design of presentation of the lot todo project'
+            alt: 'Design da apresentação do projeto lot todo'
           }
         ],
         prevProject: 'mova-app',
@@ -756,7 +757,7 @@ export const languageEN = {
       },
       {
         id: crypto.randomUUID(),
-        month: 'July',
+        month: 'Julho',
         year: '2023',
         name: 'Lawyer',
         subname: 'Website',
@@ -774,14 +775,14 @@ export const languageEN = {
             imageDark: '/assets/projects/lawyerwebsite/lawyerwebsitedpd.webp'
           }
         },
-        alt: 'Lawyer website project thumbnail',
+        alt: 'Miniatura do projeto do site do advogado',
         code: 'https://github.com/demattei-teo/Lawyer',
         demo: 'https://lawyerdev.vercel.app/',
         description:
-          'Website of a law firm that offers legal services to its clients. Where you can view information about their advice and quality legal representation to their clients respecting the ethical and deontological principles of the profession.',
+          'Site de um escritório de advocacia que oferece serviços jurídicos a seus clientes. Onde você pode visualizar informações sobre sua consultoria e representação legal de qualidade para seus clientes, respeitando os princípios éticos e deontológicos da profissão.',
         project: 'Lawyer Website',
-        date: 'July 2023',
-        role: 'Frontend Developer',
+        date: 'Julho 2023',
+        role: 'Desenvolvedor Frontend',
         technologies: [
           'Typescript',
           'Next',
@@ -797,13 +798,13 @@ export const languageEN = {
         tools: ['ESLint', 'Prettier', 'Figma', 'Notion', 'Discord', 'Visual Studio Code', 'Git', 'Github'],
         video: '',
         info: {
-          code: 'Code',
+          code: 'Código',
           demo: 'Demo',
-          project: 'Project',
-          date: 'Date',
-          role: 'Role',
-          technologies: 'Technologies',
-          tools: 'Tools',
+          project: 'Projeto',
+          date: 'Data',
+          role: 'Função',
+          technologies: 'Tecnologias',
+          tools: 'Ferramentas',
           back: 'Back',
           next: 'Next'
         },
@@ -812,19 +813,19 @@ export const languageEN = {
             id: crypto.randomUUID(),
             image: '/assets/projects/lawyerwebsite/lawyerwebsite.webp',
             imageDark: '/assets/projects/lawyerwebsite/lawyerwebsited.webp',
-            alt: 'Design of presentation of the lawyer website project'
+            alt: 'Design da apresentação do projeto do site do advogado'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/lawyerwebsite/lawyerwebsite2.webp',
             imageDark: '/assets/projects/lawyerwebsite/lawyerwebsite2d.webp',
-            alt: 'Design of presentation of the lawyer website project'
+            alt: 'Design da apresentação do projeto do site do advogado'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/lawyerwebsite/lawyerwebsite3.webp',
             imageDark: '/assets/projects/lawyerwebsite/lawyerwebsite3d.webp',
-            alt: 'Design of presentation of the lawyer website project'
+            alt: 'Design da apresentação do projeto do site do advogado'
           }
         ],
         prevProject: 'lot-todo',
@@ -832,7 +833,7 @@ export const languageEN = {
       },
       {
         id: crypto.randomUUID(),
-        month: 'May',
+        month: 'Maio',
         year: '2023',
         name: 'My',
         subname: 'Photos',
@@ -850,14 +851,14 @@ export const languageEN = {
             imageDark: '/assets/projects/myphotos/myphotosdpd.webp'
           }
         },
-        alt: 'My photos project thumbnail',
+        alt: 'Miniatura do projeto My photos',
         code: 'https://github.com/davidmedev222/my-photos',
         demo: 'https://myphotosdev.vercel.app/',
         description:
-          'Website designed exclusively to showcase photographs, focused on providing visitors with a captivating visual experience by presenting stunning images in a simple one-page layout.',
+          'Site projetado exclusivamente para exibir fotografias, com foco em proporcionar aos visitantes uma experiência visual cativante, apresentando imagens impressionantes em um layout simples de uma página.',
         project: 'My Photos',
         date: 'May 2023',
-        role: 'Frontend Developer',
+        role: 'Desenvolvedor Frontend',
         technologies: [
           'Typescript',
           'Next',
@@ -872,13 +873,13 @@ export const languageEN = {
         tools: ['ESLint', 'Prettier', 'Figma', 'Trello', 'Visual Studio Code', 'Git', 'Github'],
         video: '',
         info: {
-          code: 'Code',
+          code: 'Código',
           demo: 'Demo',
-          project: 'Project',
-          date: 'Date',
-          role: 'Role',
-          technologies: 'Technologies',
-          tools: 'Tools',
+          project: 'Projeto',
+          date: 'Data',
+          role: 'Função',
+          technologies: 'Tecnologias',
+          tools: 'Ferramentas',
           back: 'Back',
           next: 'Next'
         },
@@ -887,19 +888,19 @@ export const languageEN = {
             id: crypto.randomUUID(),
             image: '/assets/projects/myphotos/myphotos.webp',
             imageDark: '/assets/projects/myphotos/myphotosd.webp',
-            alt: 'Design of presentation of the my photos project'
+            alt: 'Design da apresentação do projeto my photos'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/myphotos/myphotos2.webp',
             imageDark: '/assets/projects/myphotos/myphotos2d.webp',
-            alt: 'Design of presentation of the my photos project'
+            alt: 'Design da apresentação do projeto my photos'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/myphotos/myphotos3.webp',
             imageDark: '/assets/projects/myphotos/myphotos3d.webp',
-            alt: 'Design of presentation of the my photos project'
+            alt: 'Design da apresentação do projeto my photos'
           }
         ],
         prevProject: 'lawyer-website',
@@ -907,7 +908,7 @@ export const languageEN = {
       },
       {
         id: crypto.randomUUID(),
-        month: 'March',
+        month: 'Março',
         year: '2023',
         name: 'Chat',
         subname: 'Box',
@@ -925,14 +926,14 @@ export const languageEN = {
             imageDark: '/assets/projects/chatbox/chatboxdpd.webp'
           }
         },
-        alt: 'Chat Box project thumbnail',
+        alt: 'Miniatura do projeto Chat Box',
         code: 'https://github.com/No-Country/S7-20-T-NODEREACT',
         demo: 'https://github.com/No-Country/S7-20-T-NODEREACT',
         description:
-          'A chat application that allows users to communicate with other users via text messages where users can create an account, change their settings and preferences.',
+          'Um aplicativo de bate-papo que permite que os usuários se comuniquem com outros usuários por meio de mensagens de texto, onde os usuários podem criar uma conta, alterar suas configurações e preferências.',
         project: 'Chat Box',
-        date: 'March 2023',
-        role: 'Frontend Developer',
+        date: 'Março 2023',
+        role: 'Desenvolvedor Frontend',
         technologies: [
           'Typescript',
           'React',
@@ -960,13 +961,13 @@ export const languageEN = {
         ],
         video: '',
         info: {
-          code: 'Code',
+          code: 'Código',
           demo: 'Demo',
-          project: 'Project',
-          date: 'Date',
-          role: 'Role',
-          technologies: 'Technologies',
-          tools: 'Tools',
+          project: 'Projeto',
+          date: 'Data',
+          role: 'Função',
+          technologies: 'Tecnologias',
+          tools: 'Ferramentas',
           back: 'Back',
           next: 'Next'
         },
@@ -975,19 +976,19 @@ export const languageEN = {
             id: crypto.randomUUID(),
             image: '/assets/projects/chatbox/chatbox.webp',
             imageDark: '/assets/projects/chatbox/chatboxd.webp',
-            alt: 'Design of presentation of the chat box project'
+            alt: 'Design da apresentação do projeto da caixa de bate-papo'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/chatbox/chatbox2.webp',
             imageDark: '/assets/projects/chatbox/chatbox2d.webp',
-            alt: 'Design of presentation of the chat box project'
+            alt: 'Design da apresentação do projeto da caixa de bate-papo'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/chatbox/chatbox3.webp',
             imageDark: '/assets/projects/chatbox/chatbox3d.webp',
-            alt: 'Design of presentation of the chat box project'
+            alt: 'Design da apresentação do projeto da caixa de bate-papo'
           }
         ],
         prevProject: 'my-photos',
@@ -995,7 +996,7 @@ export const languageEN = {
       },
       {
         id: crypto.randomUUID(),
-        month: 'March',
+        month: 'Março',
         year: '2023',
         name: 'Agency',
         subname: 'Website',
@@ -1013,25 +1014,25 @@ export const languageEN = {
             imageDark: '/assets/projects/agencywebsite/agencywebsitedpd.webp'
           }
         },
-        alt: 'Agency website project thumbnail',
+        alt: 'Miniatura do projeto do site da agência',
         code: 'https://github.com/davidmedev222/agency',
         demo: 'https://devagency.vercel.app/',
         description:
-          'Agency, modern website where you can see the projects, clients, services, jobs, and information about the agency.',
+          'Agência, site moderno onde você pode ver os projetos, clientes, serviços, trabalhos e informações sobre a agência.',
         project: 'Agency Website',
-        date: 'March 2023',
-        role: 'Frontend Developer',
+        date: 'Março 2023',
+        role: 'Desenvolvedor Frontend',
         technologies: ['Typescript', 'React', 'Styled Components', 'ViteJs', 'React Router Dom', 'Pnpm'],
         tools: ['ESLint', 'Figma', 'Trello', 'Visual Studio Code', 'Git', 'Github'],
         video: '',
         info: {
-          code: 'Code',
+          code: 'Código',
           demo: 'Demo',
-          project: 'Project',
-          date: 'Date',
-          role: 'Role',
-          technologies: 'Technologies',
-          tools: 'Tools',
+          project: 'Projeto',
+          date: 'Data',
+          role: 'Função',
+          technologies: 'Tecnologias',
+          tools: 'Ferramentas',
           back: 'Back',
           next: 'Next'
         },
@@ -1040,19 +1041,19 @@ export const languageEN = {
             id: crypto.randomUUID(),
             image: '/assets/projects/agencywebsite/agencywebsite.webp',
             imageDark: '/assets/projects/agencywebsite/agencywebsited.webp',
-            alt: 'Design of presentation of the agency website project'
+            alt: 'Design da apresentação do projeto do site da agência'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/agencywebsite/agencywebsite2.webp',
             imageDark: '/assets/projects/agencywebsite/agencywebsite2d.webp',
-            alt: 'Design of presentation of the agency website project'
+            alt: 'Design da apresentação do projeto do site da agência'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/agencywebsite/agencywebsite3.webp',
             imageDark: '/assets/projects/agencywebsite/agencywebsite3d.webp',
-            alt: 'Design of presentation of the agency website project'
+            alt: 'Design da apresentação do projeto do site da agência'
           }
         ],
         prevProject: 'chat-box',
@@ -1060,7 +1061,7 @@ export const languageEN = {
       },
       {
         id: crypto.randomUUID(),
-        month: 'January',
+        month: 'Janeiro',
         year: '2023',
         name: 'Custom',
         subname: 'Sports',
@@ -1078,14 +1079,14 @@ export const languageEN = {
             imageDark: '/assets/projects/customsports/customsportsdpd.webp'
           }
         },
-        alt: 'Custom Sports project thumbnail',
+        alt: 'Miniatura de projeto de esportes personalizados',
         code: 'https://github.com/No-Country/S6-14-T-MERN',
         demo: 'http://ec2-18-118-29-121.us-east-2.compute.amazonaws.com/',
         description:
-          'Custom Sports, online store of sports apparel, where you can design and buy the sports model, with the possibility to create and manage a personal user account.',
+          'Custom Sports, loja on-line de roupas esportivas, onde é possível projetar e comprar o modelo esportivo, com a possibilidade de criar e gerenciar uma conta de usuário pessoal.',
         project: 'Custom Sports',
-        date: 'January 2023',
-        role: 'Frontend Developer',
+        date: 'Janeiro 2023',
+        role: 'Desenvolvedor Frontend',
         technologies: [
           'Javascript',
           'React',
@@ -1121,13 +1122,13 @@ export const languageEN = {
         ],
         video: '',
         info: {
-          code: 'Code',
+          code: 'Código',
           demo: 'Demo',
-          project: 'Project',
-          date: 'Date',
-          role: 'Role',
-          technologies: 'Technologies',
-          tools: 'Tools',
+          project: 'Projeto',
+          date: 'Data',
+          role: 'Função',
+          technologies: 'Tecnologias',
+          tools: 'Ferramentas',
           back: 'Back',
           next: 'Next'
         },
@@ -1136,19 +1137,19 @@ export const languageEN = {
             id: crypto.randomUUID(),
             image: '/assets/projects/customsports/customsports.webp',
             imageDark: '/assets/projects/customsports/customsportsd.webp',
-            alt: 'Design of presentation of the custom sports project'
+            alt: 'Design da apresentação do projeto esportivo personalizado'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/customsports/customsports2.webp',
             imageDark: '/assets/projects/customsports/customsports2d.webp',
-            alt: 'Design of presentation of the custom sports project'
+            alt: 'Design da apresentação do projeto esportivo personalizado'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/customsports/customsports3.webp',
             imageDark: '/assets/projects/customsports/customsports3d.webp',
-            alt: 'Design of presentation of the custom sports project'
+            alt: 'Design da apresentação do projeto esportivo personalizado'
           }
         ],
         prevProject: 'agency-website',
@@ -1156,7 +1157,7 @@ export const languageEN = {
       },
       {
         id: crypto.randomUUID(),
-        month: 'January',
+        month: 'Janeiro',
         year: '2023',
         name: 'Apollo',
         subname: 'NFT',
@@ -1174,25 +1175,25 @@ export const languageEN = {
             imageDark: '/assets/projects/apollonft/apollonftdpd.webp'
           }
         },
-        alt: 'Apollo NFT project thumbnail',
+        alt: 'Miniatura do projeto Apollo NFT',
         code: 'https://github.com/davidmedev222/landing-apollonft-react',
         demo: 'https://apollonft.vercel.app/',
         description:
-          'Apollo NFT, Website where you can find information about the nft market and information on how to create your own nft from the page.',
+          'Apollo NFT, site onde você pode encontrar informações sobre o mercado de nft e informações sobre como criar seu próprio nft a partir da página.',
         project: 'Apollo NFT',
-        date: 'January 2023',
-        role: 'Frontend Developer',
+        date: 'Janeiro 2023',
+        role: 'Desenvolvedor Frontend',
         technologies: ['Javascript', 'React', 'Sass', 'ViteJs', 'React Router Dom', 'CommitLint', 'Husky', 'Pnpm'],
         tools: ['ESLint', 'Figma', 'Trello', 'Visual Studio Code', 'Git', 'Github'],
         video: '',
         info: {
-          code: 'Code',
+          code: 'Código',
           demo: 'Demo',
-          project: 'Project',
-          date: 'Date',
-          role: 'Role',
-          technologies: 'Technologies',
-          tools: 'Tools',
+          project: 'Projeto',
+          date: 'Data',
+          role: 'Função',
+          technologies: 'Tecnologias',
+          tools: 'Ferramentas',
           back: 'Back',
           next: 'Next'
         },
@@ -1201,19 +1202,19 @@ export const languageEN = {
             id: crypto.randomUUID(),
             image: '/assets/projects/apollonft/apollonft.webp',
             imageDark: '/assets/projects/apollonft/apollonftd.webp',
-            alt: 'Design of presentation of the union solidaria project'
+            alt: 'Design de apresentação do projeto union solidaria'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/apollonft/apollonft2.webp',
             imageDark: '/assets/projects/apollonft/apollonft2d.webp',
-            alt: 'Design of presentation of the union solidaria project'
+            alt: 'Design de apresentação do projeto union solidaria'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/apollonft/apollonft3.webp',
             imageDark: '/assets/projects/apollonft/apollonft3d.webp',
-            alt: 'Design of presentation of the union solidaria project'
+            alt: 'Design de apresentação do projeto union solidaria'
           }
         ],
         prevProject: 'custom-sports',
@@ -1221,7 +1222,7 @@ export const languageEN = {
       },
       {
         id: crypto.randomUUID(),
-        month: 'December',
+        month: 'Dezembro',
         year: '2022',
         name: 'Blizt',
         subname: 'Website',
@@ -1239,14 +1240,14 @@ export const languageEN = {
             imageDark: '/assets/projects/bliztwebsite/bliztwebsitedpd.webp'
           }
         },
-        alt: 'Blizt Website project thumbnail',
+        alt: 'Miniatura do projeto do site Blizt',
         code: 'https://github.com/davidmedev222/landing-blizt-react',
         demo: 'https://blizt.vercel.app/',
         description:
-          'Blizt website, where you can see information about the company, services, projects and how to contact the brand.',
+          'Site da Blizt, onde é possível ver informações sobre a empresa, serviços, projetos e como entrar em contato com a marca.',
         project: 'Blizt Website',
-        date: 'December 2022',
-        role: 'Frontend Developer',
+        date: 'Dezembro 2022',
+        role: 'Desenvolvedor Frontend',
         technologies: [
           'Javascript',
           'React',
@@ -1260,13 +1261,13 @@ export const languageEN = {
         tools: ['ESLint', 'Figma', 'Trello', 'Visual Studio Code', 'Git', 'Github'],
         video: '',
         info: {
-          code: 'Code',
+          code: 'Código',
           demo: 'Demo',
-          project: 'Project',
-          date: 'Date',
-          role: 'Role',
-          technologies: 'Technologies',
-          tools: 'Tools',
+          project: 'Projeto',
+          date: 'Data',
+          role: 'Função',
+          technologies: 'Tecnologias',
+          tools: 'Ferramentas',
           back: 'Back',
           next: 'Next'
         },
@@ -1275,19 +1276,19 @@ export const languageEN = {
             id: crypto.randomUUID(),
             image: '/assets/projects/bliztwebsite/bliztwebsite.webp',
             imageDark: '/assets/projects/bliztwebsite/bliztwebsited.webp',
-            alt: 'Design of presentation of the blizt website project'
+            alt: 'Design da apresentação do projeto do site da blizt'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/bliztwebsite/bliztwebsite2.webp',
             imageDark: '/assets/projects/bliztwebsite/bliztwebsite2d.webp',
-            alt: 'Design of presentation of the blizt website project'
+            alt: 'Design da apresentação do projeto do site da blizt'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/bliztwebsite/bliztwebsite.webp',
             imageDark: '/assets/projects/bliztwebsite/bliztwebsited.webp',
-            alt: 'Design of presentation of the blizt website project'
+            alt: 'Design da apresentação do projeto do site da blizt'
           }
         ],
         prevProject: 'apollo-nft',
@@ -1295,7 +1296,7 @@ export const languageEN = {
       },
       {
         id: crypto.randomUUID(),
-        month: 'November',
+        month: 'Novembro',
         year: '2022',
         name: 'Stadium',
         subname: 'Sports',
@@ -1313,25 +1314,25 @@ export const languageEN = {
             imageDark: '/assets/projects/stadiumsports/stadiumsportsdpd.webp'
           }
         },
-        alt: 'Stadium Sports project thumbnail',
+        alt: 'Miniatura do projeto Stadium Sports',
         code: 'https://github.com/No-Country/C8-73-T-RN',
         demo: 'https://e-stadium.vercel.app/',
         description:
-          'Online gaming and e-sports platform for gamers and tournament organizers where gamers can discover tournaments and participate, and tournament organizers can create and manage their tournaments and build their own communities.',
+          'Plataforma de jogos on-line e e-sports para jogadores e organizadores de torneios, onde os jogadores podem descobrir torneios e participar, e os organizadores de torneios podem criar e gerenciar seus torneios e construir suas próprias comunidades.',
         project: 'Stadium Sports',
-        date: 'November 2022',
-        role: 'Frontend Developer',
+        date: 'Novembro 2022',
+        role: 'Desenvolvedor Frontend',
         technologies: ['Javascript', 'React', 'Sass', 'ViteJs', 'React Router Dom', 'Firebase', 'Glider Js', 'Npm'],
         tools: ['Figma', 'Trello', 'Slack', 'Discord', 'Visual Studio Code', 'Git', 'Github'],
         video: '',
         info: {
-          code: 'Code',
+          code: 'Código',
           demo: 'Demo',
-          project: 'Project',
-          date: 'Date',
-          role: 'Role',
-          technologies: 'Technologies',
-          tools: 'Tools',
+          project: 'Projeto',
+          date: 'Data',
+          role: 'Função',
+          technologies: 'Tecnologias',
+          tools: 'Ferramentas',
           back: 'Back',
           next: 'Next'
         },
@@ -1340,19 +1341,19 @@ export const languageEN = {
             id: crypto.randomUUID(),
             image: '/assets/projects/stadiumsports/stadiumsports.webp',
             imageDark: '/assets/projects/stadiumsports/stadiumsportsd.webp',
-            alt: 'Design of presentation of the stadium sports project'
+            alt: 'Design de apresentação do projeto esportivo do estádio'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/stadiumsports/stadiumsports2.webp',
             imageDark: '/assets/projects/stadiumsports/stadiumsports2d.webp',
-            alt: 'Design of presentation of the stadium sports project'
+            alt: 'Design de apresentação do projeto esportivo do estádio'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/stadiumsports/stadiumsports3.webp',
             imageDark: '/assets/projects/stadiumsports/stadiumsports3d.webp',
-            alt: 'Design of presentation of the stadium sports project'
+            alt: 'Design de apresentação do projeto esportivo do estádio'
           }
         ],
         prevProject: 'blizt-website',
@@ -1360,7 +1361,7 @@ export const languageEN = {
       },
       {
         id: crypto.randomUUID(),
-        month: 'October',
+        month: 'Outubro',
         year: '2022',
         name: 'Jordan',
         subname: 'Store',
@@ -1378,14 +1379,14 @@ export const languageEN = {
             imageDark: '/assets/projects/jordanstore/jordanstoredpd.webp'
           }
         },
-        alt: 'Jordan Store project thumbnail',
+        alt: 'Miniatura do projeto da Jordan Store',
         code: 'https://github.com/davidmedev222/ecommerce-jordan-react',
         demo: 'https://jordanstore.vercel.app/',
         description:
-          'Online sneaker store for people with a Jordan brand preference, where they will be able to purchase and manage their own account on the website.',
+          'Loja on-line de tênis para pessoas com preferência pela marca Jordan, onde poderão comprar e gerenciar sua própria conta no site.',
         project: 'Jordan Store',
-        date: 'October 2022',
-        role: 'Frontend Developer',
+        date: 'Outubro 2022',
+        role: 'Desenvolvedor Frontend',
         technologies: [
           'Javascript',
           'React',
@@ -1400,13 +1401,13 @@ export const languageEN = {
         tools: ['ESLint', 'Trello', 'Visual Studio Code', 'Git', 'Github'],
         video: '',
         info: {
-          code: 'Code',
+          code: 'Código',
           demo: 'Demo',
-          project: 'Project',
-          date: 'Date',
-          role: 'Role',
-          technologies: 'Technologies',
-          tools: 'Tools',
+          project: 'Projeto',
+          date: 'Data',
+          role: 'Função',
+          technologies: 'Tecnologias',
+          tools: 'Ferramentas',
           back: 'Back',
           next: 'Next'
         },
@@ -1415,19 +1416,19 @@ export const languageEN = {
             id: crypto.randomUUID(),
             image: '/assets/projects/jordanstore/jordanstore.webp',
             imageDark: '/assets/projects/jordanstore/jordanstored.webp',
-            alt: 'Design of presentation of the jordan store project'
+            alt: 'Design de apresentação do projeto da loja jordan'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/jordanstore/jordanstore2.webp',
             imageDark: '/assets/projects/jordanstore/jordanstore2d.webp',
-            alt: 'Design of presentation of the jordan store project'
+            alt: 'Design de apresentação do projeto da loja jordan'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/jordanstore/jordanstore3.webp',
             imageDark: '/assets/projects/jordanstore/jordanstore3d.webp',
-            alt: 'Design of presentation of the jordan store project'
+            alt: 'Design de apresentação do projeto da loja jordan'
           }
         ],
         prevProject: 'stadium-sports',
@@ -1436,183 +1437,239 @@ export const languageEN = {
     ]
   },
   about: {
-    title: 'About Me',
+    title: 'Sobre Mim',
     name: 'David',
     lastname: 'Mamani',
-    paragraph: `Web developer and mentor with 2 years of experience, specialized in Frontend with a solid focus on creating modern and functional user interfaces using best practices and industry standards.
+    paragraph: `Desenvolvedor web e mentor com 2 anos de experiência, especializado em Frontend com um sólido foco na criação de interfaces de usuário modernas e funcionais usando práticas recomendadas e padrões do setor.
 
-    I participated in multiple collaborative teams formed by Startup No Country Argentina. These experiences allowed me to develop effective communication and collaboration skills, as well as adaptability to work in dynamic environments.
+    Participei de várias equipes colaborativas formadas pela Startup No Country Argentina. Essas experiências me permitiram desenvolver habilidades eficazes de comunicação e colaboração, além de adaptabilidade para trabalhar em ambientes dinâmicos.
     
-    As a professional, I am constantly updating my knowledge to keep up with the latest trends and technologies.
+    Como profissional, estou sempre atualizando meus conhecimentos para acompanhar as últimas tendências e tecnologias.
     
-    I am currently looking for a job as a Frontend Developer or similar positions.`,
+    No momento, estou procurando um emprego como desenvolvedor front-end ou cargos semelhantes.`,
     experience: {
-      title: 'Projects',
+      title: 'Projetos',
       categories: [
-        { id: crypto.randomUUID(), title: 'Personal', quantity: 6 },
-        { id: crypto.randomUUID(), title: 'Collaborative', quantity: 7 },
-        { id: crypto.randomUUID(), title: 'Team Leader', quantity: 2 }
+        { id: crypto.randomUUID(), title: 'Pessoal', quantity: 6 },
+        { id: crypto.randomUUID(), title: 'Colaborativas', quantity: 7 },
+        { id: crypto.randomUUID(), title: 'Líder de Equipe', quantity: 2 }
       ]
     },
     skills: {
-      title: 'Skills',
+      title: 'Habilidades',
       categories: [
         {
           id: crypto.randomUUID(),
-          title: 'Languages & Preprocessors',
+          title: 'Linguagens e Pré-processadores',
           logos: [
-            { id: crypto.randomUUID(), image: '/assets/skills/logohtml.webp', alt: 'Technology logo html' },
-            { id: crypto.randomUUID(), image: '/assets/skills/logocss.webp', alt: 'Technology logo css' },
+            { id: crypto.randomUUID(), image: '/assets/skills/logohtml.webp', alt: 'Logotipo da tecnologia html' },
+            { id: crypto.randomUUID(), image: '/assets/skills/logocss.webp', alt: 'Logotipo da tecnologia css' },
             {
               id: crypto.randomUUID(),
               image: '/assets/skills/logojavascript.webp',
-              alt: 'Technology logo javascript'
+              alt: 'Logotipo da tecnologia javascript'
             },
             {
               id: crypto.randomUUID(),
               image: '/assets/skills/logotypescript.webp',
-              alt: 'Technology logo typescript'
+              alt: 'Logotipo da tecnologia typescript'
             },
-            { id: crypto.randomUUID(), image: '/assets/skills/logosass.webp', alt: 'Technology logo sass' },
-            { id: crypto.randomUUID(), image: '/assets/skills/logopostcss.webp', alt: 'Technology logo postcss' },
-            { id: crypto.randomUUID(), image: '/assets/skills/logomarkdown.webp', alt: 'Technology logo markdown' }
+            { id: crypto.randomUUID(), image: '/assets/skills/logosass.webp', alt: 'Logotipo da tecnologia sass' },
+            {
+              id: crypto.randomUUID(),
+              image: '/assets/skills/logopostcss.webp',
+              alt: 'Logotipo da tecnologia postcss'
+            },
+            {
+              id: crypto.randomUUID(),
+              image: '/assets/skills/logomarkdown.webp',
+              alt: 'Logotipo da tecnologia markdown'
+            }
           ]
         },
         {
           id: crypto.randomUUID(),
           title: 'Build Tools & Bundlers',
           logos: [
-            { id: crypto.randomUUID(), image: '/assets/skills/logobabel.webp', alt: 'Technology logo babeljs' },
-            { id: crypto.randomUUID(), image: '/assets/skills/logovite.webp', alt: 'Technology logo vitejs' }
+            { id: crypto.randomUUID(), image: '/assets/skills/logobabel.webp', alt: 'Logotipo da tecnologia babeljs' },
+            { id: crypto.randomUUID(), image: '/assets/skills/logovite.webp', alt: 'Logotipo da tecnologia vitejs' }
           ]
         },
         {
           id: crypto.randomUUID(),
           title: 'Frameworks',
           logos: [
-            { id: crypto.randomUUID(), image: '/assets/skills/logonext.webp', alt: 'Technology logo nextjs' },
+            { id: crypto.randomUUID(), image: '/assets/skills/logonext.webp', alt: 'Logotipo da tecnologia nextjs' },
             {
               id: crypto.randomUUID(),
               image: '/assets/skills/logotailwindcss.webp',
-              alt: 'Technology logo tailwind css'
+              alt: 'Logotipo da tecnologia tailwind css'
             },
-            { id: crypto.randomUUID(), image: '/assets/skills/logonode.webp', alt: 'Technology logo node js' },
+            { id: crypto.randomUUID(), image: '/assets/skills/logonode.webp', alt: 'Logotipo da tecnologia node js' },
             {
               id: crypto.randomUUID(),
               title: 'expo',
               image: '/assets/skills/logoexpo.webp',
               imageDark: '/assets/skills/logoexpod.webp',
-              alt: 'Technology logo expo'
-            },
-            { id: crypto.randomUUID(), image: '/assets/skills/logofirebase.webp', alt: 'Technology logo firebase' }
-          ]
-        },
-        {
-          id: crypto.randomUUID(),
-          title: 'Libraries',
-          logos: [
-            { id: crypto.randomUUID(), image: '/assets/skills/logoreact.webp', alt: 'Technology logo react' },
-            { id: crypto.randomUUID(), image: '/assets/skills/logomui.webp', alt: 'Technology logo material ui' },
-            { id: crypto.randomUUID(), image: '/assets/skills/logobootstrap.webp', alt: 'Technology logo bootstrap' },
-            {
-              id: crypto.randomUUID(),
-              title: 'cssmodules',
-              image: '/assets/skills/logocssmodules.webp',
-              imageDark: '/assets/skills/logocssmodulesd.webp',
-              alt: 'Technology logo css modules'
-            },
-            { id: crypto.randomUUID(), image: '/assets/skills/logoredux.webp', alt: 'Technology logo redux toolkit' },
-            { id: crypto.randomUUID(), image: '/assets/skills/logoaxios.webp', alt: 'Technology logo axios' },
-            { id: crypto.randomUUID(), image: '/assets/skills/logomongoose.webp', alt: 'Technology logo mongoose' },
-            { id: crypto.randomUUID(), image: '/assets/skills/logostripe.webp', alt: 'Technology logo stripe' },
-            {
-              id: crypto.randomUUID(),
-              title: 'commitlint',
-              image: '/assets/skills/logocommitlint.webp',
-              imageDark: '/assets/skills/logocommitlintd.webp',
-              alt: 'Technology logo commitlint'
+              alt: 'Logotipo da tecnologia expo'
             },
             {
               id: crypto.randomUUID(),
-              image: '/assets/skills/logoreactrouterdom.webp',
-              alt: 'Technology logo react router dom'
-            },
-            {
-              id: crypto.randomUUID(),
-              image: '/assets/skills/logoreacthookform.webp',
-              alt: 'Technology logo react hook form'
-            },
-            { id: crypto.randomUUID(), image: '/assets/skills/logohusky.webp', alt: 'Technology logo husky' },
-            {
-              id: crypto.randomUUID(),
-              title: 'swr',
-              image: '/assets/skills/logoswr.webp',
-              imageDark: '/assets/skills/logoswrd.webp',
-              alt: 'Technology logo swr'
-            },
-            { id: crypto.randomUUID(), image: '/assets/skills/logozustand.webp', alt: 'Technology logo zustand' },
-            {
-              id: crypto.randomUUID(),
-              title: 'styledcomponents',
-              image: '/assets/skills/logostyledcomponents.webp',
-              imageDark: '/assets/skills/logostyledcomponentsd.webp',
-              alt: 'Technology logo styled components'
+              image: '/assets/skills/logofirebase.webp',
+              alt: 'Logotipo da tecnologia firebase'
             }
           ]
         },
         {
           id: crypto.randomUUID(),
-          title: 'Package Managers',
+          title: 'Bibliotecas',
           logos: [
-            { id: crypto.randomUUID(), image: '/assets/skills/logopnpm.webp', alt: 'Technology logo pnpm' },
-            { id: crypto.randomUUID(), image: '/assets/skills/logonpm.webp', alt: 'Technology logo npm' }
+            { id: crypto.randomUUID(), image: '/assets/skills/logoreact.webp', alt: 'Logotipo da tecnologia react' },
+            {
+              id: crypto.randomUUID(),
+              image: '/assets/skills/logomui.webp',
+              alt: 'Logotipo da tecnologia material ui'
+            },
+            {
+              id: crypto.randomUUID(),
+              image: '/assets/skills/logobootstrap.webp',
+              alt: 'Logotipo da tecnologia bootstrap'
+            },
+            {
+              id: crypto.randomUUID(),
+              title: 'cssmodules',
+              image: '/assets/skills/logocssmodules.webp',
+              imageDark: '/assets/skills/logocssmodulesd.webp',
+              alt: 'Logotipo da tecnologia css modules'
+            },
+            {
+              id: crypto.randomUUID(),
+              image: '/assets/skills/logoredux.webp',
+              alt: 'Logotipo da tecnologia redux toolkit'
+            },
+            { id: crypto.randomUUID(), image: '/assets/skills/logoaxios.webp', alt: 'Logotipo da tecnologia axios' },
+            {
+              id: crypto.randomUUID(),
+              image: '/assets/skills/logomongoose.webp',
+              alt: 'Logotipo da tecnologia mongoose'
+            },
+            { id: crypto.randomUUID(), image: '/assets/skills/logostripe.webp', alt: 'Logotipo da tecnologia stripe' },
+            {
+              id: crypto.randomUUID(),
+              title: 'commitlint',
+              image: '/assets/skills/logocommitlint.webp',
+              imageDark: '/assets/skills/logocommitlintd.webp',
+              alt: 'Logotipo da tecnologia commitlint'
+            },
+            {
+              id: crypto.randomUUID(),
+              image: '/assets/skills/logoreactrouterdom.webp',
+              alt: 'Logotipo da tecnologia react router dom'
+            },
+            {
+              id: crypto.randomUUID(),
+              image: '/assets/skills/logoreacthookform.webp',
+              alt: 'Logotipo da tecnologia react hook form'
+            },
+            { id: crypto.randomUUID(), image: '/assets/skills/logohusky.webp', alt: 'Logotipo da tecnologia husky' },
+            {
+              id: crypto.randomUUID(),
+              title: 'swr',
+              image: '/assets/skills/logoswr.webp',
+              imageDark: '/assets/skills/logoswrd.webp',
+              alt: 'Logotipo da tecnologia swr'
+            },
+            {
+              id: crypto.randomUUID(),
+              image: '/assets/skills/logozustand.webp',
+              alt: 'Logotipo da tecnologia zustand'
+            },
+            {
+              id: crypto.randomUUID(),
+              title: 'styledcomponents',
+              image: '/assets/skills/logostyledcomponents.webp',
+              imageDark: '/assets/skills/logostyledcomponentsd.webp',
+              alt: 'Logotipo da tecnologia styled components'
+            }
           ]
         },
         {
           id: crypto.randomUUID(),
-          title: 'Databases',
+          title: 'Gerentes de Pacotes',
           logos: [
-            { id: crypto.randomUUID(), image: '/assets/skills/logomongodb.webp', alt: 'Technology logo mongo db' },
-            { id: crypto.randomUUID(), image: '/assets/skills/logofirebase.webp', alt: 'Technology logo firebase' }
+            { id: crypto.randomUUID(), image: '/assets/skills/logopnpm.webp', alt: 'Logotipo da tecnologia pnpm' },
+            { id: crypto.randomUUID(), image: '/assets/skills/logonpm.webp', alt: 'Logotipo da tecnologia npm' }
           ]
         },
         {
           id: crypto.randomUUID(),
-          title: 'Tools & Linters',
+          title: 'Bancos de Dados',
           logos: [
-            { id: crypto.randomUUID(), image: '/assets/skills/logotrello.webp', alt: 'Technology logo trello' },
-            { id: crypto.randomUUID(), image: '/assets/skills/logofigma.webp', alt: 'Technology logo figma' },
-            { id: crypto.randomUUID(), image: '/assets/skills/logomiro.webp', alt: 'Technology logo miro' },
-            { id: crypto.randomUUID(), image: '/assets/skills/logorapidapi.webp', alt: 'Technology logo rapid api' },
-            { id: crypto.randomUUID(), image: '/assets/skills/logogit.webp', alt: 'Technology logo git' },
+            {
+              id: crypto.randomUUID(),
+              image: '/assets/skills/logomongodb.webp',
+              alt: 'Logotipo da tecnologia mongo db'
+            },
+            {
+              id: crypto.randomUUID(),
+              image: '/assets/skills/logofirebase.webp',
+              alt: 'Logotipo da tecnologia firebase'
+            }
+          ]
+        },
+        {
+          id: crypto.randomUUID(),
+          title: 'Ferramentas',
+          logos: [
+            { id: crypto.randomUUID(), image: '/assets/skills/logotrello.webp', alt: 'Logotipo da tecnologia trello' },
+            { id: crypto.randomUUID(), image: '/assets/skills/logofigma.webp', alt: 'Logotipo da tecnologia figma' },
+            { id: crypto.randomUUID(), image: '/assets/skills/logomiro.webp', alt: 'Logotipo da tecnologia miro' },
+            {
+              id: crypto.randomUUID(),
+              image: '/assets/skills/logorapidapi.webp',
+              alt: 'Logotipo da tecnologia rapid api'
+            },
+            { id: crypto.randomUUID(), image: '/assets/skills/logogit.webp', alt: 'Logotipo da tecnologia git' },
             {
               id: crypto.randomUUID(),
               title: 'github',
               image: '/assets/skills/logogithub.webp',
               imageDark: '/assets/skills/logogithubd.webp',
-              alt: 'Technology logo github'
+              alt: 'Logotipo da tecnologia github'
             },
-            { id: crypto.randomUUID(), image: '/assets/skills/logocanva.webp', alt: 'Technology logo canva' },
-            { id: crypto.randomUUID(), image: '/assets/skills/logoslack.webp', alt: 'Technology logo slack' },
-            { id: crypto.randomUUID(), image: '/assets/skills/logonotion.webp', alt: 'Technology logo notion' },
-            { id: crypto.randomUUID(), image: '/assets/skills/logodiscord.webp', alt: 'Technology logo discord' },
+            { id: crypto.randomUUID(), image: '/assets/skills/logocanva.webp', alt: 'Logotipo da tecnologia canva' },
+            { id: crypto.randomUUID(), image: '/assets/skills/logoslack.webp', alt: 'Logotipo da tecnologia slack' },
+            { id: crypto.randomUUID(), image: '/assets/skills/logonotion.webp', alt: 'Logotipo da tecnologia notion' },
+            {
+              id: crypto.randomUUID(),
+              image: '/assets/skills/logodiscord.webp',
+              alt: 'Logotipo da tecnologia discord'
+            },
             {
               id: crypto.randomUUID(),
               image: '/assets/skills/logovisualstudiocode.webp',
-              alt: 'Technology logo visual studio code'
+              alt: 'Logotipo da tecnologia visual studio code'
             },
-            { id: crypto.randomUUID(), image: '/assets/skills/logowordpress.webp', alt: 'Technology logo wordpress' },
-            { id: crypto.randomUUID(), image: '/assets/skills/logoeslint.webp', alt: 'Technology logo eslint' },
-            { id: crypto.randomUUID(), image: '/assets/skills/logoprettier.webp', alt: 'Technology logo prettier' }
+            {
+              id: crypto.randomUUID(),
+              image: '/assets/skills/logowordpress.webp',
+              alt: 'Logotipo da tecnologia wordpress'
+            },
+            { id: crypto.randomUUID(), image: '/assets/skills/logoeslint.webp', alt: 'Logotipo da tecnologia eslint' },
+            {
+              id: crypto.randomUUID(),
+              image: '/assets/skills/logoprettier.webp',
+              alt: 'Logotipo da tecnologia prettier'
+            }
           ]
         }
       ]
     }
   },
   contact: {
-    title: 'Contact',
+    title: 'Contato',
     social: {
-      paragraph: 'I invite you to connect through my social networks.',
+      paragraph: 'Convido-o a se conectar por meio de minhas redes sociais.',
       media: [
         {
           id: crypto.randomUUID(),
@@ -1635,28 +1692,28 @@ export const languageEN = {
       ]
     },
     contact: {
-      paragraph: 'Or contact me by Gmail.',
-      name: 'Name',
-      email: 'Email',
-      message: 'Message',
+      paragraph: 'Ou entre em contato comigo pelo E-mail.',
+      name: 'Nome',
+      email: 'E-mail',
+      message: 'Mensagem',
       errors: {
         name: {
-          required: 'Please enter your name.',
-          min: 'The name is too short. Minimum 3 characters.'
+          required: 'Digite seu nome.',
+          min: 'O nome é muito curto. Mínimo de 3 caracteres.'
         },
         email: {
-          format: 'Enter a valid email address.',
-          required: 'Please enter your email address.',
-          min: 'The email is too short. Minimum 5 characters.'
+          format: 'Digite um endereço de e-mail válido.',
+          required: 'Digite seu endereço de e-mail.',
+          min: 'O e-mail é muito curto. Mínimo de 5 caracteres.'
         },
         message: {
-          required: 'Please enter your message.',
-          min: 'The message is too short. Minimum 20 characters.'
+          required: 'Digite sua mensagem.',
+          min: 'A mensagem é muito curta. Mínimo de 20 caracteres.'
         }
       },
-      check: 'It was sent correctly, thank you!',
-      alert: 'An error occurred.',
-      button: 'Submit'
+      check: 'Ele foi enviado corretamente, obrigado!',
+      alert: 'Ocorreu um erro.',
+      button: 'Enviar'
     }
   },
   footer: {
@@ -1664,14 +1721,14 @@ export const languageEN = {
       info: {
         title: 'Info',
         links: [
-          { id: crypto.randomUUID(), href: Routes.home, title: 'Home' },
-          { id: crypto.randomUUID(), href: Routes.projects, title: 'Projects' },
-          { id: crypto.randomUUID(), href: Routes.about, title: 'About Me' },
-          { id: crypto.randomUUID(), href: Routes.contact, title: 'Contact' }
+          { id: crypto.randomUUID(), href: Routes.home, title: 'Início' },
+          { id: crypto.randomUUID(), href: Routes.projects, title: 'Projetos' },
+          { id: crypto.randomUUID(), href: Routes.about, title: 'Sobre Mim' },
+          { id: crypto.randomUUID(), href: Routes.contact, title: 'Contato' }
         ]
       },
       contact: {
-        title: 'Contact',
+        title: 'Contato',
         media: [
           {
             id: crypto.randomUUID(),
@@ -1691,6 +1748,8 @@ export const languageEN = {
         ]
       }
     },
-    copyright: '© Davidmedev. All rights reserved.'
+    copyright: '© Davidmedev. Todos os direitos reservados.'
   }
 }
+
+export default dictionary

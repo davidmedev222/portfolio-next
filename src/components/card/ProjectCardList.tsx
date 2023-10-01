@@ -1,3 +1,4 @@
+import { IProject } from '@/models'
 import { languageEN } from '@/utils/const'
 import clsx from 'clsx'
 import { Fragment } from 'react'
@@ -5,23 +6,27 @@ import Divider from '../divider/Divider'
 import ProjectCard from './ProjectCard'
 
 interface Props {
-  variant?: 'highlights' | 'all'
+  variant: 'highlights' | 'all'
+  highlightsProjects?: IProject[]
+  allProjects?: IProject[]
 }
 
-function ProjectCardList({ variant }: Props) {
+function ProjectCardList({ variant, allProjects, highlightsProjects }: Props) {
   const classes = clsx(variant === 'highlights' && 'hidden md:block')
 
   return (
     <section className={classes}>
       {variant === 'highlights' &&
-        languageEN.home.projects.map((project) => (
+        highlightsProjects &&
+        highlightsProjects.map((project) => (
           <Fragment key={project.id}>
             <ProjectCard project={project} />
             <Divider color='box' direction='horizontal' />
           </Fragment>
         ))}
       {variant === 'all' &&
-        languageEN.projects.projects.map((project, index) => {
+        allProjects &&
+        allProjects.map((project, index) => {
           const isLastProject = index === languageEN.projects.projects.length - 1
 
           return (

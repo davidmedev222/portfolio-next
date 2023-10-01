@@ -1,5 +1,5 @@
 'use client'
-import { languageEN } from '@/utils/const'
+import { IProject } from '@/models'
 import 'swiper/css'
 import 'swiper/css/effect-coverflow'
 import 'swiper/css/pagination'
@@ -7,7 +7,11 @@ import { EffectCoverflow, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import ProjectCard from '../card/ProjectCard'
 
-function ProjectCarousel() {
+interface Props {
+  projects: IProject[]
+}
+
+function ProjectCarousel({ projects }: Props) {
   return (
     <Swiper
       modules={[Pagination, EffectCoverflow]}
@@ -26,7 +30,7 @@ function ProjectCarousel() {
       }}
       className='md:!hidden'
     >
-      {languageEN.home.projects.map((project) => (
+      {projects.map((project) => (
         <SwiperSlide key={project.id}>
           <ProjectCard project={project} />
         </SwiperSlide>

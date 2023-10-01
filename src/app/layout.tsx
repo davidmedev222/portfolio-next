@@ -1,4 +1,3 @@
-import { Footer, Header } from '@/components'
 import { benzin, ego, tahoma } from '../styles/fonts'
 import '../styles/globals.css'
 import Providers from './providers'
@@ -16,11 +15,7 @@ function RootLayout({ children }: Props) {
   return (
     <html lang='en' suppressHydrationWarning className={`${benzin.variable} ${ego.variable} ${tahoma.variable}`}>
       <body className='min-h-screen bg-white font-tahoma text-black dark:bg-black dark:text-white'>
-        <Providers>
-          <Header />
-          {children}
-          <Footer />
-        </Providers>
+        <Providers>{children}</Providers>
       </body>
     </html>
   )

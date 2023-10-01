@@ -1,10 +1,14 @@
 'use client'
-import { languageEN } from '@/utils/const'
+import { Header } from '@/models'
 import clsx from 'clsx'
 import Link, { LinkProps } from 'next/link'
 import { usePathname } from 'next/navigation'
 
-function Navbar() {
+interface NavbarProps {
+  links: Header['links']
+}
+
+function Navbar({ links }: NavbarProps) {
   const classes = {
     nav: clsx('hidden lg:block'),
     items: clsx('flex gap-x-1.5 text-sm uppercase')
@@ -13,7 +17,7 @@ function Navbar() {
   return (
     <nav className={classes.nav}>
       <ul className={classes.items}>
-        {languageEN.header.links.map((link) => (
+        {links.map((link) => (
           <li key={link.id}>
             <NavLink href={link.href}>{link.title}</NavLink>
           </li>

@@ -1,12 +1,16 @@
 'use client'
 import { CloseIcon, Divider, MenuIcon } from '@/components'
 import { useToggle } from '@/hooks'
-import { languageEN } from '@/utils/const'
+import { Header } from '@/models'
 import clsx from 'clsx'
 import { Fragment } from 'react'
 import MenuLink from './MenuLink'
 
-function HamburgerMenu() {
+interface Props {
+  links: Header['links']
+}
+
+function HamburgerMenu({ links }: Props) {
   const { state: isOpen, toggleState: toggleHamburgerMenu } = useToggle()
 
   const classes = {
@@ -27,14 +31,12 @@ function HamburgerMenu() {
       <div className={classes.backdrop}>
         <div className={classes.menu}>
           <div className={classes.links}>
-            {languageEN.header.links.map((link, index) => (
+            {links.map((link, index) => (
               <Fragment key={link.id}>
                 <MenuLink key={link.id} onClick={toggleHamburgerMenu} href={link.href}>
                   {link.title}
                 </MenuLink>
-                {index !== languageEN.header.links.length - 1 && (
-                  <Divider className='md:h-[1px]' color='violet' direction='horizontal' />
-                )}
+                {index !== links.length - 1 && <Divider className='md:h-[1px]' color='violet' direction='horizontal' />}
               </Fragment>
             ))}
           </div>
