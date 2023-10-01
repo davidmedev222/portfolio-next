@@ -20,10 +20,10 @@ function ProjectCard({ project }: Props) {
       </h3>
       <Link href={href} className='md:area-project-image group relative h-60 md:h-96'>
         <ThemeImage
-          className='rounded-3xl object-cover'
-          sizes='(max-width: 768px) 100vw, 70vw'
-          fill
-          priority='high'
+          className='h-full w-full rounded-3xl object-cover'
+          width={960}
+          height={384}
+          fetchPriority='high'
           srcLight={project.thumbnail}
           srcDark={project.thumbnailDark}
           alt={project.alt}

@@ -6,10 +6,9 @@ interface Props extends Omit<ImageProps, 'src' | 'priority' | 'loading' | 'class
   srcLight: string
   srcDark: string
   className?: string
-  priority?: 'high' | 'low' | 'auto'
 }
 
-function ThemeImage({ srcDark, srcLight, className, priority, ...rest }: Props) {
+function ThemeImage({ srcDark, srcLight, className, ...rest }: Props) {
   const classes = {
     imageDark: clsx('hidden dark:block', className),
     imageLight: clsx('dark:hidden', className)
@@ -17,8 +16,8 @@ function ThemeImage({ srcDark, srcLight, className, priority, ...rest }: Props) 
 
   return (
     <>
-      <Image {...rest} src={srcLight} fetchPriority={priority} className={classes.imageLight} />
-      <Image {...rest} src={srcDark} fetchPriority={priority} className={classes.imageDark} />
+      <Image {...rest} src={srcLight} className={classes.imageLight} />
+      <Image {...rest} src={srcDark} className={classes.imageDark} />
     </>
   )
 }
