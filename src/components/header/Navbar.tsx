@@ -32,10 +32,15 @@ interface Props extends LinkProps {
 }
 
 function NavLink({ children, ...rest }: Props) {
-  const pathname = usePathname()
+  const pathname = usePathname().split('/')[2]
+  // eslint-disable-next-line @typescript-eslint/no-base-to-string
+  const href = rest.href.toString().split('/')[1]
+  const isHomePathname = pathname === undefined && href === ''
+  const isActivePathname = isHomePathname || pathname === href
+
   const classes = clsx(
     'rounded-full px-4 py-1 text-gray-700 transition-colors duration-300 hover:bg-violet-300 hover:text-black dark:hover:bg-violet-950 dark:hover:text-white',
-    pathname === rest.href && 'bg-violet-300 !text-black shadow-md shadow-black/25 dark:bg-violet-950 dark:!text-white'
+    isActivePathname && 'bg-violet-300 !text-black shadow-md shadow-black/25 dark:bg-violet-950 dark:!text-white'
   )
 
   return (
