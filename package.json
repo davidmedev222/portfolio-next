@@ -24,6 +24,7 @@
     "@types/react-lines-ellipsis": "^0.15.1",
     "autoprefixer": "10.4.15",
     "clsx": "^2.0.0",
+    "cookies-next": "^4.0.0",
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
     "husky": "^8.0.3",
