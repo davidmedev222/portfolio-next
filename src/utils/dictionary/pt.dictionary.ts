@@ -180,13 +180,13 @@ const dictionary = {
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/movaapp/movaapp2.webp',
-            imageDark: '/assets/projects/movaapp/movaapp2.webp',
+            imageDark: '/assets/projects/movaapp/movaapp2d.webp',
             alt: 'Design da apresentação do projeto do aplicativo mova'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/movaapp/movaapp3.webp',
-            imageDark: '/assets/projects/movaapp/movaapp3.webp',
+            imageDark: '/assets/projects/movaapp/movaapp3d.webp',
             alt: 'Design da apresentação do projeto do aplicativo mova'
           }
         ],
@@ -664,13 +664,13 @@ const dictionary = {
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/movaapp/movaapp2.webp',
-            imageDark: '/assets/projects/movaapp/movaapp2.webp',
+            imageDark: '/assets/projects/movaapp/movaapp2d.webp',
             alt: 'Design da apresentação do projeto do aplicativo mova'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/movaapp/movaapp3.webp',
-            imageDark: '/assets/projects/movaapp/movaapp3.webp',
+            imageDark: '/assets/projects/movaapp/movaapp3d.webp',
             alt: 'Design da apresentação do projeto do aplicativo mova'
           }
         ],

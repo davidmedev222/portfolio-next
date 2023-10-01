@@ -11,25 +11,27 @@ function Hero({ project }: Props) {
 
   return (
     <section className='relative min-h-screen'>
-      <div className='xs:hidden'>
+      <div className='absolute h-full w-full xs:hidden'>
         <ThemeImage
-          className='object-cover'
+          className='h-full w-full object-cover'
           srcDark={mobile.imageDark}
           srcLight={mobile.image}
-          sizes='100vw'
-          priority='high'
-          fill
+          fetchPriority='high'
+          quality={100}
+          width={540}
+          height={810}
           alt={project.alt}
         />
       </div>
-      <div className='hidden xs:block'>
+      <div className='absolute hidden h-full w-full xs:block'>
         <ThemeImage
-          className='object-cover'
+          className='h-full w-full object-cover'
           srcDark={desktop.imageDark}
           srcLight={desktop.image}
-          sizes='100vw'
-          priority='high'
-          fill
+          fetchPriority='high'
+          width={960}
+          quality={100}
+          height={720}
           alt={project.alt}
         />
       </div>
