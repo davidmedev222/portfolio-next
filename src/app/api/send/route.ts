@@ -1,4 +1,4 @@
-import EmailTemplate from '@/app/contact/components/EmailTemplate'
+import EmailTemplate from '@/app/[language]/contact/components/EmailTemplate'
 import { NextRequest, NextResponse } from 'next/server'
 import { Resend } from 'resend'
 

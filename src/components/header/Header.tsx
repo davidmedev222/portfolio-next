@@ -1,13 +1,19 @@
 'use client'
 import { Divider, DropdownLanguages, DropdownTheme, HamburgerMenu, LogoIcon, Navbar } from '@/components'
+import { Header as HeaderType } from '@/models'
 import { Routes } from '@/utils/const'
 import clsx from 'clsx'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 
+interface Props {
+  links: HeaderType['links']
+  themes: HeaderType['themes']
+}
+
 const minScroll = 25
 
-function Header() {
+function Header({ links, themes }: Props) {
   const [scrolling, setScrolling] = useState(false)
 
   const classes = {
@@ -38,11 +44,11 @@ function Header() {
         <Link href={Routes.home} className={classes.logo}>
           <LogoIcon className='fill-black dark:fill-white' />
         </Link>
-        <Navbar />
+        <Navbar links={links} />
         <Divider color='violet' direction='vertical' className='hidden lg:block' />
         <DropdownLanguages />
-        <DropdownTheme />
-        <HamburgerMenu />
+        <DropdownTheme themes={themes} />
+        <HamburgerMenu links={links} />
       </div>
     </header>
   )

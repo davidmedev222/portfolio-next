@@ -1,11 +1,16 @@
 'use client'
 import { DarkIcon, Divider, LightIcon, SystemIcon } from '@/components'
 import { useToggle } from '@/hooks'
+import { Header } from '@/models'
 import clsx from 'clsx'
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
 
-function DropdownTheme() {
+interface Props {
+  themes: Header['themes']
+}
+
+function DropdownTheme({ themes }: Props) {
   const [isMounted, setIsMounted] = useState(false)
   const { theme, setTheme } = useTheme()
   const { state: isOpen, toggleState } = useToggle()
@@ -71,11 +76,11 @@ function DropdownTheme() {
               className={classes.optionDesktop}
               onClick={handleToggleTheme('system')}
             >
-              <SystemIcon className='h-full w-full fill-black py-2 dark:fill-white' /> System
+              <SystemIcon className='h-full w-full fill-black py-2 dark:fill-white' /> {themes.system}
             </button>
             <Divider className='dark:!bg-violet-300 lg:h-[1px]' color='violet' direction='horizontal' />
             <button data-theme={theme === 'dark'} className={classes.optionDesktop} onClick={handleToggleTheme('dark')}>
-              <DarkIcon className='h-full w-full fill-black py-1.5 dark:fill-white' /> Dark
+              <DarkIcon className='h-full w-full fill-black py-1.5 dark:fill-white' /> {themes.dark}
             </button>
             <Divider className='dark:!bg-violet-300 lg:h-[1px]' color='violet' direction='horizontal' />
             <button
@@ -83,7 +88,7 @@ function DropdownTheme() {
               className={classes.optionDesktop}
               onClick={handleToggleTheme('light')}
             >
-              <LightIcon className='h-full w-full fill-black py-1 dark:fill-white' /> Light
+              <LightIcon className='h-full w-full fill-black py-1 dark:fill-white' /> {themes.light}
             </button>
           </div>
         )}
