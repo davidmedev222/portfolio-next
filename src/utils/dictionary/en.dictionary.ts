@@ -1,6 +1,6 @@
-import { Routes } from './routes.const'
+import { Routes } from '../const/routes.const'
 
-export const languageEN = {
+const dictionary = {
   header: {
     links: [
       { id: crypto.randomUUID(), href: Routes.home, title: 'Home' },
@@ -9,14 +9,14 @@ export const languageEN = {
       { id: crypto.randomUUID(), href: Routes.contact, title: 'Contact' }
     ],
     languages: {
-      en: 'EN',
-      es: 'ES',
-      br: 'BR'
+      en: 'en',
+      es: 'es',
+      pt: 'pt'
     },
     themes: {
-      system: 'system',
-      light: 'light',
-      dark: 'dark'
+      system: 'System',
+      light: 'Light',
+      dark: 'Dark'
     }
   },
   home: {
@@ -315,19 +315,19 @@ export const languageEN = {
             id: crypto.randomUUID(),
             image: '/assets/projects/apollonft/apollonft.webp',
             imageDark: '/assets/projects/apollonft/apollonftd.webp',
-            alt: 'Design of presentation of the union solidaria project'
+            alt: 'Design of presentation of the apollo nft project'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/apollonft/apollonft2.webp',
             imageDark: '/assets/projects/apollonft/apollonft2d.webp',
-            alt: 'Design of presentation of the union solidaria project'
+            alt: 'Design of presentation of the apollo nft project'
           },
           {
             id: crypto.randomUUID(),
             image: '/assets/projects/apollonft/apollonft3.webp',
             imageDark: '/assets/projects/apollonft/apollonft3d.webp',
-            alt: 'Design of presentation of the union solidaria project'
+            alt: 'Design of presentation of the apollo nft project'
           }
         ],
         prevProject: 'custom-sports',
@@ -1694,3 +1694,4 @@ export const languageEN = {
     copyright: '© Davidmedev. All rights reserved.'
   }
 }
+export default dictionary
