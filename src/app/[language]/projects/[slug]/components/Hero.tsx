@@ -1,5 +1,8 @@
+'use client'
 import { ArrowIcon, ThemeImage } from '@/components'
+import { useIntersectionObserver } from '@/hooks'
 import { IProject } from '@/models'
+import clsx from 'clsx'
 import ArrowBack from './ArrowBack'
 
 interface Props {
@@ -7,13 +10,22 @@ interface Props {
 }
 
 function Hero({ project }: Props) {
+  const [isIntersecting, ref] = useIntersectionObserver({ options: { threshold: 0.25 }, unobserve: true })
   const { mobile, desktop } = project.images
 
+  const classes = {
+    imageAnimation: clsx('clip-shutter-none h-full w-full object-cover', isIntersecting && 'clip-shutter'),
+    textAnimation: clsx(
+      'translate-y-full transition-transform delay-700 duration-700',
+      isIntersecting && '!translate-y-0'
+    )
+  }
+
   return (
-    <section className='relative min-h-screen'>
+    <section ref={ref} className='relative min-h-screen'>
       <div className='absolute h-full w-full xs:hidden'>
         <ThemeImage
-          className='h-full w-full object-cover'
+          className={classes.imageAnimation}
           srcDark={mobile.imageDark}
           srcLight={mobile.image}
           fetchPriority='high'
@@ -25,7 +37,7 @@ function Hero({ project }: Props) {
       </div>
       <div className='absolute hidden h-full w-full xs:block'>
         <ThemeImage
-          className='h-full w-full object-cover'
+          className={classes.imageAnimation}
           srcDark={desktop.imageDark}
           srcLight={desktop.image}
           fetchPriority='high'
@@ -37,8 +49,12 @@ function Hero({ project }: Props) {
       </div>
       <ArrowBack />
       <div className='absolute inset-x-0 bottom-12 mx-auto text-center text-2xl uppercase leading-none sm:left-16 sm:right-auto sm:text-[64px] sm:drop-shadow-heading 2xl:text-[96px]'>
-        <h1 className='font-benzin text-white'>{project.name}</h1>
-        <h2 className='font-ego sm:text-white'>{project.subname}</h2>
+        <h1 className='overflow-hidden font-benzin text-white'>
+          <div className={classes.textAnimation}>{project.name}</div>
+        </h1>
+        <h2 className='overflow-hidden font-ego sm:text-white'>
+          <div className={classes.textAnimation}>{project.subname}</div>
+        </h2>
       </div>
       <ArrowIcon className='absolute inset-x-0 bottom-4 mx-auto h-5 w-3 -rotate-90 fill-transparent stroke-white stroke-[0.4px] sm:h-14 sm:w-7' />
     </section>
