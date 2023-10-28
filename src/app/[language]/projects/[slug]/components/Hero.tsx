@@ -22,16 +22,17 @@ function Hero({ project }: Props) {
   }
 
   return (
-    <section ref={ref} className='relative min-h-screen'>
+    <section ref={ref} className='relative min-h-screen overflow-hidden'>
       <div className='absolute h-full w-full xs:hidden'>
         <ThemeImage
           className={classes.imageAnimation}
           srcDark={mobile.imageDark}
           srcLight={mobile.image}
           fetchPriority='high'
+          unoptimized
           quality={100}
-          width={540}
-          height={810}
+          width={810}
+          height={1080}
           alt={project.alt}
         />
       </div>
@@ -41,22 +42,23 @@ function Hero({ project }: Props) {
           srcDark={desktop.imageDark}
           srcLight={desktop.image}
           fetchPriority='high'
-          width={960}
+          unoptimized
           quality={100}
-          height={720}
+          width={1440}
+          height={1080}
           alt={project.alt}
         />
       </div>
       <ArrowBack />
-      <div className='absolute inset-x-0 bottom-12 mx-auto text-center text-2xl uppercase leading-none sm:left-16 sm:right-auto sm:text-[64px] sm:drop-shadow-heading 2xl:text-[96px]'>
-        <h1 className='overflow-hidden font-benzin text-white'>
+      <div className='absolute inset-x-0 bottom-12 mx-auto text-center text-2xl uppercase leading-none text-white drop-shadow-heading xs:left-16 xs:right-auto xs:text-[64px] 2xl:text-[96px]'>
+        <h1 className='overflow-hidden font-benzin'>
           <div className={classes.textAnimation}>{project.name}</div>
         </h1>
-        <h2 className='overflow-hidden font-ego sm:text-white'>
+        <h2 className='overflow-hidden font-ego'>
           <div className={classes.textAnimation}>{project.subname}</div>
         </h2>
       </div>
-      <ArrowIcon className='absolute inset-x-0 bottom-4 mx-auto h-5 w-3 -rotate-90 fill-transparent stroke-white stroke-[0.4px] sm:h-14 sm:w-7' />
+      <ArrowIcon className='absolute inset-x-0 bottom-4 mx-auto h-5 w-3 -rotate-90 fill-transparent stroke-white stroke-[0.4px] xs:h-14 xs:w-7' />
     </section>
   )
 }

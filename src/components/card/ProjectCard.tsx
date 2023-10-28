@@ -23,7 +23,7 @@ function ProjectCard({ project }: Props) {
       'md:area-project-date font-benzin text-[min(6vw,48px)] uppercase md:flex md:flex-col md:pt-24 md:text-center'
     ),
     link: clsx(
-      'clip-x-0 md:area-project-image transition-clip-path group relative h-60 duration-700 md:h-96',
+      'clip-x-0 md:area-project-image group relative h-60 transition-clip-path duration-700 md:h-96',
       isIntersecting && 'clip-x-auto'
     ),
     project: clsx('lg:area-project-title font-benzin text-[min(6vw,48px)] uppercase'),
@@ -40,10 +40,11 @@ function ProjectCard({ project }: Props) {
       </h3>
       <Link href={href} className={classes.link}>
         <ThemeImage
-          className='h-full w-full rounded-3xl object-cover'
-          width={960}
-          height={384}
+          className='h-full rounded-3xl object-cover'
+          width={1440}
+          height={1080}
           fetchPriority='high'
+          unoptimized
           srcLight={project.thumbnail}
           srcDark={project.thumbnailDark}
           alt={project.alt}
