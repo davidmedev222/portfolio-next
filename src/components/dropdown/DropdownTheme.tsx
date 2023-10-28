@@ -46,25 +46,27 @@ function DropdownTheme({ themes }: Props) {
     <>
       <div className={classes.dropdown}>
         <button data-active={isOpen} className={classes.optionMobile} onClick={toggleState}>
-          {theme === 'system' && <SystemIcon className='h-full w-full fill-black px-1.5 py-1 dark:fill-white' />}
-          {theme === 'dark' && <DarkIcon className='h-full w-full fill-black px-2.5 py-0.5 dark:fill-white' />}
           {theme === 'light' && <LightIcon className='h-full w-full fill-black px-1.5 py-0.5 dark:fill-white' />}
+          {theme === 'dark' && (
+            <DarkIcon className='h-full w-full -rotate-[25deg] fill-black px-2.5 py-0.5 dark:fill-white' />
+          )}
+          {theme === 'system' && <SystemIcon className='h-full w-full fill-black px-1.5 py-1 dark:fill-white' />}
         </button>
         {isOpen && (
           <div className={classes.optionsMobile}>
-            {theme !== 'system' && (
-              <button className={classes.optionMobile} onClick={handleToggleTheme('system')}>
-                <SystemIcon className='h-full w-full fill-black px-1.5 py-1 dark:fill-white' />
+            {theme !== 'light' && (
+              <button className={classes.optionMobile} onClick={handleToggleTheme('light')}>
+                <LightIcon className='h-full w-full fill-black px-1.5 py-0.5 dark:fill-white' />
               </button>
             )}
             {theme !== 'dark' && (
               <button className={classes.optionMobile} onClick={handleToggleTheme('dark')}>
-                <DarkIcon className='h-full w-full fill-black px-2.5 py-0.5 dark:fill-white' />
+                <DarkIcon className='h-full w-full -rotate-[25deg] fill-black px-2.5 py-0.5 dark:fill-white' />
               </button>
             )}
-            {theme !== 'light' && (
-              <button className={classes.optionMobile} onClick={handleToggleTheme('light')}>
-                <LightIcon className='h-full w-full fill-black px-1.5 py-0.5 dark:fill-white' />
+            {theme !== 'system' && (
+              <button className={classes.optionMobile} onClick={handleToggleTheme('system')}>
+                <SystemIcon className='h-full w-full fill-black px-1.5 py-1 dark:fill-white' />
               </button>
             )}
           </div>
@@ -72,23 +74,23 @@ function DropdownTheme({ themes }: Props) {
         {isOpen && (
           <div className={classes.optionsDesktop}>
             <button
-              data-theme={theme === 'system'}
-              className={classes.optionDesktop}
-              onClick={handleToggleTheme('system')}
-            >
-              <SystemIcon className='h-full w-full fill-black py-2 dark:fill-white' /> {themes.system}
-            </button>
-            <Divider className='dark:!bg-violet-300 lg:h-[1px]' color='violet' direction='horizontal' />
-            <button data-theme={theme === 'dark'} className={classes.optionDesktop} onClick={handleToggleTheme('dark')}>
-              <DarkIcon className='h-full w-full fill-black py-1.5 dark:fill-white' /> {themes.dark}
-            </button>
-            <Divider className='dark:!bg-violet-300 lg:h-[1px]' color='violet' direction='horizontal' />
-            <button
               data-theme={theme === 'light'}
               className={classes.optionDesktop}
               onClick={handleToggleTheme('light')}
             >
               <LightIcon className='h-full w-full fill-black py-1 dark:fill-white' /> {themes.light}
+            </button>
+            <Divider className='dark:!bg-violet-300 lg:h-[1px]' color='violet' direction='horizontal' />
+            <button data-theme={theme === 'dark'} className={classes.optionDesktop} onClick={handleToggleTheme('dark')}>
+              <DarkIcon className='h-full w-full -rotate-[25deg] fill-black py-1.5 dark:fill-white' /> {themes.dark}
+            </button>
+            <Divider className='dark:!bg-violet-300 lg:h-[1px]' color='violet' direction='horizontal' />
+            <button
+              data-theme={theme === 'system'}
+              className={classes.optionDesktop}
+              onClick={handleToggleTheme('system')}
+            >
+              <SystemIcon className='h-full w-full fill-black py-2 dark:fill-white' /> {themes.system}
             </button>
           </div>
         )}

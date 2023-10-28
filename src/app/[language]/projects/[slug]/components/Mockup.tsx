@@ -14,7 +14,7 @@ function Mockup({ className, mockup }: Props) {
 
   const classes = {
     image: clsx(
-      'clip-x-0 transition-clip-path h-full w-full rounded-3xl object-cover duration-700',
+      'clip-x-0 h-full w-full rounded-3xl object-cover transition-clip-path duration-700',
       isIntersecting && 'clip-x-auto'
     )
   }
@@ -25,8 +25,9 @@ function Mockup({ className, mockup }: Props) {
         className={classes.image}
         srcDark={mockup.imageDark}
         srcLight={mockup.image}
-        width={960}
-        height={548}
+        unoptimized
+        width={1440}
+        height={1080}
         alt={mockup.alt}
       />
     </div>
