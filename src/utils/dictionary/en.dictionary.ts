@@ -25,6 +25,83 @@ const dictionary = {
     projects: [
       {
         id: crypto.randomUUID(),
+        month: 'October',
+        year: '2023',
+        name: 'Eleva',
+        subname: 'MKT',
+        skills: ['Typescript', 'React', 'Next', 'Tailwind CSS', 'React Fast Marquee', 'Npm'],
+        slug: 'eleva-mkt',
+        thumbnail: '/assets/projects/elevamkt/elevamkt.webp',
+        thumbnailDark: '/assets/projects/elevamkt/elevamktd.webp',
+        images: {
+          mobile: {
+            image: '/assets/projects/elevamkt/elevamktmp.webp',
+            imageDark: '/assets/projects/elevamkt/elevamktmpd.webp'
+          },
+          desktop: {
+            image: '/assets/projects/elevamkt/elevamktdp.webp',
+            imageDark: '/assets/projects/elevamkt/elevamktdpd.webp'
+          }
+        },
+        alt: 'Eleva marketing project thumbnail',
+        code: 'https://github.com/davidmedev222/eleva-mkt',
+        demo: 'https://elevamkt.vercel.app/',
+        description:
+          'Eleva MKT, explore our marketing services website. With a specialized focus on digital strategies, SEO, engaging content and social media campaigns, we help propel your online presence to success.',
+        project: 'Eleva MKT',
+        date: 'October 2023',
+        role: 'Frontend Developer',
+        technologies: [
+          'Typescript',
+          'React',
+          'Next',
+          'Tailwind CSS',
+          'React Fast Marquee',
+          'Next Themes',
+          'Clsx',
+          'PostCSS',
+          'CommitLint',
+          'Husky',
+          'Npm'
+        ],
+        tools: ['ESLint', 'Prettier', 'Figma', 'Notion', 'Visual Studio Code', 'Git', 'Github'],
+        video: '',
+        info: {
+          code: 'Code',
+          demo: 'Demo',
+          project: 'Project',
+          date: 'Date',
+          role: 'Role',
+          technologies: 'Technologies',
+          tools: 'Tools',
+          back: 'Back',
+          next: 'Next'
+        },
+        mockups: [
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/elevamkt/elevamkt.webp',
+            imageDark: '/assets/projects/elevamkt/elevamktd.webp',
+            alt: 'Design of presentation of the eleva marketing project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/elevamkt/elevamkt2.webp',
+            imageDark: '/assets/projects/elevamkt/elevamkt2d.webp',
+            alt: 'Design of presentation of the eleva marketing project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/elevamkt/elevamkt3.webp',
+            imageDark: '/assets/projects/elevamkt/elevamkt3d.webp',
+            alt: 'Design of presentation of the eleva marketing project'
+          }
+        ],
+        prevProject: 'jordan-store',
+        nextProject: 'solidarity-union'
+      },
+      {
+        id: crypto.randomUUID(),
         month: 'August',
         year: '2023',
         name: 'Design',
@@ -416,6 +493,83 @@ const dictionary = {
     projects: [
       {
         id: crypto.randomUUID(),
+        month: 'October',
+        year: '2023',
+        name: 'Eleva',
+        subname: 'MKT',
+        skills: ['Typescript', 'React', 'Next', 'Tailwind CSS', 'React Fast Marquee', 'Npm'],
+        slug: 'eleva-mkt',
+        thumbnail: '/assets/projects/elevamkt/elevamkt.webp',
+        thumbnailDark: '/assets/projects/elevamkt/elevamktd.webp',
+        images: {
+          mobile: {
+            image: '/assets/projects/elevamkt/elevamktmp.webp',
+            imageDark: '/assets/projects/elevamkt/elevamktmpd.webp'
+          },
+          desktop: {
+            image: '/assets/projects/elevamkt/elevamktdp.webp',
+            imageDark: '/assets/projects/elevamkt/elevamktdpd.webp'
+          }
+        },
+        alt: 'Eleva marketing project thumbnail',
+        code: 'https://github.com/davidmedev222/eleva-mkt',
+        demo: 'https://elevamkt.vercel.app/',
+        description:
+          'Eleva MKT, explore our marketing services website. With a specialized focus on digital strategies, SEO, engaging content and social media campaigns, we help propel your online presence to success.',
+        project: 'Eleva MKT',
+        date: 'October 2023',
+        role: 'Frontend Developer',
+        technologies: [
+          'Typescript',
+          'React',
+          'Next',
+          'Tailwind CSS',
+          'React Fast Marquee',
+          'Next Themes',
+          'Clsx',
+          'PostCSS',
+          'CommitLint',
+          'Husky',
+          'Npm'
+        ],
+        tools: ['ESLint', 'Prettier', 'Figma', 'Notion', 'Visual Studio Code', 'Git', 'Github'],
+        video: '',
+        info: {
+          code: 'Code',
+          demo: 'Demo',
+          project: 'Project',
+          date: 'Date',
+          role: 'Role',
+          technologies: 'Technologies',
+          tools: 'Tools',
+          back: 'Back',
+          next: 'Next'
+        },
+        mockups: [
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/elevamkt/elevamkt.webp',
+            imageDark: '/assets/projects/elevamkt/elevamktd.webp',
+            alt: 'Design of presentation of the eleva marketing project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/elevamkt/elevamkt2.webp',
+            imageDark: '/assets/projects/elevamkt/elevamkt2d.webp',
+            alt: 'Design of presentation of the eleva marketing project'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/elevamkt/elevamkt3.webp',
+            imageDark: '/assets/projects/elevamkt/elevamkt3d.webp',
+            alt: 'Design of presentation of the eleva marketing project'
+          }
+        ],
+        prevProject: 'jordan-store',
+        nextProject: 'solidarity-union'
+      },
+      {
+        id: crypto.randomUUID(),
         month: 'August',
         year: '2023',
         name: 'Solidarity',
@@ -504,7 +658,7 @@ const dictionary = {
             alt: 'Design of presentation of the solidarity union project'
           }
         ],
-        prevProject: 'jordan-store',
+        prevProject: 'eleva-mkt',
         nextProject: 'design-website'
       },
       {
@@ -1431,7 +1585,7 @@ const dictionary = {
           }
         ],
         prevProject: 'stadium-sports',
-        nextProject: 'solidarity-union'
+        nextProject: 'eleva-mkt'
       }
     ]
   },
@@ -1449,7 +1603,7 @@ const dictionary = {
     experience: {
       title: 'Projects',
       categories: [
-        { id: crypto.randomUUID(), title: 'Personal', quantity: 6 },
+        { id: crypto.randomUUID(), title: 'Personal', quantity: 7 },
         { id: crypto.randomUUID(), title: 'Collaborative', quantity: 7 },
         { id: crypto.randomUUID(), title: 'Team Leader', quantity: 2 }
       ]
