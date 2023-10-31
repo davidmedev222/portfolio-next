@@ -1,4 +1,4 @@
-import { Routes } from '../const/routes.const'
+import { Routes } from '@/utils/const'
 
 const dictionary = {
   header: {
@@ -337,13 +337,13 @@ const dictionary = {
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/myphotos/myphotos3.webp',
-            imageDark: '/assets/projects/myphotos/myphotos3d.webp',
+            image: '/assets/projects/myphotos/myphotos.webp',
+            imageDark: '/assets/projects/myphotos/myphotosd.webp',
             alt: 'Design da apresentação do projeto my photos'
           }
         ],
         prevProject: 'lawyer-website',
-        nextProject: 'chat-box'
+        nextProject: 'agency-website'
       },
       {
         id: crypto.randomUUID(),
@@ -407,7 +407,7 @@ const dictionary = {
             alt: 'Design de apresentação do projeto union solidaria'
           }
         ],
-        prevProject: 'custom-sports',
+        prevProject: 'agency-website',
         nextProject: 'blizt-website'
       },
       {
@@ -482,8 +482,8 @@ const dictionary = {
             alt: 'Design de apresentação do projeto da loja jordan'
           }
         ],
-        prevProject: 'stadium-sports',
-        nextProject: 'solidarity-union'
+        prevProject: 'blizt-website',
+        nextProject: 'eleva-mkt'
       }
     ],
     link: { id: crypto.randomUUID(), href: Routes.projects, title: 'View All' }
@@ -1052,100 +1052,12 @@ const dictionary = {
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/myphotos/myphotos3.webp',
-            imageDark: '/assets/projects/myphotos/myphotos3d.webp',
+            image: '/assets/projects/myphotos/myphotos.webp',
+            imageDark: '/assets/projects/myphotos/myphotosd.webp',
             alt: 'Design da apresentação do projeto my photos'
           }
         ],
         prevProject: 'lawyer-website',
-        nextProject: 'chat-box'
-      },
-      {
-        id: crypto.randomUUID(),
-        month: 'Março',
-        year: '2023',
-        name: 'Chat',
-        subname: 'Box',
-        skills: ['Typescript', 'React', 'Styled Components', 'ViteJs', 'React Router Dom', 'Npm'],
-        slug: 'chat-box',
-        thumbnail: '/assets/projects/chatbox/chatbox.webp',
-        thumbnailDark: '/assets/projects/chatbox/chatboxd.webp',
-        images: {
-          mobile: {
-            image: '/assets/projects/chatbox/chatboxmp.webp',
-            imageDark: '/assets/projects/chatbox/chatboxmpd.webp'
-          },
-          desktop: {
-            image: '/assets/projects/chatbox/chatboxdp.webp',
-            imageDark: '/assets/projects/chatbox/chatboxdpd.webp'
-          }
-        },
-        alt: 'Miniatura do projeto Chat Box',
-        code: 'https://github.com/No-Country/S7-20-T-NODEREACT',
-        demo: 'https://github.com/No-Country/S7-20-T-NODEREACT',
-        description:
-          'Um aplicativo de bate-papo que permite que os usuários se comuniquem com outros usuários por meio de mensagens de texto, onde os usuários podem criar uma conta, alterar suas configurações e preferências.',
-        project: 'Chat Box',
-        date: 'Março 2023',
-        role: 'Desenvolvedor Frontend',
-        technologies: [
-          'Typescript',
-          'React',
-          'Styled Components',
-          'ViteJs',
-          'React Router Dom',
-          'Axios',
-          'ExpressJs',
-          'MongoDB',
-          'Mongoose',
-          'CommitLint',
-          'Husky',
-          'Npm'
-        ],
-        tools: [
-          'ESLint',
-          'Figma',
-          'Trello',
-          'RapidAPI Client',
-          'Slack',
-          'Discord',
-          'Visual Studio Code',
-          'Git',
-          'Github'
-        ],
-        video: '',
-        info: {
-          code: 'Código',
-          demo: 'Demo',
-          project: 'Projeto',
-          date: 'Data',
-          role: 'Função',
-          technologies: 'Tecnologias',
-          tools: 'Ferramentas',
-          back: 'Back',
-          next: 'Next'
-        },
-        mockups: [
-          {
-            id: crypto.randomUUID(),
-            image: '/assets/projects/chatbox/chatbox.webp',
-            imageDark: '/assets/projects/chatbox/chatboxd.webp',
-            alt: 'Design da apresentação do projeto da caixa de bate-papo'
-          },
-          {
-            id: crypto.randomUUID(),
-            image: '/assets/projects/chatbox/chatbox2.webp',
-            imageDark: '/assets/projects/chatbox/chatbox2d.webp',
-            alt: 'Design da apresentação do projeto da caixa de bate-papo'
-          },
-          {
-            id: crypto.randomUUID(),
-            image: '/assets/projects/chatbox/chatbox3.webp',
-            imageDark: '/assets/projects/chatbox/chatbox3d.webp',
-            alt: 'Design da apresentação do projeto da caixa de bate-papo'
-          }
-        ],
-        prevProject: 'my-photos',
         nextProject: 'agency-website'
       },
       {
@@ -1210,103 +1122,7 @@ const dictionary = {
             alt: 'Design da apresentação do projeto do site da agência'
           }
         ],
-        prevProject: 'chat-box',
-        nextProject: 'custom-sports'
-      },
-      {
-        id: crypto.randomUUID(),
-        month: 'Janeiro',
-        year: '2023',
-        name: 'Custom',
-        subname: 'Sports',
-        skills: ['Javascript', 'React', 'Styled Components', 'ViteJs', 'React Router Dom', 'Npm'],
-        slug: 'custom-sports',
-        thumbnail: '/assets/projects/customsports/customsports.webp',
-        thumbnailDark: '/assets/projects/customsports/customsportsd.webp',
-        images: {
-          mobile: {
-            image: '/assets/projects/customsports/customsportsmp.webp',
-            imageDark: '/assets/projects/customsports/customsportsmpd.webp'
-          },
-          desktop: {
-            image: '/assets/projects/customsports/customsportsdp.webp',
-            imageDark: '/assets/projects/customsports/customsportsdpd.webp'
-          }
-        },
-        alt: 'Miniatura de projeto de esportes personalizados',
-        code: 'https://github.com/No-Country/S6-14-T-MERN',
-        demo: 'http://ec2-18-118-29-121.us-east-2.compute.amazonaws.com/',
-        description:
-          'Custom Sports, loja on-line de roupas esportivas, onde é possível projetar e comprar o modelo esportivo, com a possibilidade de criar e gerenciar uma conta de usuário pessoal.',
-        project: 'Custom Sports',
-        date: 'Janeiro 2023',
-        role: 'Desenvolvedor Frontend',
-        technologies: [
-          'Javascript',
-          'React',
-          'Styled Components',
-          'ViteJs',
-          'React Router Dom',
-          'React Hook Form',
-          'Axios',
-          'ExpressJs',
-          'MongoDB',
-          'Mongoose',
-          'Firebase',
-          'CommitLint',
-          'Husky',
-          'Js Cookie',
-          'React Paypal',
-          'React Icons',
-          'React Spinners',
-          'React Toastify',
-          'Npm'
-        ],
-        tools: [
-          'ESLint',
-          'Figma',
-          'Trello',
-          'RapidAPI Client',
-          'Slack',
-          'Discord',
-          'Miro',
-          'Visual Studio Code',
-          'Git',
-          'Github'
-        ],
-        video: '',
-        info: {
-          code: 'Código',
-          demo: 'Demo',
-          project: 'Projeto',
-          date: 'Data',
-          role: 'Função',
-          technologies: 'Tecnologias',
-          tools: 'Ferramentas',
-          back: 'Back',
-          next: 'Next'
-        },
-        mockups: [
-          {
-            id: crypto.randomUUID(),
-            image: '/assets/projects/customsports/customsports.webp',
-            imageDark: '/assets/projects/customsports/customsportsd.webp',
-            alt: 'Design da apresentação do projeto esportivo personalizado'
-          },
-          {
-            id: crypto.randomUUID(),
-            image: '/assets/projects/customsports/customsports2.webp',
-            imageDark: '/assets/projects/customsports/customsports2d.webp',
-            alt: 'Design da apresentação do projeto esportivo personalizado'
-          },
-          {
-            id: crypto.randomUUID(),
-            image: '/assets/projects/customsports/customsports3.webp',
-            imageDark: '/assets/projects/customsports/customsports3d.webp',
-            alt: 'Design da apresentação do projeto esportivo personalizado'
-          }
-        ],
-        prevProject: 'agency-website',
+        prevProject: 'my-photos',
         nextProject: 'apollo-nft'
       },
       {
@@ -1371,7 +1187,7 @@ const dictionary = {
             alt: 'Design de apresentação do projeto union solidaria'
           }
         ],
-        prevProject: 'custom-sports',
+        prevProject: 'agency-website',
         nextProject: 'blizt-website'
       },
       {
@@ -1446,71 +1262,6 @@ const dictionary = {
           }
         ],
         prevProject: 'apollo-nft',
-        nextProject: 'stadium-sports'
-      },
-      {
-        id: crypto.randomUUID(),
-        month: 'Novembro',
-        year: '2022',
-        name: 'Stadium',
-        subname: 'Sports',
-        skills: ['Javascript', 'React', 'Sass', 'ViteJs', 'React Router Dom', 'Npm'],
-        slug: 'stadium-sports',
-        thumbnail: '/assets/projects/stadiumsports/stadiumsports.webp',
-        thumbnailDark: '/assets/projects/stadiumsports/stadiumsportsd.webp',
-        images: {
-          mobile: {
-            image: '/assets/projects/stadiumsports/stadiumsportsmp.webp',
-            imageDark: '/assets/projects/stadiumsports/stadiumsportsmpd.webp'
-          },
-          desktop: {
-            image: '/assets/projects/stadiumsports/stadiumsportsdp.webp',
-            imageDark: '/assets/projects/stadiumsports/stadiumsportsdpd.webp'
-          }
-        },
-        alt: 'Miniatura do projeto Stadium Sports',
-        code: 'https://github.com/No-Country/C8-73-T-RN',
-        demo: 'https://e-stadium.vercel.app/',
-        description:
-          'Plataforma de jogos on-line e e-sports para jogadores e organizadores de torneios, onde os jogadores podem descobrir torneios e participar, e os organizadores de torneios podem criar e gerenciar seus torneios e construir suas próprias comunidades.',
-        project: 'Stadium Sports',
-        date: 'Novembro 2022',
-        role: 'Desenvolvedor Frontend',
-        technologies: ['Javascript', 'React', 'Sass', 'ViteJs', 'React Router Dom', 'Firebase', 'Glider Js', 'Npm'],
-        tools: ['Figma', 'Trello', 'Slack', 'Discord', 'Visual Studio Code', 'Git', 'Github'],
-        video: '',
-        info: {
-          code: 'Código',
-          demo: 'Demo',
-          project: 'Projeto',
-          date: 'Data',
-          role: 'Função',
-          technologies: 'Tecnologias',
-          tools: 'Ferramentas',
-          back: 'Back',
-          next: 'Next'
-        },
-        mockups: [
-          {
-            id: crypto.randomUUID(),
-            image: '/assets/projects/stadiumsports/stadiumsports.webp',
-            imageDark: '/assets/projects/stadiumsports/stadiumsportsd.webp',
-            alt: 'Design de apresentação do projeto esportivo do estádio'
-          },
-          {
-            id: crypto.randomUUID(),
-            image: '/assets/projects/stadiumsports/stadiumsports2.webp',
-            imageDark: '/assets/projects/stadiumsports/stadiumsports2d.webp',
-            alt: 'Design de apresentação do projeto esportivo do estádio'
-          },
-          {
-            id: crypto.randomUUID(),
-            image: '/assets/projects/stadiumsports/stadiumsports3.webp',
-            imageDark: '/assets/projects/stadiumsports/stadiumsports3d.webp',
-            alt: 'Design de apresentação do projeto esportivo do estádio'
-          }
-        ],
-        prevProject: 'blizt-website',
         nextProject: 'jordan-store'
       },
       {
@@ -1585,7 +1336,7 @@ const dictionary = {
             alt: 'Design de apresentação do projeto da loja jordan'
           }
         ],
-        prevProject: 'stadium-sports',
+        prevProject: 'blizt-website',
         nextProject: 'eleva-mkt'
       }
     ]

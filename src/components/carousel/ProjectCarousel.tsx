@@ -5,7 +5,7 @@ import 'swiper/css/effect-coverflow'
 import 'swiper/css/pagination'
 import { EffectCoverflow, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import ProjectCard from '../card/ProjectCard'
+import { ProjectCard } from '../index'
 
 interface Props {
   projects: IProject[]
