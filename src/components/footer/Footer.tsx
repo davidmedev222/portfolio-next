@@ -1,8 +1,7 @@
 import { Footer as FooterType } from '@/models'
 import { Routes } from '@/utils/const'
 import Link from 'next/link'
-import Divider from '../divider/Divider'
-import LogoIcon from '../icons/LogoIcon'
+import { Divider, LogoIcon } from '../index'
 
 interface Props {
   categories: FooterType['categories']

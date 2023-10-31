@@ -1,6 +1,6 @@
 import clsx from 'clsx'
 import Link, { LinkProps } from 'next/link'
-import Divider from '../divider/Divider'
+import { Divider } from '../index'
 
 interface Props extends LinkProps {
   children: React.ReactNode

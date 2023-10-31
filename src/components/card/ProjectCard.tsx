@@ -4,10 +4,7 @@ import { IProject } from '@/models'
 import { Routes } from '@/utils/const'
 import clsx from 'clsx'
 import Link from 'next/link'
-import ArrowIcon from '../icons/ArrowIcon'
-import ThemeImage from '../image/ThemeImage'
-import Paragraph from '../text/Paragraph'
-import SkillText from '../text/SkillText'
+import { ArrowIcon, Paragraph, SkillText, ThemeImage } from '../index'
 
 interface Props {
   project: IProject

@@ -3,7 +3,7 @@ import { yupResolver } from '@hookform/resolvers/yup'
 import clsx from 'clsx'
 import { useForm } from 'react-hook-form'
 import { InferType, object, string } from 'yup'
-import { sendEmail } from '../services/email.service'
+import { sendEmail } from '../services'
 
 import { Contact } from '@/models'
 import { useState } from 'react'

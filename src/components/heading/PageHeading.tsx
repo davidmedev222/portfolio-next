@@ -1,7 +1,7 @@
 'use client'
 import { useIntersectionObserver } from '@/hooks'
 import clsx from 'clsx'
-import Divider from '../divider/Divider'
+import { Divider } from '../index'
 
 interface Props {
   children: React.ReactNode
@@ -22,7 +22,7 @@ function PageHeading({ children, variant, as, className }: Props) {
     ),
     heading: clsx('overflow-hidden text-center font-benzin text-[min(6vw,36px)] uppercase'),
     headingAnimation: clsx('translate-y-full transition-transform duration-700', isIntersecting && '!translate-y-0'),
-    dividerAnimation: clsx('transition-width !w-0 duration-1000', isIntersecting && '!w-full')
+    dividerAnimation: clsx('!w-0 transition-width duration-1000', isIntersecting && '!w-full')
   }
 
   return (

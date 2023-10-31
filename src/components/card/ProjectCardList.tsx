@@ -1,9 +1,7 @@
 import { IProject } from '@/models'
-import { languageEN } from '@/utils/const'
 import clsx from 'clsx'
 import { Fragment } from 'react'
-import Divider from '../divider/Divider'
-import ProjectCard from './ProjectCard'
+import { Divider, ProjectCard } from '../index'
 
 interface Props {
   variant: 'highlights' | 'all'
@@ -27,7 +25,7 @@ function ProjectCardList({ variant, allProjects, highlightsProjects }: Props) {
       {variant === 'all' &&
         allProjects &&
         allProjects.map((project, index) => {
-          const isLastProject = index === languageEN.projects.projects.length - 1
+          const isLastProject = index === allProjects.length - 1
 
           return (
             <Fragment key={project.id}>
