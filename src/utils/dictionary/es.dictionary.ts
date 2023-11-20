@@ -27,6 +27,84 @@ const dictionary = {
         id: crypto.randomUUID(),
         month: 'Octubre',
         year: '2023',
+        name: 'Chat',
+        subname: 'Box',
+        skills: ['Typescript', 'React', 'Next', 'Tailwind CSS', 'Next Auth', 'Npm'],
+        slug: 'chat-box',
+        thumbnail: '/assets/projects/chatbox/chatbox.webp',
+        thumbnailDark: '/assets/projects/chatbox/chatboxd.webp',
+        images: {
+          mobile: {
+            image: '/assets/projects/chatbox/chatboxmp.webp',
+            imageDark: '/assets/projects/chatbox/chatboxmpd.webp'
+          },
+          desktop: {
+            image: '/assets/projects/chatbox/chatboxdp.webp',
+            imageDark: '/assets/projects/chatbox/chatboxdpd.webp'
+          }
+        },
+        alt: 'Miniatura del proyecto de Chat Box',
+        code: 'https://github.com/davidmedev222/chat-box',
+        demo: 'https://chatboxwebsite.vercel.app/',
+        description:
+          'Aplicación de chat de mensajería que ofrece una interfaz moderna, intuitiva y personalizable. Con opciones para enviar mensajes de texto, voz, imágenes, vídeos y archivos a cualquier persona, en cualquier momento y lugar. Además, puedes crear grupos, hacer videollamadas, compartir tu ubicación y mucho más.',
+        project: 'Chat Box',
+        date: 'Octubre 2023',
+        role: 'Desarrollador Frontend',
+        technologies: [
+          'Typescript',
+          'React',
+          'Next',
+          'Tailwind CSS',
+          'Next Auth',
+          'Firebase',
+          'Next Themes',
+          'Clsx',
+          'PostCSS',
+          'CommitLint',
+          'Husky',
+          'Npm'
+        ],
+        tools: ['ESLint', 'Prettier', 'Figma', 'Notion', 'Visual Studio Code', 'Git', 'Github'],
+        video: '',
+        info: {
+          code: 'Código',
+          demo: 'Demo',
+          project: 'Proyecto',
+          date: 'Fecha',
+          role: 'Rol',
+          technologies: 'Tecnologías',
+          tools: 'Herramientas',
+          back: 'Back',
+          next: 'Next'
+        },
+        mockups: [
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/chatbox/chatbox2.webp',
+            imageDark: '/assets/projects/chatbox/chatbox2d.webp',
+            alt: 'Diseño de la presentación del proyecto de Chat Box'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/chatbox/chatbox3.webp',
+            imageDark: '/assets/projects/chatbox/chatbox3d.webp',
+            alt: 'Diseño de la presentación del proyecto de Chat Box'
+          },
+          {
+            id: crypto.randomUUID(),
+            image: '/assets/projects/chatbox/chatbox4.webp',
+            imageDark: '/assets/projects/chatbox/chatbox4d.webp',
+            alt: 'Diseño de la presentación del proyecto de Chat Box'
+          }
+        ],
+        prevProject: 'jordan-store',
+        nextProject: 'eleva-mkt'
+      },
+      {
+        id: crypto.randomUUID(),
+        month: 'Octubre',
+        year: '2023',
         name: 'Eleva',
         subname: 'MKT',
         skills: ['Typescript', 'React', 'Next', 'Tailwind CSS', 'React Fast Marquee', 'Npm'],
@@ -97,7 +175,7 @@ const dictionary = {
             alt: 'Diseño de la presentación del proyecto de eleva marketing'
           }
         ],
-        prevProject: 'jordan-store',
+        prevProject: 'chat-box',
         nextProject: 'solidarity-union'
       },
       {
@@ -409,47 +487,56 @@ const dictionary = {
         ],
         prevProject: 'agency-website',
         nextProject: 'blizt-website'
-      },
+      }
+    ],
+    link: { id: crypto.randomUUID(), href: Routes.projects, title: 'Ver Todos' }
+  },
+  projects: {
+    title: 'Proyectos',
+    projects: [
       {
         id: crypto.randomUUID(),
         month: 'Octubre',
-        year: '2022',
-        name: 'Jordan',
-        subname: 'Store',
-        skills: ['Javascript', 'React', 'Styled Components', 'ViteJs', 'React Router Dom', 'Firebase'],
-        slug: 'jordan-store',
-        thumbnail: '/assets/projects/jordanstore/jordanstore.webp',
-        thumbnailDark: '/assets/projects/jordanstore/jordanstored.webp',
+        year: '2023',
+        name: 'Chat',
+        subname: 'Box',
+        skills: ['Typescript', 'React', 'Next', 'Tailwind CSS', 'Next Auth', 'Npm'],
+        slug: 'chat-box',
+        thumbnail: '/assets/projects/chatbox/chatbox.webp',
+        thumbnailDark: '/assets/projects/chatbox/chatboxd.webp',
         images: {
           mobile: {
-            image: '/assets/projects/jordanstore/jordanstoremp.webp',
-            imageDark: '/assets/projects/jordanstore/jordanstorempd.webp'
+            image: '/assets/projects/chatbox/chatboxmp.webp',
+            imageDark: '/assets/projects/chatbox/chatboxmpd.webp'
           },
           desktop: {
-            image: '/assets/projects/jordanstore/jordanstoredp.webp',
-            imageDark: '/assets/projects/jordanstore/jordanstoredpd.webp'
+            image: '/assets/projects/chatbox/chatboxdp.webp',
+            imageDark: '/assets/projects/chatbox/chatboxdpd.webp'
           }
         },
-        alt: 'Miniatura del proyecto Jordan Store',
-        code: 'https://github.com/davidmedev222/ecommerce-jordan-react',
-        demo: 'https://jordanstore.vercel.app/',
+        alt: 'Miniatura del proyecto de Chat Box',
+        code: 'https://github.com/davidmedev222/chat-box',
+        demo: 'https://chatboxwebsite.vercel.app/',
         description:
-          'Tienda de zapatillas en línea para personas con preferencia por la marca Jordan, donde podrán comprar y gestionar su propia cuenta en el sitio web.',
-        project: 'Jordan Store',
-        date: 'Octubre 2022',
+          'Aplicación de chat de mensajería que ofrece una interfaz moderna, intuitiva y personalizable. Con opciones para enviar mensajes de texto, voz, imágenes, vídeos y archivos a cualquier persona, en cualquier momento y lugar. Además, puedes crear grupos, hacer videollamadas, compartir tu ubicación y mucho más.',
+        project: 'Chat Box',
+        date: 'Octubre 2023',
         role: 'Desarrollador Frontend',
         technologies: [
-          'Javascript',
+          'Typescript',
           'React',
-          'Styled Components',
-          'ViteJs',
-          'React Router Dom',
+          'Next',
+          'Tailwind CSS',
+          'Next Auth',
           'Firebase',
-          'Formkit Auto Animate',
-          'React Toastify',
-          'Pnpm'
+          'Next Themes',
+          'Clsx',
+          'PostCSS',
+          'CommitLint',
+          'Husky',
+          'Npm'
         ],
-        tools: ['ESLint', 'Trello', 'Visual Studio Code', 'Git', 'Github'],
+        tools: ['ESLint', 'Prettier', 'Figma', 'Notion', 'Visual Studio Code', 'Git', 'Github'],
         video: '',
         info: {
           code: 'Código',
@@ -465,32 +552,26 @@ const dictionary = {
         mockups: [
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/jordanstore/jordanstore.webp',
-            imageDark: '/assets/projects/jordanstore/jordanstored.webp',
-            alt: 'Diseño de la presentación del proyecto de tienda jordan'
+            image: '/assets/projects/chatbox/chatbox2.webp',
+            imageDark: '/assets/projects/chatbox/chatbox2d.webp',
+            alt: 'Diseño de la presentación del proyecto de Chat Box'
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/jordanstore/jordanstore2.webp',
-            imageDark: '/assets/projects/jordanstore/jordanstore2d.webp',
-            alt: 'Diseño de la presentación del proyecto de tienda jordan'
+            image: '/assets/projects/chatbox/chatbox3.webp',
+            imageDark: '/assets/projects/chatbox/chatbox3d.webp',
+            alt: 'Diseño de la presentación del proyecto de Chat Box'
           },
           {
             id: crypto.randomUUID(),
-            image: '/assets/projects/jordanstore/jordanstore3.webp',
-            imageDark: '/assets/projects/jordanstore/jordanstore3d.webp',
-            alt: 'Diseño de la presentación del proyecto de tienda jordan'
+            image: '/assets/projects/chatbox/chatbox4.webp',
+            imageDark: '/assets/projects/chatbox/chatbox4d.webp',
+            alt: 'Diseño de la presentación del proyecto de Chat Box'
           }
         ],
-        prevProject: 'blizt-website',
+        prevProject: 'jordan-store',
         nextProject: 'eleva-mkt'
-      }
-    ],
-    link: { id: crypto.randomUUID(), href: Routes.projects, title: 'Ver Todos' }
-  },
-  projects: {
-    title: 'Proyectos',
-    projects: [
+      },
       {
         id: crypto.randomUUID(),
         month: 'Octubre',
@@ -565,7 +646,7 @@ const dictionary = {
             alt: 'Diseño de la presentación del proyecto de eleva marketing'
           }
         ],
-        prevProject: 'jordan-store',
+        prevProject: 'chat-box',
         nextProject: 'solidarity-union'
       },
       {
@@ -1337,7 +1418,7 @@ const dictionary = {
           }
         ],
         prevProject: 'blizt-website',
-        nextProject: 'eleva-mkt'
+        nextProject: 'chat-box'
       }
     ]
   },
