@@ -25,7 +25,7 @@ function DropdownLanguages() {
   const classes = {
     dropdown: clsx('relative select-none'),
     option: clsx(
-      'flex h-6 cursor-pointer items-center gap-x-0.5 rounded-full bg-box pl-1 pr-1.5 text-xs uppercase shadow-md shadow-black/25 transition-colors duration-300 hover:bg-violet-300 data-[active=true]:bg-violet-300 dark:bg-violet-950 dark:hover:bg-violet-500 dark:data-[active=true]:bg-violet-500'
+      'flex h-6 items-center gap-x-0.5 rounded-full bg-box pl-1 pr-1.5 text-xs uppercase shadow-md shadow-black/25 transition-colors duration-300 hover:bg-violet-300 data-[active=true]:bg-violet-300 dark:bg-violet-950 dark:hover:bg-violet-500 dark:data-[active=true]:bg-violet-500'
     ),
     optionActive: clsx(isOpen && 'bg-violet-300 dark:bg-violet-500'),
     options: clsx('absolute top-[calc(100%+6px)] grid gap-y-1.5')
@@ -33,7 +33,7 @@ function DropdownLanguages() {
 
   return (
     <div className={classes.dropdown}>
-      <div data-active={isOpen} className={classes.option} onClick={toggleLanguages}>
+      <button data-active={isOpen} className={classes.option} onClick={toggleLanguages}>
         {currentLanguage === 'en' && (
           <Image width={21} height={21} src='/assets/logo-en.png' alt='Icono del pais Estados Unidos' />
         )}
@@ -44,23 +44,23 @@ function DropdownLanguages() {
           <Image width={21} height={21} src='/assets/logo-pt.png' alt='Icono del pais Brasil' />
         )}
         {currentLanguage}
-      </div>
+      </button>
       {isOpen && (
         <div className={classes.options}>
           {currentLanguage !== 'en' && (
-            <div onClick={changeLanguage('en')} className={classes.option}>
+            <button onClick={changeLanguage('en')} className={classes.option}>
               <Image width={21} height={21} src='/assets/logo-en.png' alt='Icono del pais Estados Unidos' /> en
-            </div>
+            </button>
           )}
           {currentLanguage !== 'es' && (
-            <div onClick={changeLanguage('es')} className={classes.option}>
+            <button onClick={changeLanguage('es')} className={classes.option}>
               <Image width={21} height={21} src='/assets/logo-es.png' alt='Icono del pais Argentina' /> es
-            </div>
+            </button>
           )}
           {currentLanguage !== 'pt' && (
-            <div onClick={changeLanguage('pt')} className={classes.option}>
+            <button onClick={changeLanguage('pt')} className={classes.option}>
               <Image width={21} height={21} src='/assets/logo-pt.png' alt='Icono del pais Brasil' /> pt
-            </div>
+            </button>
           )}
         </div>
       )}
